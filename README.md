@@ -15,3 +15,5 @@
 
 ==> [ShAd0wInK/starter-pack](http://github.com/ShAd0wInK/starter-pack)
 
+==> [How to install](https://github.com/ShAd0wInK/starter-pack/blob/master/README.md)
+
