@@ -23,4 +23,4 @@ if ($stmt->errorCode() !== '00000') {
 
 $msg = 'deleted';
 
-header("Location: ../../index.php?msg=".$msg);
+header("Location: ../../index.php?msg=".$msg."#station");

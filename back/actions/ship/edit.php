@@ -1,7 +1,7 @@
 <?php
 require_once "../../includes/connection.php";
 require_once "../../includes/head.php";
-$sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link` FROM `planets` WHERE `id` = $_POST[id];
+$sql  = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link` FROM `ship` WHERE `id` = $_POST[id];
 ";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
@@ -76,29 +76,27 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `wa
 
   <form method="post" action="./doedit.php">
 <div class="form-group">
-    <label style="font-size: 24px">Modifier la planète <?= $row["name"] ?> : </label><br><br>
+    <label style="font-size: 24px">Modifier le transport <?= $row["name"] ?> : </label><br><br>
     <label style="width: 100px;">Name : </label>
     <input placeholder="Name" value="<?= $row["name"] ?>" type="text" name="name"></input><br>
     <label style="width: 100px;">Size : </label>
     <input placeholder="Size" value="<?= $row["size"] ?>" type="text" name="size"></input><br>
     <label style="width: 100px;">Air : </label>
     <input placeholder="Air" value="<?= $row["air"] ?>" type="text" name="air"></input><br>
-    <label style="width: 100px;">Wildlife : </label>
-    <input placeholder="Wildlife" value="<?= $row["wildlife"] ?>" type="text" name="wildlife"></input><br>
-    <label style="width: 100px;">Flora : </label>
-    <input placeholder="Flora" value="<?= $row["flora"] ?>" type="text" name="flora"></input><br>
-    <label style="width: 100px;">Weather : </label>
-    <input placeholder="Weather" value="<?= $row["weather"] ?>" type="text" name="weather"></input><br>
-    <label style="width: 100px;">Water : </label>
-    <input placeholder="Water" value="<?= $row["water"] ?>" type="text" name="water"></input><br>
-    <label style="width: 100px;">Work : </label>
-    <input placeholder="Work" value="<?= $row["work"] ?>" type="text" name="work"></input><br>
-    <label style="width: 100px;">Image : </label>
+    <label style="width: 100px;">Duration : </label>
+    <input placeholder="Duration" value="<?= $row["duration"] ?>" type="text" name="duration"></input><br>
+    <label style="width: 100px;">Spacing : </label>
+    <input placeholder="Spacing" value="<?= $row["spacing"] ?>" type="text" name="spacing"></input><br>
+    <label style="width: 100px;">Connection : </label>
+    <input placeholder="Connection" value="<?= $row["connection"] ?>" type="text" name="connection"></input><br>
+    <label style="width: 100px;">Installations : </label>
+	<input placeholder="Installations" value="<?= $row["installations"] ?>" type="text" name="installations"></input><br>
+	<label style="width: 100px;">Image : </label>
     <input placeholder="Link" value="<?= $row["link"] ?>" type="link" name="link"></input> <img style="width: 100px;" src="<?= $row["link"] ?>" alt="<?= $row["name"]?>"><br><br><br>
 </div>
 <input type="hidden" name="id" value="<?=$row["id"]?>">
-<a href="../../index.php#planet" class="btn btn-danger">Annuler</a>
-            <!-- Sending all the modifications to the doedit.php file -->
+    <!-- Sending all the modifications to the doedit.php file -->
+<a href="../../index.php#ship" class="btn btn-danger">Annuler</a>
 <button onclick="return confirm('Voulez-vous vraiment ajouter ceci ?')" type="submit" class="btn btn-info">Send it !</button>
 </form>
 </div>

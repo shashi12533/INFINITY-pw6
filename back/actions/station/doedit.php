@@ -2,7 +2,7 @@
 // Require the file connexion.php to connect to the database
 require_once "../../includes/connection.php";
 // Updating the values below from the "planetes" table where there's the needed id
-$sql = "UPDATE `db_space`.`station` SET `name`=:name, `size`=:size, `air`=:air, `residence`=:residence, `activity`=:activity, `leisure`=:leisure, `services`=:services, `land`=:land, `staff`=:staff WHERE `id`=:id
+$sql = "UPDATE `db_space`.`station` SET `name`=:name, `size`=:size, `air`=:air, `residence`=:residence, `activity`=:activity, `leisure`=:leisure, `services`=:services, `land`=:land, `staff`=:staff, `link`=:link WHERE `id`=:id
 ;";
 
 // Preparing the update session
@@ -18,6 +18,7 @@ $stmt->bindValue(':leisure', $_POST['leisure']);
 $stmt->bindValue(':services', $_POST['services']);
 $stmt->bindValue(':land', $_POST['land']);
 $stmt->bindValue(':staff', $_POST['staff']);
+$stmt->bindValue(':link', $_POST['link']);
 $stmt->execute();
 
 // If there's an error, execute the code below
@@ -27,4 +28,4 @@ if ($stmt->errorCode() !== '00000') {
 
 $msg = 'edited';
 
-header("Location: ../../index.php?msg=".$msg);
+header("Location: ../../index.php?msg=".$msg."#station");

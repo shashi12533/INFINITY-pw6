@@ -4,7 +4,7 @@ require_once "../../includes/connection.php";
 
 // DELETE FROM is used to delete a data from a database, here : "planetes", where the needed id is located
 $sql = "DELETE FROM
-  `planets`
+  `ship`
 WHERE
   `id` = :id
 ;";
@@ -23,4 +23,4 @@ if ($stmt->errorCode() !== '00000') {
 
 $msg = 'deleted';
 
-header("Location: ../../index.php?msg=".$msg."#planet");
+header("Location: ../../index.php?msg=".$msg."#ship");
