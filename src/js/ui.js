@@ -5,7 +5,7 @@ var starBox = document.querySelector('.stars');
 function loadSquare() {
 	starBox.innerHTML = '';
 	var counter = 0;
-	while ( counter < 50 ) {
+	while ( counter < 100 ) {
 		createSquare();
 		counter++
 	}

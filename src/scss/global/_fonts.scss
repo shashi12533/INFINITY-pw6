@@ -4,17 +4,21 @@
 
 @font-face {
 	font-family: "Quicksand-Regular";
-    src: url('../../src/assets/fonts/Quicksand-Regular.ttf');
+    src: url('../assets/fonts/Quicksand/Quicksand-Regular.ttf');
 }
 @font-face {
 	font-family: "Quicksand-Medium";
-	src: url('../../src/assets/fonts/Quicksand-Medium.ttf');
+	src: url('../assets/fonts/Quicksand/Quicksand-Medium.ttf');
 }
 @font-face {
 	font-family: "Quicksand-Bold";
-	src: url('../../src/assets/fonts/Quicksand-Bold.ttf');
+	src: url('../assets/fonts/Quicksand/Quicksand-Bold.ttf');
 }
 @font-face {
 	font-family: "Quicksand-Light";
-	src: url('../../src/assets/fonts/Quicksand-Light.ttf');
+	src: url('../assets/fonts/Quicksand/Quicksand-Light.ttf');
+}
+@font-face {
+	font-family: "Adam";
+	src: url('../assets/fonts/Adam.otf');
 }
