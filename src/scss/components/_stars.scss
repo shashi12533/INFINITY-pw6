@@ -1,0 +1,21 @@
+.stars {
+    background: $bgPurple;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.star {
+	background-image: url('https://media.giphy.com/media/1bJFX6QRTAVm8j1e53/giphy.gif');
+    background-size: cover;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	position: relative;
+	margin-bottom: 5px;
+	transform: translate3d(-6.3px, 4.2px, 0px);
+	transform-style: preserve-3d; 
+	backface-visibility: hidden;
+	display: block; 
+
+}
