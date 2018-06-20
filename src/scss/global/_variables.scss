@@ -2,11 +2,20 @@
 $bgPurple: #0E0224;
 $blocPurple: #17043A;
 $pathPurple: #251533;
+$lghPurple: #60006B;
 $yellow: #E2A855;
 $white-Lgh: #e0e0e0;
 
+// Linear-gradient ------------------------------
+
+$LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
+
 // Font-family ----------------------------------
-$Qs: 'Quicksand', sans-serif;
+$Qs-Reg: 'Quicksand-Regular', sans-serif;
+$Qs-Med: 'Quicksand-Medium', sans-serif;
+$Qs-Bld: 'Quicksand-Bold', sans-serif;
+$Qs-Lgh: 'Quicksand-Light', sans-serif;
+$Adm: 'Adam';
 
 // Font-size ------------------------------------
 $tooBig: 7.2rem;
