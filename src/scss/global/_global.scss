@@ -4,6 +4,12 @@ a {
 }
 
 
+::placeholder {
+    color: $white-Lgh;
+}
+.is-flex {
+    display: flex !important;
+}
 .isnt-flex {
     display: none;
 }
