@@ -17,10 +17,18 @@ $users = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // var_dump($users);
 
-if (password_verify($_POST['pwd'], $users["pwd"])) {
-    echo 'Le mot de passe est valide. bienvenue, ' . $users["surname"] . '.';
+if ($users['type'] == 'A') {
+    echo 'Le mot de passe est valide. Bienvenue, ' . $users["surname"] . ' (Administrateur).';
 } else {
-    header("Location: ../../../public/sign.php");
+
+    if (password_verify($_POST['pwd'], $users["pwd"])) {
+        echo 'Le mot de passe est valide. Bienvenue, ' . $users["surname"] . ' (Utilisateur).';
+    } else {
+        header("Location: ../../../public/sign.php");
+    }
+
 }
+
+
 
 // echo password_verify($_POST['pwd'], $users["pwd"]);
