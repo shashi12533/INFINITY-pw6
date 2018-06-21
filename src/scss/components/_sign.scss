@@ -10,9 +10,8 @@
     @media (min-width: 600px) {  
     }
     @media (min-width: 900px) {
-        width: 600px;
+        width: 900px;
 
-        height: 100vh;
     }
     &_header {
         width: 100%;
@@ -36,12 +35,7 @@
         }
         &_title {
             position: relative;
-            &:before {
-                content: '←';
-                position: absolute;
-                bottom: -25px;
-                font-size: $Big;
-            }
+            
             a {
             color: #fff;
             font-family: $Ex-Thn;
@@ -73,7 +67,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 90%;
+            width: 80%;
         }
         &_input {
             color: #fff;
@@ -95,7 +89,7 @@
         &_text {
             color: #fff;
             font-family: $Qs-Reg;
-            font-size: $xSml;
+            font-size: $Sml;
             padding: 10px 25px;
             text-align: center;
             line-height: 1.25;
@@ -143,6 +137,7 @@
     }
     &_footer {
         width: 100%;
+        margin-bottom: 80px;
         &_social {
             display: flex;
             justify-content: center;
