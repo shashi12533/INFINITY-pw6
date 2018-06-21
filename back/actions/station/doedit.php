@@ -20,6 +20,7 @@ $stmt->bindValue(':land', $_POST['land']);
 $stmt->bindValue(':staff', $_POST['staff']);
 $stmt->bindValue(':link', $_POST['link']);
 $stmt->execute();
+errorHandler($stmt);
 
 // If there's an error, execute the code below
 if ($stmt->errorCode() !== '00000') {

@@ -5,3 +5,11 @@ try {
     die($exception->getMessage());
 }
 $pdo->query("SET NAMES UTF8;");
+
+function errorHandler(PDOStatement $stmt) : void
+{
+    if ($stmt->errorCode() !== '00000') {
+        var_dump($stmt->errorInfo());
+        die();
+    }
+}
