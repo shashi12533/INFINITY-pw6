@@ -14,6 +14,7 @@
 
     }
     &_header {
+        background: $bgPurpleToTrans;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -59,6 +60,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media (min-width: 600px) {
+            margin: 90px 0 120px 0;
+        }
         &_label {
             color: #fff;
             font-family: $Qs-Reg;
@@ -139,8 +143,14 @@
         }
     }
     &_footer {
+        background: $bgPurpleToTransInv;
         width: 100%;
         margin-bottom: 80px;
+        @media (min-width: 600px) {
+            position: fixed;
+            bottom: 0;
+            margin: 0;
+        }
         &_social {
             display: flex;
             justify-content: center;

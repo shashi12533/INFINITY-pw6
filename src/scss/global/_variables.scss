@@ -11,6 +11,9 @@ $white-Lgh: #adadad;
 // Linear-gradient ------------------------------
 
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
+$bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
+
+$bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
 
 // Font-family ----------------------------------
 $Qs-Reg: 'Quicksand-Regular', sans-serif;
