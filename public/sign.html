@@ -16,8 +16,10 @@
             <h1 class="sign_header_title"><a href="index.html">INFINITY</a></h1>
         </header>
         <form action="" method="post" class="sign_form is-flex" id="signin">
-            <input type="email" class="sign_form_input" placeholder="Adresse mail" required>
-            <input type="password" class="sign_form_input" placeholder="Mot de passe" required>
+            <label for="themail" class="sign_form_label" >Votre adresse mail :</label>
+            <input id="themail" type="email" class="sign_form_input" placeholder="adresse.mail@box.com" required>
+            <label for="thepassword" class="sign_form_label" >Votre mot de passe :</label>
+            <input id="thepassword" type="password" class="sign_form_input" placeholder="Mot de passe" required>
             <p class="sign_form_text" >Vous n'avez pas de compte ?<a href="#" class="sign_form_text_link"> Inscrivez-vous !</a></p>
             <input type="submit" class="sign_form_submit" value="Se connecter"></input>
         </form>

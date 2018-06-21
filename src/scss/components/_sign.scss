@@ -22,10 +22,10 @@
             justify-content: flex-start;
         }
         &_logo {
-            width: 80%;
+            width: 60%;
             max-width: 300px;
             height: auto;
-            padding: 25px 25px 10px 25px;
+            padding: 0 25px;
             transition: all 0.5s ease;
             @media (min-width: 600px) {
                 width: 100px;
@@ -38,24 +38,36 @@
                 font-size: $xxBig;
                 position: relative;
                 text-decoration: none;
+                top: -20px;
+                @media (min-width: 600px) {
+                    top: 0;
+                }
              }
+             
         }
     }
     &_form {
         width: 100%;
-        padding: 12px 25px 25px;
         display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &_label {
+            color: #fff;
+            font-family: $Qs-Reg;
+            font-size: $xReg;
+            padding: 12px 25px 0 25px;
+            text-align: center;
+            line-height: 1.25;
+        }
         &_input {
             color: #fff;
             background: $bgPurple;
             border: 1px $yellow solid;
             border-radius: 100px;
-            width: 50%;
-            max-width: 500px;
-            height: 33px;
+            width: 70%;
+            max-width: 300px;
+            height: 25px;
             margin: 10px 0;
             padding: 10px 0;
             font-family: $Qs-Reg;
@@ -69,12 +81,27 @@
             color: #fff;
             font-family: $Qs-Reg;
             font-size: $Sml;
-            padding: 10px 0;
+            padding: 10px 25px;
             text-align: center;
             line-height: 1.25;
             &_link {
                 color: $yellow;
                 text-decoration: none;
+                position: relative;
+                &:after {
+                    content: '';
+                    background: #fff;
+                    width: 0%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 4px;
+                    transition: all 0.2s ease;
+                }
+                &:hover:after {
+                    width: 45%;
+
+                }
             }
         }
         &_submit {
@@ -83,13 +110,18 @@
             border: 1px $yellow solid;
             border-radius: 100px;
             width: 50%;
-            max-width: 300px;
+            max-width: 175px;
             height: 45px;
             margin: 10px;
             padding: 10px;
             font-family: $Qs-Reg;
             font-size: $Reg;
             text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover {
+                background: $bgPurple
+            }
             @media (min-width: 900px) {
             }
         }
@@ -103,30 +135,43 @@
                 width: 20px;
                 height: 20px;
                 margin: 12px 15px;
+                transition: all 0.2s ease;
                 &:nth-child(1) {
                     background: url(../assets/images/icons/facebook.svg) no-repeat center;
                     background-size: cover;
+                    &:hover {
+                        background: url(../assets/images/icons/facebook-anim.svg) no-repeat center;
+                    background-size: cover;
+                    }
                 }
                 &:nth-child(2) {
                     background: url(../assets/images/icons/instagram.svg) no-repeat center;
                     background-size: cover;
+                    &:hover {
+                        background: url(../assets/images/icons/instagram-anim.svg) no-repeat center;
+                        background-size: cover;
+                    }
                 }
                 &:nth-child(3) {
                     background: url(../assets/images/icons/twitter.svg) no-repeat center;
                     background-size: cover;
+                    &:hover {
+                        background: url(../assets/images/icons/twitter-anim.svg) no-repeat center;
+                    background-size: cover;
+                    }
                 }
             }
         }
         &_text {
             color: $white-Lgh;
-            margin: 0 25px;
+            margin: 12px 25px 0 25px;
             font-family: $Qs-Reg;
             font-size: $xSml;
             text-align: center;
         }
         &_copyright {
             color: #fff;
-            margin: 12px 25px;
+            margin: 0 0 25px 0;
             font-family: $Qs-Reg;
             font-size: $Reg;
             text-align: center;
