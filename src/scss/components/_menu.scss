@@ -1,5 +1,5 @@
 .fmenu {
-    background: $menuPurple;
+    background: $blocPurpleTotrans;
     width: 100%;
     height: 80px;
     position: fixed;
@@ -20,6 +20,7 @@
             width: 30px;
             margin: 15px 0;
             position: relative;
+            transition: all 0.2s ease;
             @media (min-width: 600px) {
                 margin: 25px 0;
             }
@@ -37,6 +38,10 @@
             &:nth-child(1) {
                 background: url('../assets/images/icons/menu/right-arrow.svg') no-repeat center;
                 background-size: cover;
+                &:hover {
+                    background: url('../assets/images/icons/menu/right-arrow-anim.svg') no-repeat center;
+                    background-size: cover;
+                }
                 &:after {
                     content: 'Retour';
                     
@@ -45,6 +50,10 @@
             &:nth-child(2) {
                 background: url('../assets/images/icons/menu/layers.svg') no-repeat center;
                 background-size: cover;
+                &:hover {
+                    background: url('../assets/images/icons/menu/layers-anim.svg') no-repeat center;
+                    background-size: cover;
+                }
                 &:after {
                     content: 'Packs';
                     
@@ -53,6 +62,10 @@
             &:nth-child(3) {
                 background: url('../assets/images/icons/menu/rocket-ship.svg') no-repeat center;
                 background-size: cover;
+                &:hover {
+                    background: url('../assets/images/icons/menu/rocket-ship-anim.svg') no-repeat center;
+                    background-size: cover;
+                }
                 &:after {
                     content: 'Transports';
                     
@@ -61,6 +74,10 @@
             &:nth-child(4) {
                 background: url('../assets/images/icons/menu/saturn.svg') no-repeat center;
                 background-size: cover;
+                &:hover {
+                    background: url('../assets/images/icons/menu/saturn-anim.svg') no-repeat center;
+                    background-size: cover;
+                }
                 &:after {
                     content: 'Planètes';
                     
@@ -69,6 +86,10 @@
             &:nth-child(5) {
                 background: url('../assets/images/icons/menu/lunar-module.svg') no-repeat center;
                 background-size: cover;
+                &:hover {
+                    background: url('../assets/images/icons/menu/lunar-module-anim.svg') no-repeat center;
+                    background-size: cover;
+                }
                 &:after {
                     content: 'Habitats';
                     
