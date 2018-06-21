@@ -74,6 +74,7 @@
                     
                 }
             }
+            
 
         }
         @media (min-width: 600px) {
@@ -82,4 +83,13 @@
         }
     }
     
+}
+.signIcon {
+     background-image: url('../assets/images/icons/menu/user.svg') !important; 
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    &:after {
+        content: 'Connexion' !important;
+        
+    }
 }
