@@ -27,6 +27,7 @@ $stmt->bindValue(':connection', $_POST['connection']);
 $stmt->bindValue(':installations', $_POST['installations']);
 $stmt->bindValue(':link', $_POST['link']);
 $stmt->execute();
+errorHandler($stmt);
 
 // If there's an error, execute the code below
 if ($stmt->errorCode() !== '00000') {

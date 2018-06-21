@@ -15,13 +15,13 @@
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="sign_header_logo">
             <h1 class="sign_header_title"><a href="index.html">INFINITY</a></h1>
         </header>
-        <form action="" method="post" class="sign_form is-flex" id="signin">
+        <form action="../back/actions/login/check.php" method="post" class="sign_form is-flex" id="signin">
             <label for="themail" class="sign_form_label" >Votre adresse mail :
                 <input 
                 id="themail"
                 class="sign_form_input"  
                 type="email"
-                name="signup_mail"
+                name="usr"
                 placeholder="adresse.mail@box.com" required>
             </label>
             <label for="thepassword" class="sign_form_label" >Votre mot de passe :
@@ -29,19 +29,19 @@
                 id="thepassword" 
                 class="sign_form_input" 
                 type="password" 
-                name="signup_password"
+                name="pwd"
                 placeholder="Mot de passe" 
                 required>
             </label>
             <p class="sign_form_text" >Vous n'avez pas de compte ?<a href="#" class="sign_form_text_link"> Inscrivez-vous !</a></p>
             <input type="submit" class="sign_form_submit" value="Se connecter"></input>
         </form>
-        <form action="" method="post" class="sign_form" id="signup">
+        <form action="../back/actions/login/doadd.php" method="post" class="sign_form" id="signup">
             <label for="thelastname" class="sign_form_label" >Votre nom :
-                <input id="thelastname" type="text" class="sign_form_input" placeholder="Nom" required>
+                <input id="thelastname" type="text" class="sign_form_input" placeholder="Nom" name="name" required>
             </label>
             <label for="thefirstname" class="sign_form_label" >Votre prénom :
-                <input type="text" class="sign_form_input" placeholder="Prénom" required>
+                <input type="text" class="sign_form_input" placeholder="Prénom" name="surname" required>
             </label>
             
             <label for="themail" class="sign_form_label" >Votre adresse mail :
@@ -49,15 +49,15 @@
                 id="themail"
                 class="sign_form_input"  
                 type="email"
-                name="signup_mail"
-                placeholder="adresse.mail@box.com" required>
+                name="mail"
+                placeholder="mail@exemple.com" required>
             </label>
             <label for="thepassword" class="sign_form_label" >Votre mot de passe :
                 <input 
                 id="thepassword" 
                 class="sign_form_input" 
                 type="password" 
-                name="signup_password"
+                name="pwd"
                 placeholder="Mot de passe" 
                 required>
             </label>

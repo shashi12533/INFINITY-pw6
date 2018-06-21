@@ -115,7 +115,7 @@ $ship_stmt->execute();
     <label style="width: 100px">Name : </label>
     <input placeholder="Name" type="text" name="name"></input><br>
     <label style="width: 100px">Size : </label>
-    <input placeholder="Size" type="text" name="size"></input><br>
+    <input placeholder="Size" type="number" name="size"></input><br>
     <label style="width: 100px">Air : </label>
     <input placeholder="Air" type="text" name="air"></input><br>
     <label style="width: 100px">Wildlife : </label>
@@ -146,7 +146,7 @@ $ship_stmt->execute();
     <label style="width: 100px">Name : </label>
     <input placeholder="Name" type="text" name="name"></input><br>
     <label style="width: 100px">Size : </label>
-    <input placeholder="Size" type="text" name="size"></input><br>
+    <input placeholder="Size" type="number" name="size"></input><br>
     <label style="width: 100px">Air : </label>
     <input placeholder="Air" type="text" name="air"></input><br>
     <label style="width: 100px">Residence : </label>
@@ -179,7 +179,7 @@ $ship_stmt->execute();
     <label style="width: 100px">Name : </label>
     <input placeholder="Name" type="text" name="name"></input><br>
     <label style="width: 100px">Size : </label>
-    <input placeholder="Size" type="text" name="size"></input><br>
+    <input placeholder="Size" type="number" name="size"></input><br>
     <label style="width: 100px">Air : </label>
     <input placeholder="Air" type="text" name="air"></input><br>
     <label style="width: 100px">Duration : </label>

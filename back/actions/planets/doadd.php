@@ -27,6 +27,7 @@ $stmt->bindValue(':water', $_POST['water']);
 $stmt->bindValue(':work', $_POST['work']);
 $stmt->bindValue(':link', $_POST['link']);
 $stmt->execute();
+errorHandler($stmt);
 
 // If there's an error, execute the code below
 if ($stmt->errorCode() !== '00000') {
