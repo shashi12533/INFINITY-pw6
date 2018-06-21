@@ -28,7 +28,6 @@ setTimeout(function() {
 
 window.addEventListener('keydown', function(e) {
 	if (e.which === 32) {
-		e.preventDefault();
 		loadSquare();
 	}
 });

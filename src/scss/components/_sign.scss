@@ -6,11 +6,13 @@
     align-items: center;
     transition: all 0.5s ease;
     position: relative;
-    @media (min-width: 600px) {    
-        height: 100vh;
+    
+    @media (min-width: 600px) {  
     }
     @media (min-width: 900px) {
         width: 600px;
+
+        height: 100vh;
     }
     &_header {
         width: 100%;
@@ -33,17 +35,21 @@
             }
         }
         &_title {
-             a {
-                color: #fff;
-                font-family: $Ex-Thn;
-                font-size: $xxBig;
-                position: relative;
-                text-decoration: none;
-                top: -20px;
-                @media (min-width: 600px) {
-                    top: 0;
-                }
-             }
+            &:before {
+                content: '←'
+                
+            }
+            a {
+            color: #fff;
+            font-family: $Ex-Thn;
+            font-size: $xxBig;
+            position: relative;
+            text-decoration: none;
+            top: -20px;
+            @media (min-width: 600px) {
+                top: 0;
+            }
+            }
              
         }
     }
@@ -56,10 +62,15 @@
         &_label {
             color: #fff;
             font-family: $Qs-Reg;
-            font-size: $xReg;
-            padding: 12px 25px 0 25px;
+            font-size: $xSml;
+            padding: 12px 10% 0 10%;
             text-align: center;
             line-height: 1.25;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
         }
         &_input {
             color: #fff;
@@ -67,8 +78,8 @@
             border: 1px $yellow solid;
             border-radius: 100px;
             width: 70%;
-            max-width: 300px;
-            height: 25px;
+            max-width: 250px;
+            height: 20px;
             margin: 10px 0;
             padding: 10px 0;
             font-family: $Qs-Reg;
@@ -199,7 +210,7 @@
     &_planet1 {
         width: 275px;
         height: auto;
-        position: absolute;
+        position: fixed;
         right: -65px;
         bottom: 100px;
         z-index: 3;
@@ -207,7 +218,7 @@
     &_planet2 {
         width: 75px;
         height: auto;
-        position: absolute;
+        position: fixed;
         right: 120px;
         bottom: 300px;
         z-index: 2;
@@ -215,7 +226,7 @@
     &_comet {
         width: 800px;
         height: auto;
-        position: absolute;
+        position: fixed;
         right: -255px;
         bottom: -229px;
         z-index: 1;
