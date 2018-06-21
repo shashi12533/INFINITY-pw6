@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="26px" viewBox="0 0 42 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DAWEBSITE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" transform="translate(-54.000000, -175.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="RETOU" transform="translate(54.000000, 175.000000)">
+                <path d="M28.2823118,0.391021588 C27.7101302,-0.130340529 26.7578279,-0.130340529 26.1656399,0.391021588 C25.5934582,0.89477012 25.5934582,1.73317677 26.1656399,2.23575106 L36.8983804,11.6848523 L1.48180375,11.6848523 C0.65620832,11.6860266 0,12.2637521 0,12.9906061 C0,13.71746 0.65620832,14.3139734 1.48180375,14.3139734 L36.8983804,14.3139734 L26.1656399,23.7454611 C25.5934582,24.2668232 25.5934582,25.1064041 26.1656399,25.6089784 C26.7578279,26.1303405 27.711464,26.1303405 28.2823118,25.6089784 L41.555859,13.9229519 C42.148047,13.4192033 42.148047,12.5807967 41.555859,12.0782224 L28.2823118,0.391021588 Z" id="Shape" transform="translate(21.000000, 13.000000) scale(-1, 1) translate(-21.000000, -13.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

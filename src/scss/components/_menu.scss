@@ -1,0 +1,85 @@
+.fmenu {
+    background: $menuPurple;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    @media (min-width: 600px) {
+        background: transparent;
+        width: 80px;
+        top: 100px;
+        left: 25px;
+    }
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 25px;
+        height: auto;
+        &_icon {
+            height: 30px;
+            width: 30px;
+            margin: 15px 0;
+            position: relative;
+            @media (min-width: 600px) {
+                margin: 25px 0;
+            }
+            &:after {
+                color: #fff;
+                font-family: $Qs-Reg;
+                font-size: $xSml;
+                text-decoration: none;
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                
+            }
+            &:nth-child(1) {
+                background: url('../assets/images/icons/menu/right-arrow.svg') no-repeat center;
+                background-size: cover;
+                &:after {
+                    content: 'Retour';
+                    
+                }
+            }
+            &:nth-child(2) {
+                background: url('../assets/images/icons/menu/layers.svg') no-repeat center;
+                background-size: cover;
+                &:after {
+                    content: 'Packs';
+                    
+                }
+            }
+            &:nth-child(3) {
+                background: url('../assets/images/icons/menu/rocket-ship.svg') no-repeat center;
+                background-size: cover;
+                &:after {
+                    content: 'Transports';
+                    
+                }
+            }
+            &:nth-child(4) {
+                background: url('../assets/images/icons/menu/saturn.svg') no-repeat center;
+                background-size: cover;
+                &:after {
+                    content: 'Planètes';
+                    
+                }
+            }
+            &:nth-child(5) {
+                background: url('../assets/images/icons/menu/lunar-module.svg') no-repeat center;
+                background-size: cover;
+                &:after {
+                    content: 'Habitats';
+                    
+                }
+            }
+
+        }
+        @media (min-width: 600px) {
+            flex-direction: column;
+            
+        }
+    }
+    
+}
