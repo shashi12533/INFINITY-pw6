@@ -1,9 +1,17 @@
-a {
-    color: $yellow;
-    text-decoration: none;
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    overflow-x: hidden;
 }
 
-
+::placeholder {
+    color: $white-Lgh;
+}
+.is-flex {
+    display: flex !important;
+}
 .isnt-flex {
     display: none;
 }
