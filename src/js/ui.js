@@ -44,6 +44,7 @@ function createSquare() {
 	star.setAttribute("data-depth", "0.2");
 	starBox.appendChild(star);
 };
+
 var sign = document.querySelector('.sign');
 var signin = document.querySelector('#signin');
 var signup = document.querySelector('#signup');
