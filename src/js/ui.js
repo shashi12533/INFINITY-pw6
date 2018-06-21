@@ -44,13 +44,20 @@ function createSquare() {
 	star.setAttribute("data-depth", "0.2");
 	starBox.appendChild(star);
 };
-
+var sign = document.querySelector('.sign');
 var signin = document.querySelector('#signin');
 var signup = document.querySelector('#signup');
 var changeLink = document.querySelectorAll('.sign_form_text_link');
 for (let i = 0; i < changeLink.length; i++) {
-    changeLink[i].addEventListener('click', function() {
-        signin.classList.toggle('is-flex');
-        signup.classList.toggle('is-flex');
-    }) 
+	changeLink[i].addEventListener('click', function() {
+		// starBox.style.zIndex = "999"
+		setTimeout(function() {
+			signin.classList.toggle('is-flex');
+			signup.classList.toggle('is-flex');
+		}, 00)
+		// setTimeout(function() {
+		// 	starBox.style.zIndex = "-1"
+		// }, 200);
+	}) 
+	
 }

@@ -17,17 +17,43 @@
         </header>
         <form action="" method="post" class="sign_form is-flex" id="signin">
             <label for="themail" class="sign_form_label" >Votre adresse mail :</label>
-            <input id="themail" type="email" class="sign_form_input" placeholder="adresse.mail@box.com" required>
+            <input 
+            id="themail"
+            class="sign_form_input"  
+            type="email"
+            name="signin_mail"
+            placeholder="adresse.mail@box.com" required>
             <label for="thepassword" class="sign_form_label" >Votre mot de passe :</label>
-            <input id="thepassword" type="password" class="sign_form_input" placeholder="Mot de passe" required>
+            <input 
+            id="thepassword" 
+            class="sign_form_input" 
+            type="password" 
+            name="signin_password"
+            placeholder="Mot de passe" 
+            required>
             <p class="sign_form_text" >Vous n'avez pas de compte ?<a href="#" class="sign_form_text_link"> Inscrivez-vous !</a></p>
             <input type="submit" class="sign_form_submit" value="Se connecter"></input>
         </form>
         <form action="" method="post" class="sign_form" id="signup">
-            <input type="text" class="sign_form_input" placeholder="Nom" required>
+            <label for="thelastname" class="sign_form_label" >Votre nom :</label>
+            <input id="thelastname" type="text" class="sign_form_input" placeholder="Nom" required>
+            <label for="thefirstname" class="sign_form_label" >Votre prénom :</label>
             <input type="text" class="sign_form_input" placeholder="Prénom" required>
-            <input type="email" class="sign_form_input" placeholder="Adresse mail" required>
-            <input type="password" class="sign_form_input" placeholder="Mot de passe" required>
+            <label for="themail" class="sign_form_label" >Votre adresse mail :</label>
+            <input 
+            id="themail"
+            class="sign_form_input"  
+            type="email"
+            name="signup_mail"
+            placeholder="adresse.mail@box.com" required>
+            <label for="thepassword" class="sign_form_label" >Votre mot de passe :</label>
+            <input 
+            id="thepassword" 
+            class="sign_form_input" 
+            type="password" 
+            name="signup_password"
+            placeholder="Mot de passe" 
+            required>
             <p class="sign_form_text" >Vous avez déjà un compte ?<a href="#" class="sign_form_text_link"> Se connecter !</a></p>
             <input type="submit" class="sign_form_submit" value="S'inscrire"></input>
         </form>
