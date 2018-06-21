@@ -35,9 +35,12 @@
             }
         }
         &_title {
+            position: relative;
             &:before {
-                content: '←'
-                
+                content: '←';
+                position: absolute;
+                bottom: -25px;
+                font-size: $Big;
             }
             a {
             color: #fff;
@@ -92,7 +95,7 @@
         &_text {
             color: #fff;
             font-family: $Qs-Reg;
-            font-size: $Sml;
+            font-size: $xSml;
             padding: 10px 25px;
             text-align: center;
             line-height: 1.25;
@@ -185,7 +188,7 @@
             color: #fff;
             margin: 0 0 25px 0;
             font-family: $Qs-Reg;
-            font-size: $Reg;
+            font-size: $Sml;
             text-align: center;
         }
     }
