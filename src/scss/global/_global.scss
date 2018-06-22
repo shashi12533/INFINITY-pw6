@@ -3,7 +3,7 @@ html {
 }
 body {
     display: flex;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
 ::placeholder {
@@ -45,3 +45,4 @@ body {
       color: #000;
     background: #ffd800; /* Gecko Browsers */
   }
+
