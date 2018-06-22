@@ -17,7 +17,7 @@ $users = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // var_dump($users);
 
-if ($users['type'] == 'A') {
+if ($users['type'] == 'A' && password_verify($_POST['pwd'], $users["pwd"])) {
     echo 'Le mot de passe est valide. Bienvenue, ' . $users["surname"] . ' (Administrateur).';
 } else {
 
