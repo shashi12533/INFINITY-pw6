@@ -104,7 +104,7 @@
             align-items: flex-end;
             position: absolute;
             top: 35%;
-            right: 25px;
+            right: 100px;
         }
         &_span {
             color: #fff;
@@ -118,7 +118,7 @@
             font-size: 8.4rem;
             position: absolute;
             top: 55%;
-            right: 25px;
+            right: 100px;
             @media (min-width: 600px) {
                 // font-size: $xxBig;
                 // position: relative;
