@@ -15,3 +15,34 @@ body {
 .isnt-flex {
     display: none;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: $bgPurple;
+}
+::-webkit-scrollbar-thumb {
+    background: $yellow;
+    transition: all 0.25s ease-out;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #f9a012;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #BB3800;
+}
+
+::selection {
+    color: #000;
+    background: #ffd800; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+      color: #000;
+    background: #ffd800; /* Gecko Browsers */
+  }
+
