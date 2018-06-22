@@ -10,11 +10,11 @@
     @media (min-width: 600px) {  
     }
     @media (min-width: 900px) {
-        width: 600px;
+        width: 900px;
 
-        height: 100vh;
     }
     &_header {
+        background: $bgPurpleToTrans;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -23,7 +23,10 @@
         @media (min-width: 600px) {
             flex-direction: row;
             justify-content: flex-start;
-        }
+            position: fixed;
+            top: 0;
+            left: 0;
+        } 
         &_logo {
             width: 50%;
             max-width: 300px;
@@ -36,12 +39,7 @@
         }
         &_title {
             position: relative;
-            &:before {
-                content: '←';
-                position: absolute;
-                bottom: -25px;
-                font-size: $Big;
-            }
+            
             a {
             color: #fff;
             font-family: $Ex-Thn;
@@ -62,6 +60,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media (min-width: 600px) {
+            margin: 90px 0 120px 0;
+        }
         &_label {
             color: #fff;
             font-family: $Qs-Reg;
@@ -73,7 +74,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 90%;
+            width: 80%;
         }
         &_input {
             color: #fff;
@@ -95,7 +96,7 @@
         &_text {
             color: #fff;
             font-family: $Qs-Reg;
-            font-size: $xSml;
+            font-size: $Sml;
             padding: 10px 25px;
             text-align: center;
             line-height: 1.25;
@@ -142,7 +143,14 @@
         }
     }
     &_footer {
+        background: $bgPurpleToTransInv;
         width: 100%;
+        margin-bottom: 80px;
+        @media (min-width: 600px) {
+            position: fixed;
+            bottom: 0;
+            margin: 0;
+        }
         &_social {
             display: flex;
             justify-content: center;

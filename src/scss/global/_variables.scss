@@ -2,6 +2,7 @@
 $bgPurple: #0E0224;
 $blocPurple: #17043A;
 $pathPurple: #251533;
+$menuPurple: #282037;
 $lghPurple: #60006B;
 $yellow: #E2A855;
 $white-Lgh: #adadad;
@@ -10,6 +11,9 @@ $white-Lgh: #adadad;
 // Linear-gradient ------------------------------
 
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
+$bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
+$bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
+$blocPurpleTotrans: linear-gradient(0turn,$blocPurple 90%, transparent 100%);
 
 // Font-family ----------------------------------
 $Qs-Reg: 'Quicksand-Regular', sans-serif;
@@ -32,6 +36,7 @@ $Ex-sBld: 'Exo2-SemiBold', sans-serif;
 $tooBig: 7.2rem;
 $xxBig: 4.8rem;
 $xBig:3.6rem;
+$midBig: 3rem;
 $Big: 2.4rem;
 $xxReg: 2rem;
 $xReg: 1.8rem;
