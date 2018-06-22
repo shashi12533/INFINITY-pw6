@@ -2,9 +2,9 @@
 require_once "../../includes/connection.php";
 $sql  = "INSERT INTO 
 `db_space`.`login` 
-(`usr`, `pwd`, `name`, `surname`) 
+(`usr`, `pwd`, `name`, `surname`, `type`) 
 VALUES 
-(:usr, :pwd, :name, :surname);
+(:usr, :pwd, :name, :surname, 'U');
 ";
 
 // All the needed fields are set, we're now entering into the database
