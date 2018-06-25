@@ -38,7 +38,7 @@ else {
             <?php
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
                 ?>
-                <a href="profile.php" class="fmenu_nav_icon_profile"><img style="width: 30px; border-radius: 100px;" src="<?= $_SESSION['img']?>" alt=""></a>
+                <a href="profile.php" class="fmenu_nav_icon_profile"><img src="<?= $_SESSION['img']?>" alt=""></a>
                 <?php
             } else {
                 ?>
