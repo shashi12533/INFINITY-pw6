@@ -5,7 +5,7 @@
   justify-content: center;
   &_container {
     width: 100vw;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       margin: 90px 0 120px;
     }
   }
@@ -19,7 +19,7 @@
     width: 60vw;
     margin: auto;
     display: none;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       width: 50vw;
       margin: auto;
     }
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 90px;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       align-items: center;
       margin-bottom: 0;
     }
@@ -57,7 +57,7 @@
       flex-direction: column;
       justify-content: center;
       width: 80%;
-      @media (min-width: 900px) {
+      @media (min-width: $tabletToDesktop ) {
         text-align: left;
         margin-left: 22vw;
         font-size: $Sml;
@@ -97,7 +97,7 @@
       &:hover {
         background: $bgPurple;
       }
-      @media (min-width: 900px) {
+      @media (min-width: $tabletToDesktop ) {
         margin-left: 10px;
       }
     }
@@ -107,7 +107,7 @@
     width: 60vw;
     margin: auto;
     display: none;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       width: 50vw;
       margin: auto;
     }
@@ -131,11 +131,11 @@
   width: 60vw;
   margin: auto;
   // display: none;
-  @media (min-width: 600px) {
+  @media (min-width: $mobileToTablet ) {
     width: 50vw;
     margin: auto;
     // display: none;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       width: 50vw;
       margin: auto;
     }
@@ -162,7 +162,8 @@
   &:hover {
     background: $bgPurple;
   }
-  @media (min-width: 900px) {
+  @media (min-width: $tabletToDesktop ) {
     margin-left: 10px;
   }
+}
 }
