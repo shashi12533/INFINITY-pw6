@@ -18,16 +18,16 @@ session_start ();
         <header class="home_header">
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="home_header_logo">
             <p class="home_header_text">
-                Ouvrez vous<span class="home_header_span"> au futur, avec</span> 
+                Ouvrez vous<span class="home_header_span"> au futur, avec</span>
             </p>
             <h1 class="home_header_title">INFINITY</h1>
-            
+
         </header>
         <img src="assets/images/planets/planeteAnneau1.svg" alt="" class="home_planet1">
-        
+
         <div class="home_titleBox">
             <p class="home_titleBox_text">
-                Ouvrez vous<span class="home_titleBox_span"> au futur, avec</span> 
+                Ouvrez vous<span class="home_titleBox_span"> au futur, avec</span>
             </p>
             <h1 class="home_titleBox_title">INFINITY</h1>
         </div>
@@ -92,7 +92,7 @@ session_start ();
         <?php
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
                 ?>
-                <a href="profile.php" class="fmenu_nav_icon_generated"><img style="width: 30px; border-radius: 100px;" src="<?= $_SESSION['img']?>" alt=""></a>
+                <a href="profile.php" class="fmenu_nav_icon_generated"><img class="fmenu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt=""></a>
                 <?php
             } else {
                 ?>

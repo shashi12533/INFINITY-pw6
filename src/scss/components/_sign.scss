@@ -6,8 +6,8 @@
     align-items: center;
     transition: all 0.5s ease;
     position: relative;
-    
-    @media (min-width: 600px) {  
+
+    @media (min-width: 600px) {
     }
     @media (min-width: 900px) {
         width: 900px;
@@ -26,7 +26,7 @@
             position: fixed;
             top: 0;
             left: 0;
-        } 
+        }
         &_logo {
             width: 50%;
             max-width: 300px;
@@ -39,7 +39,7 @@
         }
         &_title {
             position: relative;
-            
+
             a {
             color: #fff;
             font-family: $Ex-Thn;
@@ -51,7 +51,7 @@
                 top: 0;
             }
             }
-             
+
         }
     }
     &_form {
@@ -75,6 +75,12 @@
             justify-content: center;
             align-items: center;
             width: 80%;
+            &_wrong {
+            color: red
+            }
+            &_right {
+              color: green
+            }
         }
         &_input {
             color: #fff;
@@ -216,7 +222,7 @@
         transition: all 0.5s ease;
         @media (min-width: 900px) {
             visibility: visible;
-        } 
+        }
     }
     &_planet1 {
         width: 275px;
