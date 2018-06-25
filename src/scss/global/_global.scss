@@ -1,9 +1,10 @@
 html {
     font-size: 62.5%;
+    // overflow-x: hidden;
 }
 body {
     display: flex;
-    //overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 ::placeholder {
