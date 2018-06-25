@@ -18,15 +18,36 @@ $users = $stmt->fetch(PDO::FETCH_ASSOC);
 // var_dump($users);
 
 if ($users['type'] == 'A' && password_verify($_POST['pwd'], $users["pwd"])) {
-    echo 'Le mot de passe est valide. Bienvenue, ' . $users["surname"] . ' (Administrateur).';
+    session_start ();
+
+    $_SESSION['id'] = $users['id'];
+    $_SESSION['usr'] = $_POST['usr'];
+    $_SESSION['pwd'] = $_POST['pwd'];
+    $_SESSION['name'] = $users['name'];
+    $_SESSION['surname'] = $users['surname'];
+    $_SESSION['img'] = $users['img'];
+    $_SESSION['type'] = $users['type'];
+
+    header("Location: ../../../public/profile.php");
 } else {
 
     if (password_verify($_POST['pwd'], $users["pwd"])) {
-        echo 'Le mot de passe est valide. Bienvenue, ' . $users["surname"] . ' (Utilisateur).';
-    } else {
-        header("Location: ../../../public/sign.php");
-    }
+        
+        session_start ();
+        
+        $_SESSION['id'] = $users['id'];
+        $_SESSION['usr'] = $_POST['usr'];
+        $_SESSION['pwd'] = $_POST['pwd'];
+        $_SESSION['name'] = $users['name'];
+        $_SESSION['surname'] = $users['surname'];
+        $_SESSION['img'] = $users['img'];
+        $_SESSION['type'] = $users['type'];
 
+        header("Location: ../../../public/profile.php");
+    } else {
+        $msg = 'error';
+        header("Location: ../../../public/sign.php?msg=".$msg);
+    }
 }
 
 
