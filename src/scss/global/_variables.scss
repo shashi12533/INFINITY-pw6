@@ -7,9 +7,7 @@ $lghPurple: #60006B;
 $yellow: #E2A855;
 $white-Lgh: #adadad;
 
-
 // Linear-gradient ------------------------------
-
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
 $bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
 $bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
@@ -50,3 +48,6 @@ $bp-tablet: 600px;
 $bp-desktop: 949px;
 $bp-desktop-large: 1200px;
 $bp-desktop-x-large: 1800px;
+
+$mobileToTablet: 600px;
+$tabletToDesktop: 900px;

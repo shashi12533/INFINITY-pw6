@@ -6,13 +6,13 @@
 @import 'global/global';
 
 // Import component files -----------------------
+@import 'components/stars';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/sign';
-@import 'components/stars';
 @import 'components/menu';
-@import 'components/userform';
 @import 'components/home';
+@import 'components/sign';
+@import 'components/userform';
 
 // Import mixin files ---------------------------
 @import 'mixins/responsive';
