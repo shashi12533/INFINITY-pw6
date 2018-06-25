@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
-    <title>Starter-pack o/</title>
+    <title>Connexion | Inscription</title>
 </head>
 <body>
     <section class="sign">
@@ -33,6 +33,23 @@
                 placeholder="Mot de passe" 
                 required>
             </label>
+            <?php if(isset($_GET['msg']) && $_GET['msg'] == 'error'){ ?>
+         <div style="color: red" class="sign_form_label">
+             <strong>Houston, on a un problème...</strong> Le mail et/ou le mot de passe incorrects.
+         </div>
+    <?php } ?>
+
+                <?php if(isset($_GET['msg']) && $_GET['msg'] == 'modified'){ ?>
+         <div style="color: green" class="sign_form_label">
+             <strong>Profile modifié !</strong> Veuillez vous reconnecter afin <br> que les changements prennent effet.
+         </div>
+    <?php } ?>
+
+        <?php if(isset($_GET['msg']) && $_GET['msg'] == 'registered'){ ?>
+         <div style="color: green" class="sign_form_label">
+             <strong>Succès !</strong> Le compte a été créé. Merci !
+         </div>
+        <?php } unset($_GET['?msg']); ?>
             <p class="sign_form_text" >Vous n'avez pas de compte ?<a href="#" class="sign_form_text_link"> Inscrivez-vous !</a></p>
             <input type="submit" class="sign_form_submit" value="Se connecter"></input>
         </form>
@@ -61,19 +78,23 @@
                 placeholder="Mot de passe" 
                 required>
             </label>
-            <!-- <label for="theconfirmpassword" class="sign_form_label" >Confirmez votre mot de passe :
+            <label for="theconfirmpassword" class="sign_form_label" >Confirmez votre mot de passe :
                 <input 
                 id="theconfirmpassword" 
                 class="sign_form_input" 
                 type="password" 
-                name="signup_confirmpassword"
+                name="vpwd"
                 placeholder="Mot de passe" 
                 required>
-            </label> -->
+            </label>
             
             <p class="sign_form_text" >Vous avez déjà un compte ?<a href="#" class="sign_form_text_link"> Se connecter !</a></p>
             <input type="submit" class="sign_form_submit" value="S'inscrire"></input>
         </form>
+
+        <div class="alert alert-danger">
+    <strong>Succès !</strong> L'objet a été supprimé.
+  </div>
         <footer class="sign_footer">
             <p class="sign_footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="sign_footer_social">
@@ -88,6 +109,15 @@
         <img src="assets/images/planets/planete2.svg" alt="" class="backgroundSign_planet1">
         <img src="assets/images/planets/planete3.svg" alt="" class="backgroundSign_planet2">
         <img src="assets/images/planets/comet.svg" alt="" class="backgroundSign_comet">
+    </section>
+    <section class="fmenu">
+        <nav class="fmenu_nav">
+            <a href="index.html" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+        </nav>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/app.min.js" charset="UTF-8"></script>
