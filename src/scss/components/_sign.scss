@@ -20,12 +20,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         @media (min-width: 600px) {
             flex-direction: row;
             justify-content: flex-start;
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 0;
         }
         &_logo {
             width: 50%;
@@ -152,6 +154,8 @@
         background: $bgPurpleToTransInv;
         width: 100%;
         margin-bottom: 80px;
+        position: relative;
+        z-index: 10;
         @media (min-width: 600px) {
             position: fixed;
             bottom: 0;
