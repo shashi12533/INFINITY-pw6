@@ -1,5 +1,9 @@
+<?php
+session_start ();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,8 +89,17 @@
     </section>
     <section class="fmenu">
         <nav class="fmenu_nav">
-            <a href="sign.html" class="fmenu_nav_icon signIcon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
+        <?php
+            if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
+                ?>
+                <a href="profile.php" class="fmenu_nav_icon_generated"><img style="width: 30px; border-radius: 100px;" src="<?= $_SESSION['img']?>" alt=""></a>
+                <?php
+            } else {
+                ?>
+                <a href="sign.php" class="fmenu_nav_icon signIcon"></a>
+                <?php
+            }
+            ?>            <a href="" class="fmenu_nav_icon"></a>
             <a href="" class="fmenu_nav_icon"></a>
             <a href="" class="fmenu_nav_icon"></a>
             <a href="" class="fmenu_nav_icon"></a>

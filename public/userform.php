@@ -1,5 +1,9 @@
+<?php
+session_start ();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +21,11 @@
       <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="sign_header_logo">
       <h1 class="sign_header_title"><a href="index.html">INFINITY</a></h1>
     </header>
-    <section class="userform_container">
+    <?php
+    if (isset($_SESSION['usr']) && isset($_SESSION['pwd']))
+    {
+      ?>
+      <section class="userform_container">
       <h1 class="userform_title">Fiche de renseignements</h1>
       <div class="userform_container_first">
         <form class="userform_form" action="index.html" method="post">
@@ -89,6 +97,18 @@
         </form>
       </div>
     </section>
+    <?php
+    }
+    else
+    {
+      ?>
+      <div style="color: red; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)" class="userform_title">
+      <p>Veuillez d'abord vous connecter.</p>
+      <a style="font-size: 20px; color: white; text-decoration: none;" href="sign.php">Se connecter</a>
+      </div>
+      <?php
+    }
+?>
   </section>
 
   <section class="fmenu">

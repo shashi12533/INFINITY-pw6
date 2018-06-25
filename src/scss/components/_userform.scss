@@ -140,7 +140,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   &:hover {
-    background: $bgPurple
+    background: $bgPurple;
   }
   @media (min-width: 900px) {
     margin-left: 10px;
