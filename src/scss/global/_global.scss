@@ -10,6 +10,8 @@ body {
 ::placeholder {
     color: $white-Lgh;
 }
+
+// Displayed / Undisplayed classes
 .is-flex {
     display: flex !important;
 }
@@ -27,9 +29,27 @@ body {
     height: auto;
 }
 
+// Colored menu
+.packsColored {
+    background: url('../assets/images/icons/menu/packs-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.spaceshipColored {
+    background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.planetColored {
+    background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.spaceoduleColored {
+    background: url('../assets/images/icons/menu/spaceodule-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+
+// Personnal scrollbar
 ::-webkit-scrollbar {
     width: 5px;
-    
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -48,16 +68,12 @@ body {
     background: #BB3800;
 }
 
+// Personnal selection color
 ::selection {
+color: #000;
+background: $yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
     color: #000;
-    background: #ffd800; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-      color: #000;
-    background: #ffd800; /* Gecko Browsers */
-  }
-
-  .default {
-    
-    
-  }
+background: $yellow; /* Gecko Browsers */
+}
