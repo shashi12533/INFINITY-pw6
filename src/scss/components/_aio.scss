@@ -1,18 +1,28 @@
 .aio {
     width: 100%;
     @media (min-width: $mobileToTablet ) {
-        margin: 100px 120px;
+        margin: 100px 0;
     }
     &_title {
+        margin: 0 120px;
         color:#fff;
         font-size: $xBig;
         font-family: $Ex-Thn;
         text-align: center;
-        margin: 25px 0 50px 0;
+        margin: 25px 120px 50px;
         @media (min-width: $mobileToTablet ) {
-            text-align : left;
+            text-align : right;
 
         }
+    }
+    &_desc {
+        margin: 0 120px;
+        color:#fff;
+        font-size: $Reg;
+        font-family: $Ex-Thn;
+        line-height: 2;
+        padding: 0 25px 25px 25px;
+        text-align: justify;
     }
     &_packs {
         &_pack {
@@ -111,10 +121,13 @@
                     cursor: pointer;
                     transition: all 0.2s ease;
                     &:hover {
-                        background: $bgPurple
+                        background: transparent;
                     }
                     &:nth-child(1) {
                         background: transparent;
+                        &:hover {
+                            background: $yellow;
+                        }
                     }
                 }
             }
@@ -128,3 +141,34 @@
 .flickity-button {
     display: none;
 }
+
+/* flickity on by default */
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: $tabletToDesktop ) {
+  /* disable Flickity for large devices */
+  .carousel:after {
+    content: '';
+  }
+  .carousel {
+      display: flex;
+      justify-content: center;
+  }
+  .carousel-cell {
+      margin: 0 10px;
+  }
+}
+
+.carousel-cell {
+  
+}
+
+/* no margin bottom when Flickity enabled */
+.flickity-enabled .carousel-cell {
+  margin-bottom: 0;
+}
+
+/* cell number */

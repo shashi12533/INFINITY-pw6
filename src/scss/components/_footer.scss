@@ -4,6 +4,9 @@
     margin-bottom: 80px;
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     @media (min-width: $mobileToTablet ) {
         position: fixed;
         bottom: 0;
