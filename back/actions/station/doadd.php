@@ -9,7 +9,7 @@ VALUES
 
 ";
 
-if(empty($_POST['name']) OR empty($_POST['size']) OR is_numeric($_POST['size']) OR empty($_POST['air']) OR empty($_POST['resiedence']) OR empty($_POST['activity']) OR empty($_POST['leisure']) OR empty($_POST['services']) OR empty($_POST['land']) OR empty($_POST['staff']) OR empty($_POST['link']))
+if(empty($_POST['name']) OR empty($_POST['size']) OR empty($_POST['air']) OR empty($_POST['residence']) OR empty($_POST['activity']) OR empty($_POST['leisure']) OR empty($_POST['services']) OR empty($_POST['land']) OR empty($_POST['staff']) OR empty($_POST['link']))
     {
     $msg = 'error';
     header("Location: ../../index.php?msg=".$msg);
