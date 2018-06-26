@@ -3,7 +3,9 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: -1;
+	z-index: -1;
+	top: 0;
+	left: 0;
 }
 .star {
 	background-image: url('https://media.giphy.com/media/1bJFX6QRTAVm8j1e53/giphy.gif');

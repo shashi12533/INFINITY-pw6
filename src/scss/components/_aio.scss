@@ -1,0 +1,130 @@
+.aio {
+    width: 100%;
+    @media (min-width: $mobileToTablet ) {
+        margin: 100px 120px;
+    }
+    &_title {
+        color:#fff;
+        font-size: $xBig;
+        font-family: $Ex-Thn;
+        text-align: center;
+        margin: 25px 0 50px 0;
+        @media (min-width: $mobileToTablet ) {
+            text-align : left;
+
+        }
+    }
+    &_packs {
+        &_pack {
+            background: $redToPurple;
+            width: 66%;
+            max-width: 300px;
+            height: 450px;
+            margin-right: 10%;
+            position: relative;
+            border-radius: 25px;
+            &_imgBox {
+                height: 150px;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            &_img {
+                height: 200%;
+                width: auto;
+            }
+            &_content {
+                position: absolute;
+                width: 100%;
+                height: 300px;
+                top: 150px;
+                &_title {
+                    color:#fff;
+                    font-size: $Big;
+                    font-family: $Qs-Lgh;
+                    padding: 20px;
+                }
+                &_list {
+                    padding: 0px 25px 0 60px;
+                    color: #fff;
+                    font-size: $Reg;
+                    font-family: $Qs-Reg;
+                    
+                }
+                &_item {
+                    position: relative;
+
+                    padding-bottom: 15px;
+                    &:before {
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: -30px;
+                        
+                    }
+                    &:nth-child(1) {
+                        &:before {
+                            background: url('../assets/images/icons/menu/rocket-ship-anim.svg') no-repeat center;
+                            background-size: cover;
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:before {
+                            background: url('../assets/images/icons/menu/saturn-anim.svg') no-repeat center;
+                            background-size: cover;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &:before {
+                            background: url('../assets/images/icons/menu/lunar-module-anim.svg') no-repeat center;
+                            background-size: cover;                        }
+                    }
+            }
+                &_linkBox {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 25px;
+                }
+                &_link {
+                    color: #fff;
+                    background: $yellow;
+                    border: 1px $yellow solid;
+                    border-radius: 100px;
+                    width: 50%;
+                    max-width: 175px;
+                    margin: 10px;
+                    padding: 10px;
+                    font-family: $Qs-Reg;
+                    font-size: $Reg;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        background: $bgPurple
+                    }
+                    &:nth-child(1) {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flickity-viewport {
+    height: 450px !important;
+}
+.flickity-button {
+    display: none;
+}

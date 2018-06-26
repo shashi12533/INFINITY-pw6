@@ -4,6 +4,8 @@
 @import 'global/variables';
 @import 'global/fonts';
 @import 'global/global';
+@import 'global/default';
+
 
 // Import component files -----------------------
 @import 'components/stars';
@@ -13,6 +15,7 @@
 @import 'components/home';
 @import 'components/sign';
 @import 'components/userform';
+@import 'components/aio';
 
 // Import mixin files ---------------------------
 @import 'mixins/responsive';
