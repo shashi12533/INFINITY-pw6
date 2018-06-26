@@ -6,12 +6,15 @@ $menuPurple: #282037;
 $lghPurple: #60006B;
 $yellow: #E2A855;
 $white-Lgh: #adadad;
+$red: #7F0624;
+$packPurple: #391759;
 
 // Linear-gradient ------------------------------
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
 $bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
 $bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
 $blocPurpleTotrans: linear-gradient(0turn,$blocPurple 90%, transparent 100%);
+$redToPurple: linear-gradient($red, $packPurple);
 
 // Font-family ----------------------------------
 $Qs-Reg: 'Quicksand-Regular', sans-serif;
