@@ -245,8 +245,7 @@
             }
             &_link {
                 color: #fff;
-                background: $yellow;
-                border: 1px $yellow solid;
+                border: 1px $custom solid;
                 border-radius: 100px;
                 width: 50%;
                 max-width: 175px;
@@ -259,7 +258,7 @@
                 text-decoration: none;
                 transition: all 0.2s ease;
                 &:nth-child(1) {
-                    background: $bgPurple;
+                    border: 1px $aio solid;
                 }
                 &:hover {
                     background: $bgPurple

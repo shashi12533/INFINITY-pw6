@@ -37,22 +37,22 @@
 
             }
             &:nth-child(1) {
-                background: url('../assets/images/icons/menu/right-arrow.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/home.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/right-arrow-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/home-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
-                    content: 'Retour';
+                    content: 'Accueil';
 
                 }
             }
             &:nth-child(2) {
-                background: url('../assets/images/icons/menu/layers.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/packs.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/layers-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/packs-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
@@ -61,10 +61,10 @@
                 }
             }
             &:nth-child(3) {
-                background: url('../assets/images/icons/menu/rocket-ship.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/spaceship.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/rocket-ship-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
@@ -73,10 +73,10 @@
                 }
             }
             &:nth-child(4) {
-                background: url('../assets/images/icons/menu/saturn.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/planet.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/saturn-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
@@ -85,10 +85,10 @@
                 }
             }
             &:nth-child(5) {
-                background: url('../assets/images/icons/menu/lunar-module.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/spacemodule.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/lunar-module-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {

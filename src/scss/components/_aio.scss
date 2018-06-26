@@ -1,30 +1,59 @@
 .aio {
+    position: relative;
     width: 100%;
     @media (min-width: $mobileToTablet ) {
         margin: 100px 0;
     }
     &_title {
-        margin: 0 120px;
+        background: $bgPurpleToTrans;
         color:#fff;
         font-size: $xBig;
         font-family: $Ex-Thn;
         text-align: center;
-        margin: 25px 120px 50px;
+        padding: 25px 25px 37px;
+        position: sticky;
+        top: -2px;
+        z-index: 2;
+        &:before {
+            content: '';
+            background: $aio;
+            width: 33%;
+            height: 4px;
+            position: absolute;
+            bottom: 25px;
+            right: 50%;
+            transform: translate(50%, 0);
+            z-index: -1;
+        }
         @media (min-width: $mobileToTablet ) {
+            background: transparent;
             text-align : right;
-
+            margin: 25px 120px 50px;
+            &:before {
+                right: 25px;
+                bottom: 25px;
+                transform: translate(0, 0);
+                
+            }
         }
     }
     &_desc {
-        margin: 0 120px;
         color:#fff;
         font-size: $Reg;
         font-family: $Ex-Thn;
         line-height: 2;
-        padding: 0 25px 25px 25px;
+        padding: 0 25px;
         text-align: justify;
+        @media (min-width: $mobileToTablet ) {
+            text-align : right;
+            margin: 0 120px;
+        }
     }
     &_packs {
+        margin: 25px 0;
+        @media (min-width: $mobileToTablet ) {
+            margin: 25px 120px;
+        }
         &_pack {
             background: $redToPurple;
             width: 66%;
@@ -33,6 +62,8 @@
             margin-right: 10%;
             position: relative;
             border-radius: 25px;
+            @media (min-width: $mobileToTablet ) {
+            }
             &_imgBox {
                 height: 150px;
                 width: auto;
@@ -80,19 +111,19 @@
                     }
                     &:nth-child(1) {
                         &:before {
-                            background: url('../assets/images/icons/menu/rocket-ship-anim.svg') no-repeat center;
+                            background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center;
                             background-size: cover;
                         }
                     }
                     &:nth-child(2) {
                         &:before {
-                            background: url('../assets/images/icons/menu/saturn-anim.svg') no-repeat center;
+                            background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center;
                             background-size: cover;
                         }
                     }
                     &:nth-child(3) {
                         &:before {
-                            background: url('../assets/images/icons/menu/lunar-module-anim.svg') no-repeat center;
+                            background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center;
                             background-size: cover;                        }
                     }
             }
@@ -133,6 +164,33 @@
             }
         }
     }
+    &_gotoCustom {
+        padding: 0 25px;
+        color: #fff;
+        padding-bottom: 25px;
+        font-family: $Qs-Reg;
+        font-size: $xReg;
+        text-align: center;
+        &_link {
+            color: $custom;
+            text-decoration: none;
+            position: relative;
+            &:after {
+                content: '';
+                background: #fff;
+                width: 0%;
+                height: 1px;
+                position: absolute;
+                bottom: -2px;
+                left: 0px;
+                transition: all 0.2s ease;
+            }
+            &:hover:after {
+                width: 45%;
+
+            }
+        }
+    }
 }
 
 .flickity-viewport {
@@ -148,7 +206,7 @@
   display: none;
 }
 
-@media screen and ( min-width: $tabletToDesktop ) {
+@media screen and ( min-width: $mobileToTablet ) {
   /* disable Flickity for large devices */
   .carousel:after {
     content: '';
@@ -156,9 +214,10 @@
   .carousel {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
   }
   .carousel-cell {
-      margin: 0 10px;
+      margin: 0 10px 25px 10px;
   }
 }
 
