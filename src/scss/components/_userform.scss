@@ -5,11 +5,12 @@
   justify-content: center;
   &_container {
     width: 100vw;
-    @media (min-width: 600px) {
+    @media (min-width: $mobileToTablet ) {
       margin: 90px 0 120px;
     }
   }
   &_title {
+    color:#fff;
     font-size: $xBig;
     font-family: $Ex-Thn;
     text-align: center;
@@ -18,8 +19,10 @@
   &_container_first {
     width: 60vw;
     margin: auto;
-    display: none;
-    @media (min-width: 600px) {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    @media (min-width: $mobileToTablet ) {
       width: 50vw;
       margin: auto;
     }
@@ -28,10 +31,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 90px;
-    @media (min-width: 600px) {
+
+    margin: 90px 0 120px;
+    @media (min-width: $mobileToTablet ) {
       align-items: center;
-      margin-bottom: 0;
     }
     &_select {
       color: #fff;
@@ -57,7 +60,7 @@
       flex-direction: column;
       justify-content: center;
       width: 80%;
-      @media (min-width: 900px) {
+      @media (min-width: $tabletToDesktop ) {
         text-align: left;
         margin-left: 22vw;
         font-size: $Sml;
@@ -97,7 +100,7 @@
       &:hover {
         background: $bgPurple;
       }
-      @media (min-width: 900px) {
+      @media (min-width: $tabletToDesktop ) {
         margin-left: 10px;
       }
     }
@@ -105,23 +108,47 @@
   }
   &_container_second {
     width: 60vw;
-    margin: auto;
-    display: none;
-    @media (min-width: 600px) {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    @media (min-width: $mobileToTablet ) {
       width: 50vw;
       margin: auto;
     }
+  }
+  &_container_third {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    width: 60vw;
+  &_error_title {
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_error_link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
   }
 }
 &_container_third {
   width: 60vw;
   margin: auto;
   // display: none;
-  @media (min-width: 600px) {
+  @media (min-width: $mobileToTablet ) {
     width: 50vw;
     margin: auto;
+    // display: none;
+    @media (min-width: $mobileToTablet ) {
+      width: 50vw;
+      margin: auto;
+    }
   }
 }
+
 
 .userform_form_submit {
   color: #fff;
@@ -140,9 +167,10 @@
   cursor: pointer;
   transition: all 0.2s ease;
   &:hover {
-    background: $bgPurple
+    background: $bgPurple;
   }
-  @media (min-width: 900px) {
+  @media (min-width: $tabletToDesktop ) {
     margin-left: 10px;
   }
+}
 }

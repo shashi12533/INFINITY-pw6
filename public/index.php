@@ -1,5 +1,9 @@
+<?php
+session_start ();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +18,16 @@
         <header class="home_header">
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="home_header_logo">
             <p class="home_header_text">
-                Ouvrez vous<span class="home_header_span"> au futur, avec</span> 
+                Ouvrez vous<span class="home_header_span"> au futur, avec</span>
             </p>
             <h1 class="home_header_title">INFINITY</h1>
-            
+
         </header>
         <img src="assets/images/planets/planeteAnneau1.svg" alt="" class="home_planet1">
-        
+
         <div class="home_titleBox">
             <p class="home_titleBox_text">
-                Ouvrez vous<span class="home_titleBox_span"> au futur, avec</span> 
+                Ouvrez vous<span class="home_titleBox_span"> au futur, avec</span>
             </p>
             <h1 class="home_titleBox_title">INFINITY</h1>
         </div>
@@ -39,11 +43,11 @@
             </p>
             <h3 class="home_packchoice_nav_title">Choisissez votre méthode</h3>
             <nav class="home_packchoice_nav">
-                <a href="aiopacks.html" class="home_packchoice_nav_link">All-in-one</a>
+                <a href="" class="home_packchoice_nav_link">All-in-one</a>
                 <a href="" class="home_packchoice_nav_link">Custom</a>
             </nav>
         </section>
-        <p class="home_citation">Rejoignez <span class="home_citation_span">INFINITY</span> pour une meilleure vie dans l'espace</p>
+        <p class="home_citation">Rejoignez INFINITY pour une meilleure vie dans l'espace</p>
         <section class="home_stats">
             <h2 class="home_stats_title">Quelques chiffres :</h2>
             <nav class="home_stats_nav">
@@ -75,23 +79,32 @@
                 <img class="home_partners_box_img" src="assets/images/partners/soylent.svg">
             </div>
         </section>
-        <footer class="footer">
-            <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
-            <nav class="footer_social">
-                <a href="" class="footer_social_icon"></a>
-                <a href=""  class="footer_social_icon"></a>
-                <a href=""  class="footer_social_icon"></a>
+        <footer class="sign_footer">
+            <p class="sign_footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
+            <nav class="sign_footer_social">
+                <a href="" class="sign_footer_social_icon"></a>
+                <a href=""  class="sign_footer_social_icon"></a>
+                <a href=""  class="sign_footer_social_icon"></a>
             </nav>
-            <p class="footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
+            <p class="sign_footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
         </footer>
     </section>
-    <section class="menu">
-        <nav class="menu_nav">
-            <a href="sign.html" class="menu_nav_icon signIcon"></a>
-            <a href="" class="menu_nav_icon"></a>
-            <a href="" class="menu_nav_icon"></a>
-            <a href="" class="menu_nav_icon"></a>
-            <a href="" class="menu_nav_icon"></a>
+    <section class="fmenu">
+        <nav class="fmenu_nav">
+        <?php
+            if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
+                ?>
+                <a href="profile.php" class="fmenu_nav_icon_generated"><img class="fmenu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt=""></a>
+                <?php
+            } else {
+                ?>
+                <a href="sign.php" class="fmenu_nav_icon signIcon"></a>
+                <?php
+            }
+            ?>            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
+            <a href="" class="fmenu_nav_icon"></a>
         </nav>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>

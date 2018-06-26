@@ -1,9 +1,10 @@
 html {
     font-size: 62.5%;
+    // overflow-x: hidden;
 }
 body {
     display: flex;
-    //overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 ::placeholder {
@@ -14,6 +15,16 @@ body {
 }
 .isnt-flex {
     display: none;
+}
+.is-invisible {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+.is-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -46,3 +57,7 @@ body {
     background: #ffd800; /* Gecko Browsers */
   }
 
+  .default {
+    
+    
+  }

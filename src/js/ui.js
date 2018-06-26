@@ -61,3 +61,22 @@ for (let i = 0; i < changeLink.length; i++) {
 	}) 
 	
 }
+
+// Userform -------------------------------------
+
+var ctn1 = document.querySelector('.userform_container_first');
+var ctn2 = document.querySelector('.userform_container_second');
+var ctn3 = document.querySelector('.userform_container_third');
+var next1 = document.querySelector('#next1');
+var next2 = document.querySelector('#next2');
+
+next1.addEventListener('click', function() {
+	ctn1.classList.remove('is-visible');
+	ctn2.classList.add('is-visible');
+	
+});
+next2.addEventListener('click', function() {
+	ctn2.classList.remove('is-visible');
+	ctn3.classList.add('is-visible');
+});
+
