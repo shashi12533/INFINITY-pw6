@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1627px" height="1175px" viewBox="0 0 1627 1175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>comet2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.00660237275%" y1="0.0376698005%" x2="99.9933927%" y2="99.962378%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.00589595596%" y1="0.0362250408%" x2="99.9926863%" y2="99.9609332%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="comet2" transform="translate(812.500000, 587.500000) scale(-1, 1) translate(-812.500000, -587.500000) translate(-2.000000, 0.000000)" fill-rule="nonzero">
+            <path d="M1380.4,877.8 C1374.4,887.2 1060.7,698.4 679.8,456.1 C298.9,213.8 -5.1,9.8 0.9,0.4 C6.9,-9 320.6,179.8 701.5,422.1 C1082.4,664.4 1386.4,868.4 1380.4,877.8 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+            <path d="M1628.3,1174.6 C1622.3,1184 1308.6,995.2 927.7,752.9 C546.8,510.6 242.8,306.6 248.8,297.2 C254.8,287.8 568.5,476.6 949.4,718.9 C1330.3,961.2 1634.3,1165.2 1628.3,1174.6 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

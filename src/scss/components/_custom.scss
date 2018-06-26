@@ -1,7 +1,6 @@
-.aio {
+.custom {
     position: relative;
     width: 100%;
-    // overflow-y: hidden;
     @media (min-width: $mobileToTablet ) {
         margin: 100px 0;
     }
@@ -35,7 +34,6 @@
         opacity: 0.25;
         
     }
-    
     &_title {
         background: $bgPurpleToTrans;
         color:#fff;
@@ -48,7 +46,7 @@
         z-index: 2;
         &:before {
             content: '';
-            background: $aio;
+            background: $custom;
             width: 33%;
             height: 4px;
             position: absolute;
@@ -205,7 +203,7 @@
         font-size: $xReg;
         text-align: center;
         &_link {
-            color: $custom;
+            color: $aio;
             text-decoration: none;
             position: relative;
             &:after {
