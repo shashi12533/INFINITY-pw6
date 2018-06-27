@@ -84,3 +84,64 @@ if (document.body.contains(userform)) {
 }
 
 
+// Desc
+
+desc1 = document.querySelector('#desc1');
+desc2 = document.querySelector('#desc2');
+desc3 = document.querySelector('#desc3');
+desc4 = document.querySelector('#desc4');
+icon1 = document.querySelector('#icon1');
+icon2 = document.querySelector('#icon2');
+icon3 = document.querySelector('#icon3');
+icon4 = document.querySelector('#icon4');
+
+window.addEventListener('scroll', function() {
+	if (window.scrollY < desc1.offsetHeight ) {
+		
+		
+	}
+	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight - 100) {
+		console.log('yeee');
+		icon1.style.background = "url(../assets/images/desc_planets/clock-degrade.svg) no-repeat center"
+		icon1.style.backgroundSize = "100%"
+		icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+		icon2.style.backgroundSize = "100%"
+		icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+		icon3.style.backgroundSize = "100%"
+		icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+		icon4.style.backgroundSize = "100%"
+
+		
+	}
+	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight - 100 ) {
+		icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+		icon1.style.backgroundSize = "100%"
+		icon2.style.background = "url(../assets/images/desc_planets/connection-degrade.svg) no-repeat center"
+		icon2.style.backgroundSize = "100%"
+		icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+		icon3.style.backgroundSize = "100%"
+		icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+		icon4.style.backgroundSize = "100%"
+	}
+	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight + desc4.offsetHeight - 100 ){
+		icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+		icon1.style.backgroundSize = "100%"
+		icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+		icon2.style.backgroundSize = "100%"
+		icon3.style.background = "url(../assets/images/desc_planets/people-degrade.svg) no-repeat center"
+		icon3.style.backgroundSize = "100%"
+		icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+		icon4.style.backgroundSize = "100%"
+	}
+	else {
+		icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+		icon1.style.backgroundSize = "100%"
+		icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+		icon2.style.backgroundSize = "100%"
+		icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+		icon3.style.backgroundSize = "100%"
+		icon4.style.background = "url(../assets/images/desc_planets/services-degrade.svg) no-repeat center"
+		icon4.style.backgroundSize = "100%"
+	}
+
+});
