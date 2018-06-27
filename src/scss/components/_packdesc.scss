@@ -1,0 +1,38 @@
+.packdesc {
+    width: 100%;
+    &_title {
+        background: $bgPurpleToTrans;
+        color:#fff;
+        font-size: $xBig;
+        font-family: $Ex-Thn;
+        text-align: center;
+        padding: 25px 25px 37px;
+        position: sticky;
+        top: -2px;
+        z-index: 2;
+        &:before {
+            content: '';
+            background: $aio;
+            width: 33%;
+            height: 4px;
+            position: absolute;
+            bottom: 25px;
+            right: 50%;
+            transform: translate(50%, 0);
+            z-index: -1;
+            border-radius: 25px;
+        }
+        @media (min-width: $mobileToTablet ) {
+            background: transparent;
+            text-align : right;
+            margin: 25px 120px 50px;
+            &:before {
+                width: 200px;
+                right: 25px;
+                bottom: 25px;
+                transform: translate(0, 0);
+                
+            }
+        }
+    } 
+}

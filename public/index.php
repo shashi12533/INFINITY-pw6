@@ -79,14 +79,14 @@ session_start ();
                 <img class="home_partners_box_img" src="assets/images/partners/soylent.svg">
             </div>
         </section>
-        <footer class="sign_footer">
-            <p class="sign_footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
-            <nav class="sign_footer_social">
-                <a href="" class="sign_footer_social_icon"></a>
-                <a href=""  class="sign_footer_social_icon"></a>
-                <a href=""  class="sign_footer_social_icon"></a>
+        <footer class="footer">
+            <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
+            <nav class="footer_social">
+                <a href="" class="footer_social_icon"></a>
+                <a href=""  class="footer_social_icon"></a>
+                <a href=""  class="footer_social_icon"></a>
             </nav>
-            <p class="sign_footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
+            <p class="footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
         </footer>
     </section>
     <section class="menu">
