@@ -34,7 +34,7 @@ session_start ();
         <section class="home_who">
             <h2 class="home_who_title">Qui sommes-nous ?</h2>
             <p class="home_who_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro consequuntur nesciunt facere perferendis debitis aperiam dolorum magnam beatae sed sunt. Iure est neque ipsa dolor, accusantium facere. Cum, tempore alias?</p>
-            <img src="assets/images/planets/planete4.svg" alt="" class="home_planet2">
+            <img src="assets/images/planets/planete3.svg" alt="" class="home_planet2">
         </section>
         <section class="home_packchoice">
             <h2 class="home_packchoice_title"> Découvrez nos offres :</h2>
@@ -101,7 +101,7 @@ session_start ();
                 <a href="sign.php" class="menu_nav_icon signIcon"></a>
                 <?php
             }
-            ?>            <a href="" class="menu_nav_icon"></a>
+            ?>            <a href="index.php" class="menu_nav_icon"></a>
             <a href="spaceships.php" class="menu_nav_icon"></a>
             <a href="planets.php" class="menu_nav_icon"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>
