@@ -1,4 +1,4 @@
-.aio {
+.spacemodules {
     position: relative;
     width: 100%;
     // overflow-y: hidden;
@@ -48,7 +48,7 @@
         z-index: 2;
         &:before {
             content: '';
-            background: $aio;
+            background: $spacemodule;
             width: 33%;
             height: 4px;
             position: absolute;
@@ -89,7 +89,7 @@
             margin: 25px 120px;
         }
         &_pack {
-            background: $aioToAioDrk;
+            background: $spacemoduleToPurple;
             width: 66%;
             max-width: 300px;
             height: 450px;
@@ -145,21 +145,22 @@
                     }
                     &:nth-child(1) {
                         &:before {
-                            background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center;
-                            background-size: cover;
+                            background: url('../assets/images/desc_spacemodule/home-degrade.svg') no-repeat center;
+                            background-size: 100%;
                         }
                     }
                     &:nth-child(2) {
                         &:before {
-                            background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center;
-                            background-size: cover;
+                            background: url('../assets/images/desc_spacemodule/publics-services-degrade.svg') no-repeat center;
+                            background-size: 100%;
                         }
                     }
                     &:nth-child(3) {
                         &:before {
-                            background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center;
-                            background-size: cover;                        }
+                            background: url('../assets/images/desc_spacemodule/sun-umbrella-degrade.svg') no-repeat center;
+                            background-size: 100%;                        }
                     }
+                    
             }
                 &_linkBox {
                     width: 100%;
@@ -207,7 +208,7 @@
         text-align: center;
         line-height: 1.5;
         &_link {
-            color: $custom;
+            color: $aio;
             text-decoration: none;
             position: relative;
             &:after {
@@ -223,6 +224,9 @@
             &:hover:after {
                 width: 45%;
 
+            }
+            &:nth-child(1) {
+                color: $custom;
             }
         }
     }

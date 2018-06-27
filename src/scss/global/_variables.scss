@@ -9,17 +9,31 @@ $white-Lgh: #adadad;
 $red: #7F0624;
 $packPurple: #391759;
 $aio: #45FFD0;
+$aio-Drk: #0D2F26;
 $custom: #FF7925;
+$custom-Drk: #2F1607;
 
 $spaceship: #D4564A;
-$planet: #4AD49C;
+$planet: #2AB2A4;
+$spacemodule: #6380CE;
 
 // Linear-gradient ------------------------------
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
 $bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
 $bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
 $blocPurpleTotrans: linear-gradient(0turn,$blocPurple 90%, transparent 100%);
-$redToPurple: linear-gradient($red, $packPurple);
+
+$aioToPurple: linear-gradient($aio, $packPurple);
+$aioToAioDrk: linear-gradient($aio, $aio-Drk);
+$customToCustomDrk: linear-gradient($custom, $custom-Drk);
+
+
+$spaceshipToPurple: linear-gradient($spaceship, $packPurple);
+
+$planetToPurple: linear-gradient($planet, $packPurple);
+
+
+$spacemoduleToPurple: linear-gradient($spacemodule, $packPurple);
 
 // Font-family ----------------------------------
 $Qs-Reg: 'Quicksand-Regular', sans-serif;

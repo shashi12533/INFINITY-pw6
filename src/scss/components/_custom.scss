@@ -54,6 +54,8 @@
             right: 50%;
             transform: translate(50%, 0);
             z-index: -1;
+
+            border-radius: 25px;
         }
         @media (min-width: $mobileToTablet ) {
             background: transparent;
@@ -86,7 +88,7 @@
             margin: 25px 120px;
         }
         &_pack {
-            background: $redToPurple;
+            background: $customToCustomDrk;
             width: 66%;
             max-width: 300px;
             height: 450px;
