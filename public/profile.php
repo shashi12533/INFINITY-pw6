@@ -25,7 +25,7 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
 
 	// On affiche un lien pour fermer notre session
     echo '<a href="../../../back/actions/login/logout.php">Déconnection</a>';
-    echo '<a href="../../../back/actions/login/edit.php">MODIFIER</a>';
+    echo '<a href="../../SI-Space/back/actions/login/edit.php">MODIFIER</a>';
 }
 else {
 	echo "Veuillez vous connecter";

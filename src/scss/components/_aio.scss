@@ -96,6 +96,15 @@
             margin-right: 10%;
             position: relative;
             border-radius: 25px;
+            &:nth-child(1) {
+                background: $aioLghToAioDrk;
+            }
+            &:nth-child(2) {
+                background: $aioToAioDrk;
+            }
+            &:nth-child(3) {
+                background: $aioMDrkToAioDrk;
+            }
             @media (min-width: $mobileToTablet ) {
             }
             &_imgBox {
