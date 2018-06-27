@@ -9,6 +9,8 @@ $white-Lgh: #adadad;
 $red: #7F0624;
 $packPurple: #391759;
 $aio: #45FFD0;
+$aio-Lgh: #adffe9;
+$aio-mDrk: #05bf8d;
 $aio-Drk: #0D2F26;
 $custom: #FF7925;
 $custom-Drk: #2F1607;
@@ -25,6 +27,9 @@ $blocPurpleTotrans: linear-gradient(0turn,$blocPurple 90%, transparent 100%);
 
 $aioToPurple: linear-gradient($aio, $packPurple);
 $aioToAioDrk: linear-gradient($aio, $aio-Drk);
+$aioLghToAioDrk: linear-gradient($aio-Lgh, $aio-Drk);
+$aioMDrkToAioDrk: linear-gradient($aio-mDrk, $aio-Drk);
+
 $customToCustomDrk: linear-gradient($custom, $custom-Drk);
 
 

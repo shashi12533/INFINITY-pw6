@@ -37,6 +37,7 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
         </div>
 <?php
 	// On affiche un lien pour fermer notre session
+
     echo '<p>Vous décollez ? Pensez à vous<a href="../../../back/actions/login/logout.php"> déconnecter</a></p>';
     echo '<p>Vous pouvez modifier votre profil<a href="../../../back/actions/login/edit.php"> ici</a></p>';
 }
