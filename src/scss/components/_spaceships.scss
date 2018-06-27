@@ -145,24 +145,24 @@
                     }
                     &:nth-child(1) {
                         &:before {
-                            background: url('../assets/images/desc_spaceship/climate-degrade.svg') no-repeat center;
+                            background: url('../assets/images/desc_planets/clock-degrade.svg') no-repeat center;
                             background-size: 100%;
                         }
                     }
                     &:nth-child(2) {
                         &:before {
-                            background: url('../assets/images/desc_spaceship/oxygen-degrade.svg') no-repeat center;
+                            background: url('../assets/images/desc_planets/connection-degrade.svg') no-repeat center;
                             background-size: 100%;
                         }
                     }
                     &:nth-child(3) {
                         &:before {
-                            background: url('../assets/images/desc_spaceship/wildlife-degrade.svg') no-repeat center;
+                            background: url('../assets/images/desc_planets/people-degrade.svg') no-repeat center;
                             background-size: 100%;                        }
                     }
                     &:nth-child(4) {
                         &:before {
-                            background: url('../assets/images/desc_spaceship/work-degrade.svg') no-repeat center;
+                            background: url('../assets/images/desc_planets/services-degrade.svg') no-repeat center;
                             background-size: 100%;                        }
                     }
             }
