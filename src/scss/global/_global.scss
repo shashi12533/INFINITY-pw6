@@ -28,6 +28,31 @@ body {
     opacity: 1 !important;
     height: auto;
 }
+.is-righted {
+    @media (min-width: $mobileToTablet ) {
+        text-align: right !important;
+        padding-left: 33% !important;
+        padding-right: 0px !important; 
+    }
+    
+}
+.is-moved {
+    &:after {
+        content: '';
+        background: red;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        left: 15%;
+        opacity: 0;
+        
+        @media (min-width: $mobileToTablet ) {
+            opacity: 1;  
+        }
+    }
+}
 
 // Colored menu
 .packsColored {
