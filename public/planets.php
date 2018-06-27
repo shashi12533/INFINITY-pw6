@@ -25,7 +25,7 @@ $planets_stmt->execute();
         <section class="stars" id="scene"></section>
         <header class="header">
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="header_logo">
-            <h1 class="header_title"><a href="index.html">INFINITY</a></h1>
+            <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="planets_title">Planètes</h1>
         <p class="planets_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
@@ -73,8 +73,8 @@ $planets_stmt->execute();
     </section>
     <section class="menu">
         <nav class="menu_nav">
-            <a href="index.html" class="menu_nav_icon"></a>
-            <a href="index.html" class="menu_nav_icon "></a>
+            <a href="index.php" class="menu_nav_icon"></a>
+            <a href="index.php" class="menu_nav_icon "></a>
             <a href="spaceships.php" class="menu_nav_icon "></a>
             <a href="planets.php" class="menu_nav_icon planetColored"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>
