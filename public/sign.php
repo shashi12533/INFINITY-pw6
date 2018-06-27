@@ -114,9 +114,9 @@
         <nav class="fmenu_nav">
             <a href="index.html" class="fmenu_nav_icon"></a>
             <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
+            <a href="spaceships.php" class="fmenu_nav_icon"></a>
+            <a href="planets.php" class="fmenu_nav_icon"></a>
+            <a href="spacemodules.php" class="fmenu_nav_icon"></a>
         </nav>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>

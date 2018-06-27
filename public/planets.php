@@ -75,9 +75,9 @@ $planets_stmt->execute();
         <nav class="menu_nav">
             <a href="index.html" class="menu_nav_icon"></a>
             <a href="index.html" class="menu_nav_icon "></a>
-            <a href="spaceships.html" class="menu_nav_icon "></a>
-            <a href="planets.html" class="menu_nav_icon planetColored"></a>
-            <a href="spacemodules.html" class="menu_nav_icon"></a>
+            <a href="spaceships.php" class="menu_nav_icon "></a>
+            <a href="planets.php" class="menu_nav_icon planetColored"></a>
+            <a href="spacemodules.php" class="menu_nav_icon"></a>
         </nav>
     </section>
     <!--Parallax.js-->

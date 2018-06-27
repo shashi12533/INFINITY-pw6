@@ -89,22 +89,22 @@ session_start ();
             <p class="sign_footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
         </footer>
     </section>
-    <section class="fmenu">
-        <nav class="fmenu_nav">
+    <section class="menu">
+        <nav class="menu_nav">
         <?php
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
                 ?>
-                <a href="profile.php" class="fmenu_nav_icon_generated"><img class="fmenu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt=""></a>
+                <a href="profile.php" class="menu_nav_icon_generated"><img class="menu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt=""></a>
                 <?php
             } else {
                 ?>
-                <a href="sign.php" class="fmenu_nav_icon signIcon"></a>
+                <a href="sign.php" class="menu_nav_icon signIcon"></a>
                 <?php
             }
-            ?>            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
+            ?>            <a href="" class="menu_nav_icon"></a>
+            <a href="spaceships.php" class="menu_nav_icon"></a>
+            <a href="planets.php" class="menu_nav_icon"></a>
+            <a href="spacemodules.php" class="menu_nav_icon"></a>
         </nav>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
