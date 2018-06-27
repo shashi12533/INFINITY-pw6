@@ -24,7 +24,7 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
 ?>
         <div class="profile_main">
         <div class="profile_main_img_container">
-        <img class="profile_main_img" src="<?=$_SESSION['img']?>">
+        <img class="profile_main_img" src="assets/images/icons/logo.svg">
         </div>
         <h1 class="profile_main_title">Bonjour, <?= $_SESSION['surname']?>. Bienvenue sur votre profil.</h1>
         </div>
@@ -35,11 +35,12 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
             <p class="profile_informations_title-small">Votre adresse mail : <?=$_SESSION['usr']?></p>
 
         </div>
-<?php
-	// On affiche un lien pour fermer notre session
 
-    echo '<p>Vous décollez ? Pensez à vous<a href="../../../back/actions/login/logout.php"> déconnecter</a></p>';
-    echo '<p>Vous pouvez modifier votre profil<a href="../../../back/actions/login/edit.php"> ici</a></p>';
+	<!-- // On affiche un lien pour fermer notre session -->
+
+    <p class="profile_link">Vous décollez ? Pensez à vous<a class="profile_link_text" href="../../../back/actions/login/logout.php"> déconnecter</a></p>
+    <p class="profile_link">Vous pouvez modifier votre profil<a class="profile_link_text" href="../../../back/actions/login/edit.php"> ici</a></p>
+    <?php
 }
 else {
     ?>
@@ -74,7 +75,7 @@ else {
 </linearGradient>
 <circle class="st1" cx="787.2" cy="1676" r="482.8"/>
 <g>
-	
+
 		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1164.6124" y1="2085.1301" x2="2281.2046" y2="702.5433" gradientTransform="matrix(1 0 0 -1 0 2721.26)">
 		<stop  offset="8.579870e-02" style="stop-color:#E6E6E6"/>
 		<stop  offset="0.1563" style="stop-color:#D3D3D3"/>
@@ -88,7 +89,7 @@ else {
 	<circle class="st2" cx="1670.8" cy="1262.9" r="811.5"/>
 </g>
 <g class="st3">
-	
+
 		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1135.0422" y1="2121.7444" x2="2316.8582" y2="658.3967" gradientTransform="matrix(1 0 0 -1 0 2721.26)">
 		<stop  offset="8.579870e-02" style="stop-color:#E6E6E6"/>
 		<stop  offset="0.1563" style="stop-color:#D3D3D3"/>
@@ -113,11 +114,11 @@ else {
 </g>
 <g id="XMLID_2_">
 	<g>
-		
+
 			<rect x="1043" y="556.1" transform="matrix(0.7509 -0.6604 0.6604 0.7509 -110.8838 856.2845)" class="st7" width="73.5" height="38.1"/>
 	</g>
 	<g>
-		
+
 			<rect x="1043" y="556.1" transform="matrix(0.7509 -0.6604 0.6604 0.7509 -110.8838 856.2845)" class="st6" width="73.5" height="38.1"/>
 	</g>
 </g>
