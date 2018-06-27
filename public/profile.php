@@ -47,9 +47,9 @@ else {
             }
             ?>
             <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
-            <a href="" class="fmenu_nav_icon"></a>
+            <a href="spaceships.php" class="fmenu_nav_icon"></a>
+            <a href="planets.php" class="fmenu_nav_icon"></a>
+            <a href="spacemodules.php" class="fmenu_nav_icon"></a>
             <?php
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd']) && ($_SESSION['type'] == "A")) {
                 ?>

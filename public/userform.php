@@ -115,9 +115,9 @@ session_start ();
     <nav class="fmenu_nav">
       <a href="index.html" class="fmenu_nav_icon"></a>
       <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
+      <a href="spaceshipts.php" class="fmenu_nav_icon"></a>
+      <a href="planets.php" class="fmenu_nav_icon"></a>
+      <a href="spacemodules.php" class="fmenu_nav_icon"></a>
     </nav>
   </section>
 

@@ -19,6 +19,11 @@
 -- Table structure for table `admin`
 --
 
+CREATE SCHEMA `db_space`
+DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE `db_space`;
+
 DROP TABLE IF EXISTS `admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -93,7 +98,7 @@ CREATE TABLE `planets` (
   `work` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +107,7 @@ CREATE TABLE `planets` (
 
 LOCK TABLES `planets` WRITE;
 /*!40000 ALTER TABLE `planets` DISABLE KEYS */;
-INSERT INTO `planets` VALUES (36,'alex',1,'p','o','o','o','L','l','https://www.planet-prospects.com/images/planet.png'),(37,'ShAdOwInK',1,'Irrespirable','Aucune','Que des mauvaises herbes','Fépabo','Toussec','Chômage','https://preview.ibb.co/cPMTcy/alex.jpg'),(39,'akzhk',20,'20','rampants','zhhdz','ZLJE','zljlj','lzjd','http://www.abul.org/IMG/png/tux-gers2.1.png');
+INSERT INTO `planets` VALUES (41,'GraviPic',1000000,'Non respirable','Animaux rampants, insectes','Roches, peu de végétation','Sec et froid','Non potable','Obligatoire pour se fournir de l\'eau et de l\'oxygène','https://image.noelshack.com/fichiers/2018/26/3/1530095368-low1.png'),(42,'Arid',1000000,'Non respirable','Animaux féroces','Dunes de sables et savanes, peu de végétation','Chaud et sec','Non potable','Obligatoire pour se fournir de l\'eau et de l\'oxygène','https://image.noelshack.com/fichiers/2018/26/3/1530095368-low2.png'),(43,'Tribal',100000000,'Air recyclée par des machines','Animaux venimeux','Jungles, rocheux','Chaud et humide','Potable','Collaboratif','https://image.noelshack.com/fichiers/2018/26/3/1530095368-middle1.png'),(44,'Enigma',100000000,'Air recyclée par des machines','Insectes et gibiers','Forestier','Froid et humide','Potable','Collaboratif','https://image.noelshack.com/fichiers/2018/26/3/1530095368-middle2.png'),(45,'Echo',900000000,'Respirable, renouvelé par les nombreux végétaux','Elevage de bétail','Abondance de verdures, prairies, fleuves, citernes souterraines','Tempéré','Potable','Volontariat','https://image.noelshack.com/fichiers/2018/26/3/1530095368-luxe1.png'),(46,'Lumi',900000000,'Respirable','Volatiles','Champs de végétaux, cocotiers, palmiers, plages, lacs','Méditerranéen','Potable','Volontariat','https://image.noelshack.com/fichiers/2018/26/3/1530095368-luxe2.png');
 /*!40000 ALTER TABLE `planets` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,7 +129,7 @@ CREATE TABLE `ship` (
   `installations` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -133,6 +138,7 @@ CREATE TABLE `ship` (
 
 LOCK TABLES `ship` WRITE;
 /*!40000 ALTER TABLE `ship` DISABLE KEYS */;
+INSERT INTO `ship` VALUES (5,'Exploria 1.0',5000000,'Air recyclée par des machines','35 jours','10 000 passagers','Non','Couchette pour 2 passagers','https://image.noelshack.com/fichiers/2018/26/3/1530095520-low1.jpg'),(6,'Exploria 2.0',5000000,'Air recyclée par des machines','35 jours','10 000 passagers','Non','Couchette pour chaque passager','https://image.noelshack.com/fichiers/2018/26/3/1530095551-low2.jpg'),(7,'Aventura 1.0',500000,'Air recyclée par des machines','15 jours','2000 passagers','Partielle','Douche, cuisine, couchette','https://image.noelshack.com/fichiers/2018/26/3/1530095581-middle1.jpg'),(8,'Aventura 2.0',500000,'Air recyclée par des machines','15 jours','2000 passagers','30 minutes gratuites puis 50€/h','Douche, cuisine, couchette','https://image.noelshack.com/fichiers/2018/26/3/1530095581-middle2.jpg'),(9,'Eternel 1.0',50000,'Respirable','6 jours','Au choix','Oui','Salle de bain, cuisine, salle à manger, chambres, home-cinéma','https://image.noelshack.com/fichiers/2018/26/3/1530095581-luxe1.jpg'),(10,'Eternel 2.0',50000,'Respirable','6 jours','Au choix','Oui','Douche, cuisine, couchette, salle de sport, home-cinéma, piscine, sauna','https://image.noelshack.com/fichiers/2018/26/3/1530095581-luxe2.jpg');
 /*!40000 ALTER TABLE `ship` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,7 +162,7 @@ CREATE TABLE `station` (
   `staff` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -165,7 +171,7 @@ CREATE TABLE `station` (
 
 LOCK TABLES `station` WRITE;
 /*!40000 ALTER TABLE `station` DISABLE KEYS */;
-INSERT INTO `station` VALUES (5,'Hydroiid',0,'Oui','oui','oui','oui','oui','oui','boi','https://pbs.twimg.com/profile_images/839530448233574404/2H2KExtN_400x400.jpg');
+INSERT INTO `station` VALUES (6,'Comete',30,'Non respirable','Immeuble','Travail','Non','Non','Non','Non','https://image.noelshack.com/fichiers/2018/26/3/1530095813-low1.jpg'),(7,'Spiral',50,'Non respirable','Immeuble','Travail','Non','Non','Non','Non','https://image.noelshack.com/fichiers/2018/26/3/1530095813-low2.jpg'),(8,'Luna',70,'Air recyclée par des machines','Résidence pavillonaire','Marché hebdomadaire','Non','Hôpitaux, écoles','Non','Non','https://image.noelshack.com/fichiers/2018/26/3/1530095813-middle1.jpg'),(9,'Meteor',70,'Air recyclée par des machines','Résidence pavillonaire avec jardin de 45m²','Marché hebdomadaire','Non','Hôpitaux, écoles','Non','Non','https://image.noelshack.com/fichiers/2018/26/3/1530095813-middle2.jpg'),(10,'Cosmo',300000,'Respirable','Villa','Commerces','Evènements sportifs et culturels','Hôpitaux, écoles, service civil','Oui','Oui','https://image.noelshack.com/fichiers/2018/26/3/1530095813-luxe1.jpg'),(11,'Galaxia',300000,'Respirable','Duplex','Commerces','Evènements sportifs et culturels, avec accès entrées VIP pour les évènements','Hôpitaux, écoles, service civil','Oui','Oui','https://image.noelshack.com/fichiers/2018/26/3/1530095813-luxe2.jpg');
 /*!40000 ALTER TABLE `station` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -222,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-06-21 16:29:31
+-- Dump completed on 2018-06-27 13:59:13
