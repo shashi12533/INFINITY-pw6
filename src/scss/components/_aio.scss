@@ -197,13 +197,14 @@
             }
         }
     }
-    &_gotoCustom {
+    &_goto {
         padding: 0 25px;
         color: #fff;
         padding-bottom: 25px;
         font-family: $Qs-Reg;
         font-size: $xReg;
         text-align: center;
+        line-height: 1.5;
         &_link {
             color: $custom;
             text-decoration: none;
