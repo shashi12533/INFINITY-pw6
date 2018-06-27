@@ -4,8 +4,8 @@
 
 ## Context: 
 > * 🌍 The Earth is overpopulated, and the population are forced to be exported to other planets. 
-* 🚀 We are INFINITY, a big budget company having seized the opportunity facing this critical situation. 
-* ✨ We propose offshoring to other planets, with parameters like transport, planet and habitat.
+> * 🚀 We are INFINITY, a big budget company having seized the opportunity facing this critical situation. 
+> * ✨ We propose offshoring to other planets, with parameters like transport, planet and habitat.
 
 ## Team:
 
