@@ -7,16 +7,21 @@
 @import 'global/default';
 
 
-// Import component files -----------------------
+// Import global component files ----------------
 @import 'components/stars';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/menu';
+
+// Import specific componenent ------------------
 @import 'components/home';
 @import 'components/sign';
 @import 'components/userform';
 @import 'components/aio';
 @import 'components/custom';
+@import 'components/spaceships';
+@import 'components/planets';
+@import 'components/spacemodules';
 
 // Import mixin files ---------------------------
 @import 'mixins/responsive';
