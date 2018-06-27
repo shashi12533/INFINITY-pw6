@@ -1,0 +1,275 @@
+.planets {
+    position: relative;
+    width: 100%;
+    // overflow-y: hidden;
+    @media (min-width: $mobileToTablet ) {
+        margin: 100px 0;
+    }
+    &_planet1 {
+        width: 400px;
+        max-width: 90%;
+        height: auto;
+        position: fixed;
+        top: 80%;
+        right: 50%;
+        z-index: -1;
+        transform: translate(50%, -50%);
+        opacity: 0.25;
+        @media (min-width: $mobileToTablet ) {
+            position: fixed;
+            width: 400px;
+            top: 50%;
+            right: -150px;
+            transform: translate(0, -50%);
+        }
+    }
+    &_comet1 {
+        width: 400px;
+        max-width: 90%;
+        height: auto;
+        position: fixed;
+        top: 80%;
+        left: -250px;
+        z-index: -1;
+        transform: translate(0, -50%);
+        opacity: 0.25;
+        
+    }
+    
+    &_title {
+        background: $bgPurpleToTrans;
+        color:#fff;
+        font-size: $xBig;
+        font-family: $Ex-Thn;
+        text-align: center;
+        padding: 25px 25px 37px;
+        position: sticky;
+        top: -2px;
+        z-index: 2;
+        &:before {
+            content: '';
+            background: $planet;
+            width: 33%;
+            height: 4px;
+            position: absolute;
+            bottom: 25px;
+            right: 50%;
+            transform: translate(50%, 0);
+            z-index: -1;
+        }
+        @media (min-width: $mobileToTablet ) {
+            background: transparent;
+            text-align : right;
+            margin: 25px 120px 50px;
+            &:before {
+                width: 200px;
+                right: 25px;
+                bottom: 25px;
+                transform: translate(0, 0);
+                
+            }
+        }
+    }
+    &_desc {
+        color:#fff;
+        font-size: $Reg;
+        font-family: $Ex-Thn;
+        line-height: 2;
+        padding: 0 25px;
+        text-align: justify;
+        @media (min-width: $mobileToTablet ) {
+            text-align : right;
+            margin: 0 120px;
+        }
+    }
+    &_packs {
+        margin: 25px 0;
+        @media (min-width: $mobileToTablet ) {
+            margin: 25px 120px;
+        }
+        &_pack {
+            background: $planet;
+            width: 66%;
+            max-width: 300px;
+            height: 450px;
+            margin-right: 10%;
+            position: relative;
+            border-radius: 25px;
+            @media (min-width: $mobileToTablet ) {
+            }
+            &_imgBox {
+                height: 150px;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            &_img {
+                height: 90%;
+                width: auto;
+            }
+            &_content {
+                position: absolute;
+                width: 100%;
+                height: 300px;
+                top: 150px;
+                &_title {
+                    color:#fff;
+                    font-size: $Big;
+                    font-family: $Qs-Lgh;
+                    padding: 20px;
+                }
+                &_list {
+                    padding: 0px 25px 0 60px;
+                    color: #fff;
+                    font-size: $Reg;
+                    font-family: $Qs-Reg;
+                    
+                }
+                &_item {
+                    position: relative;
+
+                    padding-bottom: 15px;
+                    &:before {
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: -30px;
+                        
+                    }
+                    &:nth-child(1) {
+                        &:before {
+                            background: url('../assets/images/desc_planets/clock-degrade.svg') no-repeat center;
+                            background-size: 100%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        &:before {
+                            background: url('../assets/images/desc_planets/connection-degrade.svg') no-repeat center;
+                            background-size: 100%;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &:before {
+                            background: url('../assets/images/desc_planets/people-degrade.svg') no-repeat center;
+                            background-size: 100%;                        }
+                    }
+                    &:nth-child(4) {
+                        &:before {
+                            background: url('../assets/images/desc_planets/services-degrade.svg') no-repeat center;
+                            background-size: 100%;                        }
+                    }
+            }
+                &_linkBox {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 25px;
+                }
+                &_link {
+                    color: #fff;
+                    background: $yellow;
+                    border: 1px $yellow solid;
+                    border-radius: 100px;
+                    width: 50%;
+                    max-width: 175px;
+                    margin: 10px;
+                    padding: 10px;
+                    font-family: $Qs-Reg;
+                    font-size: $Reg;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        background: transparent;
+                    }
+                    &:nth-child(1) {
+                        background: transparent;
+                        &:hover {
+                            background: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_goto {
+        padding: 0 25px;
+        color: #fff;
+        padding-bottom: 25px;
+        font-family: $Qs-Reg;
+        font-size: $xReg;
+        text-align: center;
+        line-height: 1.5;
+        &_link {
+            color: $aio;
+            text-decoration: none;
+            position: relative;
+            &:after {
+                content: '';
+                background: #fff;
+                width: 0%;
+                height: 1px;
+                position: absolute;
+                bottom: -2px;
+                left: 0px;
+                transition: all 0.2s ease;
+            }
+            &:hover:after {
+                width: 45%;
+
+            }
+            &:nth-child(1) {
+                color: $custom;
+            }
+        }
+    }
+}
+
+.flickity-viewport {
+    height: 450px !important;
+}
+.flickity-button {
+    display: none;
+}
+
+/* flickity on by default */
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: $mobileToTablet ) {
+  /* disable Flickity for large devices */
+  .carousel:after {
+    content: '';
+  }
+  .carousel {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .carousel-cell {
+      margin: 0 10px 25px 10px;
+  }
+}
+
+.carousel-cell {
+  
+}
+
+/* no margin bottom when Flickity enabled */
+.flickity-enabled .carousel-cell {
+  margin-bottom: 0;
+}
+
+/* cell number */
