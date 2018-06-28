@@ -63,7 +63,7 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`,
     <section class="menu">
         <nav class="menu_nav">
             <a href="index.php" class="menu_nav_icon"></a>
-            <a href="index.php" class="menu_nav_icon"></a>
+            <a href="index.php#packs" class="menu_nav_icon"></a>
             <a href="spaceships.php" class="menu_nav_icon"></a>
             <a href="planets.php" class="menu_nav_icon"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>

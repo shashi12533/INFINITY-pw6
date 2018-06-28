@@ -28,7 +28,7 @@ $planets_stmt->execute();
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="planets_title">Planètes</h1>
-        <p class="planets_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
+        <p class="planets_desc">Toutes différentes de l’une à une autre, ces planètes regorgent <span class="ImStrong">d'avenir</span> pour les terriens. Chacun peut y trouver sa terre promise. <span class="ImStrong">Découvrez-les !</span></p>
         <div class="carousel planets_packs"
         data-flickity='{ "watchCSS": true }' >
         <?php
@@ -59,6 +59,8 @@ $planets_stmt->execute();
             ?>
         </div>
         <img src="assets/images/icons/menu/planet-anim.svg" alt="" class="planets_planet1"><img src="assets/images/planets/comet2.svg" alt="" class="planets_comet1">
+        <p class="planets_desc">
+        <em>"[...] Il n'est pas possible que nous continuions à nous regarder le nombril et à miser sur une planète surpeuplée et de plus en plus polluée.", <span class="ImStrong">Stephen Hawking</span></em></p>
         <p class="planets_goto">Découvrez aussi nos <a href="custompacks.html" class="planets_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.html" class="planets_goto_link">PACKS TOUT INCLUS</a></p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
@@ -74,7 +76,7 @@ $planets_stmt->execute();
     <section class="menu">
         <nav class="menu_nav">
             <a href="index.php" class="menu_nav_icon"></a>
-            <a href="index.php" class="menu_nav_icon "></a>
+            <a href="index.php#packs" class="menu_nav_icon "></a>
             <a href="spaceships.php" class="menu_nav_icon "></a>
             <a href="planets.php" class="menu_nav_icon planetColored"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>
