@@ -1,6 +1,7 @@
 <?php
 require_once "includes/connection.php";
 require_once "includes/head.php";
+session_start();
 $planets  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`, `airdesc`,`workdesc`, `weatherdesc`, `wildlifedesc` FROM `planets`
 ";
 $planets_stmt = $pdo->prepare($planets);
@@ -17,6 +18,9 @@ $ship_stmt = $pdo->prepare($ship);
 $ship_stmt->execute();
 
 ?>
+
+<?php if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) { ?>
+
 <br>
 <br>
 <div class="container">
@@ -403,5 +407,10 @@ while ($row = $ship_stmt->fetch(PDO::FETCH_ASSOC)) {
          msg.style.top="-30%"; 
          }, 3900);
 </script>
+
+<?php } else {
+    echo "<p style=\"color:#FFF\">Veuillez vous connecter en tant qu'admin pour continuer.</p>";
+
+} ?>
 </body>
 </html>

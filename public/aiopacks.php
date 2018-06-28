@@ -1,5 +1,10 @@
+<?php
+require_once "../back/includes/connection.php";
+session_start();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,9 +33,9 @@
                 <div class="aio_packs_pack_content">
                     <h2 class="aio_packs_pack_content_title">PACK ÉTOILE</h2>
                     <ul class="aio_packs_pack_content_list">
-                        <li class="aio_packs_pack_content_item"> Space ship low</li>
-                        <li class="aio_packs_pack_content_item"> Planet low</li>
-                        <li class="aio_packs_pack_content_item"> Module low</li>
+                        <li class="aio_packs_pack_content_item"> Exploria 2.0</li>
+                        <li class="aio_packs_pack_content_item"> GraviPic</li>
+                        <li class="aio_packs_pack_content_item"> Comète</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                             <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
@@ -45,9 +50,9 @@
                 <div class="aio_packs_pack_content">
                     <h2 class="aio_packs_pack_content_title">PACK NÉBULEUSE</h2>
                     <ul class="aio_packs_pack_content_list">
-                        <li class="aio_packs_pack_content_item"> Space ship middle</li>
-                        <li class="aio_packs_pack_content_item"> Planet middle</li>
-                        <li class="aio_packs_pack_content_item"> Module middle</li>
+                        <li class="aio_packs_pack_content_item"> Aventura 1.0</li>
+                        <li class="aio_packs_pack_content_item"> Enigma</li>
+                        <li class="aio_packs_pack_content_item"> Météor</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                             <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
@@ -62,9 +67,9 @@
                 <div class="aio_packs_pack_content">
                     <h2 class="aio_packs_pack_content_title">PACK VOIE LACTÉE</h2>
                     <ul class="aio_packs_pack_content_list">
-                        <li class="aio_packs_pack_content_item"> Space ship luxe</li>
-                        <li class="aio_packs_pack_content_item"> Planet luxe</li>
-                        <li class="aio_packs_pack_content_item"> Module luxe</li>
+                        <li class="aio_packs_pack_content_item"> Eternel 2.0</li>
+                        <li class="aio_packs_pack_content_item"> Lumi</li>
+                        <li class="aio_packs_pack_content_item"> Galaxia</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                         <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
