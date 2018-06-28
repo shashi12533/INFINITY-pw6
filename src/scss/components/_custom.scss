@@ -2,8 +2,9 @@
     position: relative;
     width: 100%;
     @media (min-width: $mobileToTablet ) {
-        margin: 100px 0;
+        padding: 100px 0;
     }
+    
     &_planet1 {
         width: 400px;
         max-width: 90%;
@@ -70,6 +71,16 @@
             }
         }
     }
+    &_titlesection {
+        color: #fff;
+        font-family: $Ex-Thn;
+        font-size: $Big;
+        padding: 25px;
+        @media (min-width: $mobileToTablet ) {
+            padding: 25px 150px;
+        }
+    }
+    
     &_desc {
         color:#fff;
         font-size: $Reg;
@@ -163,11 +174,10 @@
                 &_linkBox {
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
                     position: absolute;
                     bottom: 0;
-                    margin-bottom: 25px;
+                    margin-bottom: 12px;
                 }
                 &_link {
                     color: #fff;
@@ -265,3 +275,51 @@
 }
 
 /* cell number */
+
+
+
+.custom_buttonBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 12px;
+    @media (min-width: $mobileToTablet ) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    &_button {
+        color: #fff;
+        border: 1px $yellow solid;
+        border-radius: 100px;
+        width: 50%;
+        max-width: 175px;
+        margin: 10px;
+        padding: 10px;
+        font-family: $Qs-Reg;
+        font-size: $Reg;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            background: $yellow;
+        }
+        
+    }
+}
+
+
+.hovered {
+    background: $yellow;
+    &:hover {
+        background: transparent;
+    }
+}
+
+.custom_price {
+    font-size: $xxBig;
+    font-family: $Ex-Thn;
+    color: $yellow;
+}

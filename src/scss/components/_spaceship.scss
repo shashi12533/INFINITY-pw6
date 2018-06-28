@@ -123,19 +123,19 @@
             margin-bottom: 35px;
             transition: all 0.2s ease;
             &:nth-child(1) {
-                background: url(../assets/images/desc_planets/clock.svg) no-repeat center;
+                background: url(../public/assets/images/desc_planets/clock.svg) no-repeat center;
                 background-size: 100%;
             }
             &:nth-child(2) {
-                background: url(../assets/images/desc_planets/connection.svg) no-repeat center;
+                background: url(../public/assets/images/desc_planets/connection.svg) no-repeat center;
                 background-size: 100%;
             }
             &:nth-child(3) {
-                background: url(../assets/images/desc_planets/people.svg) no-repeat center;
+                background: url(../public/assets/images/desc_planets/people.svg) no-repeat center;
                 background-size: 100%;
             }
             &:nth-child(4) {
-                background: url(../assets/images/desc_planets/services.svg) no-repeat center;
+                background: url(../public/assets/images/desc_planets/services.svg) no-repeat center;
                 background-size: 100%;
             }
         }
