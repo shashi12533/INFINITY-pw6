@@ -3,9 +3,9 @@ require_once "../../includes/connection.php";
 
 $sql  = "INSERT INTO 
 `db_space`.`ship` 
-(`name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link`) 
+(`name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link` ,`durationdesc`, `connectiondesc`, `spacingdesc`, `installationsdesc`) 
 VALUES 
-(:name, :size, :air, :duration, :spacing, :connection, :installations, :link);
+(:name, :size, :air, :duration, :spacing, :connection, :installations, :link, :durationdesc, :connectiondesc, :spacingdesc, :installationsdesc);
 
 ";
 if(empty($_POST['name']) OR empty($_POST['size']) OR empty($_POST['air']) OR empty($_POST['duration']) OR empty($_POST['spacing']) OR empty($_POST['connection']) OR empty($_POST['installations']) OR empty($_POST['link']))
@@ -26,6 +26,10 @@ $stmt->bindValue(':spacing', $_POST['spacing']);
 $stmt->bindValue(':connection', $_POST['connection']);
 $stmt->bindValue(':installations', $_POST['installations']);
 $stmt->bindValue(':link', $_POST['link']);
+$stmt->bindValue(':durationdesc', $_POST['durationdesc']);
+$stmt->bindValue(':connectiondesc', $_POST['connectiondesc']);
+$stmt->bindValue(':spacingdesc', $_POST['spacingdesc']);
+$stmt->bindValue(':installationsdesc', $_POST['installationsdesc']);
 $stmt->execute();
 errorHandler($stmt);
 

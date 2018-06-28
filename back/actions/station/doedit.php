@@ -2,7 +2,7 @@
 // Require the file connexion.php to connect to the database
 require_once "../../includes/connection.php";
 // Updating the values below from the "planetes" table where there's the needed id
-$sql = "UPDATE `db_space`.`station` SET `name`=:name, `size`=:size, `air`=:air, `residence`=:residence, `activity`=:activity, `leisure`=:leisure, `services`=:services, `land`=:land, `staff`=:staff, `link`=:link WHERE `id`=:id
+$sql = "UPDATE `db_space`.`station` SET `name`=:name, `size`=:size, `air`=:air, `residence`=:residence, `activity`=:activity, `leisure`=:leisure, `services`=:services, `land`=:land, `staff`=:staff, `link`=:link, `residencedesc`=:residencedesc, `servicesdesc`=:servicesdesc, `activitydesc`=:activitydesc WHERE `id`=:id
 ;";
 
 // Preparing the update session
@@ -19,6 +19,9 @@ $stmt->bindValue(':services', $_POST['services']);
 $stmt->bindValue(':land', $_POST['land']);
 $stmt->bindValue(':staff', $_POST['staff']);
 $stmt->bindValue(':link', $_POST['link']);
+$stmt->bindValue(':residencedesc', $_POST['residencedesc']);
+$stmt->bindValue(':servicesdesc', $_POST['servicesdesc']);
+$stmt->bindValue(':activitydesc', $_POST['activitydesc']);
 $stmt->execute();
 errorHandler($stmt);
 

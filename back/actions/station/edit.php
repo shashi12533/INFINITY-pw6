@@ -1,14 +1,11 @@
 <?php
 require_once "../../includes/connection.php";
 require_once "../../includes/head.php";
-$sql  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link` FROM `station` WHERE `id` = $_POST[id];
+$sql  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link`, `residencedesc`, `servicesdesc`, `activitydesc` FROM `station` WHERE `id` = $_POST[id];
 ";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
-  ?>
 
-
-  <?php
   $row = $stmt->fetch(PDO::FETCH_ASSOC)
   ?>
 
@@ -85,13 +82,19 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`,
     <label style="width: 100px;">Air : </label>
     <input placeholder="Air" value="<?= $row["air"] ?>" type="text" name="air"></input><br>
     <label style="width: 100px;">Residence : </label>
-    <input placeholder="Residence" value="<?= $row["residence"] ?>" type="text" name="residence"></input><br>
+	<input placeholder="Residence" value="<?= $row["residence"] ?>" type="text" name="residence"></input><br>
+	<label style="width: 100px">Residence description : </label>
+    <textarea type="text" name="residencedesc"><?= $row["residencedesc"] ?></textarea><br>
     <label style="width: 100px;">Activity : </label>
-    <input placeholder="Activity" value="<?= $row["activity"] ?>" type="text" name="activity"></input><br>
+	<input placeholder="Activity" value="<?= $row["activity"] ?>" type="text" name="activity"></input><br>
+	<label style="width: 100px">Activity description : </label>
+    <textarea type="text" name="activitydesc"><?= $row["activitydesc"] ?></textarea><br>
     <label style="width: 100px;">Leisure : </label>
     <input placeholder="Leisure" value="<?= $row["leisure"] ?>" type="text" name="leisure"></input><br>
     <label style="width: 100px;">Services : </label>
-    <input placeholder="Services" value="<?= $row["services"] ?>" type="text" name="services"></input><br>
+	<input placeholder="Services" value="<?= $row["services"] ?>" type="text" name="services"></input><br>
+	<label style="width: 100px">Services description : </label>
+    <textarea type="text" name="servicesdesc"><?= $row["servicesdesc"] ?></textarea><br>
     <label style="width: 100px;">Land : </label>
     <input placeholder="Land" value="<?= $row["land"] ?>" type="text" name="land"></input><br>
     <label style="width: 100px;">Work : </label>

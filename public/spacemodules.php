@@ -47,10 +47,12 @@ $station_stmt->execute();
                         <li class="spacemodules_packs_pack_content_item"><?= $row["leisure"] ?>
                         </li>
                     </ul>
+                    <form action="spacemodule.php?id=<?= $row["id"] ?>" method="post">
                     <div class="spacemodules_packs_pack_content_linkBox">
-                            <a href="spacemodule.html" class="spacemodules_packs_pack_content_link">En savoir +</a>
-                            
+                    <input name="id" type="hidden" value="<?= $row["id"] ?>">
+                    <input type="submit" class="spacemodules_packs_pack_content_link" value="En savoir +">     
                         </div>
+                    </form>
                 </div>
             </div>
         <?php

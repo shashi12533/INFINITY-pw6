@@ -1,14 +1,11 @@
 <?php
 require_once "../../includes/connection.php";
 require_once "../../includes/head.php";
-$sql  = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link` FROM `ship` WHERE `id` = $_POST[id];
+$sql  = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link`, `durationdesc`, `connectiondesc`, `spacingdesc`, `installationsdesc` FROM `ship` WHERE `id` = $_POST[id];
 ";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
-  ?>
 
-
-  <?php
   $row = $stmt->fetch(PDO::FETCH_ASSOC)
   ?>
 
@@ -84,16 +81,28 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`
     <label style="width: 100px;">Air : </label>
     <input placeholder="Air" value="<?= $row["air"] ?>" type="text" name="air"></input><br>
     <label style="width: 100px;">Duration : </label>
-    <input placeholder="Duration" value="<?= $row["duration"] ?>" type="text" name="duration"></input><br>
+	<input placeholder="Duration" value="<?= $row["duration"] ?>" type="text" name="duration"></input><br>
+	<label style="width: 100px;">Duration description : </label>
+    <textarea placeholder="Duration" type="text" name="duration"><?= $row["durationdesc"] ?></textarea><br>
     <label style="width: 100px;">Spacing : </label>
-    <input placeholder="Spacing" value="<?= $row["spacing"] ?>" type="text" name="spacing"></input><br>
+	<input placeholder="Spacing" value="<?= $row["spacing"] ?>" type="text" name="spacing"></input><br>
+	<label style="width: 100px;">Spacing description : </label>
+    <textarea placeholder="Spacing description" type="text" name="spacingdesc"><?= $row["spacingdesc"] ?></textarea><br>
     <label style="width: 100px;">Connection : </label>
-    <input placeholder="Connection" value="<?= $row["connection"] ?>" type="text" name="connection"></input><br>
+	<input placeholder="Connection" value="<?= $row["connection"] ?>" type="text" name="connection"></input><br>
+	<label style="width: 100px;">Connection description : </label>
+    <textarea placeholder="Connection description" type="text" name="connectiondesc"><?= $row["connectiondesc"] ?></textarea><br>
     <label style="width: 100px;">Installations : </label>
 	<input placeholder="Installations" value="<?= $row["installations"] ?>" type="text" name="installations"></input><br>
+	<label style="width: 100px;">Installations desc : </label>
+    <textarea placeholder="Installations desc" type="text" name="installationsdesc"><?= $row["installationsdesc"] ?></textarea><br>
 	<label style="width: 100px;">Image : </label>
     <input placeholder="Link" value="<?= $row["link"] ?>" type="link" name="link"></input> <img style="width: 100px;" src="<?= $row["link"] ?>" alt="<?= $row["name"]?>"><br><br><br>
 </div>
+$stmt->bindValue(':durationdesc', $_POST['durationdesc']);
+$stmt->bindValue(':connectiondesc', $_POST['connectiondesc']);
+$stmt->bindValue(':spacingdesc', $_POST['spacingdesc']);
+$stmt->bindValue(':installationsdesc', $_POST['installationsdesc']);
 <input type="hidden" name="id" value="<?=$row["id"]?>">
     <!-- Sending all the modifications to the doedit.php file -->
 <a href="../../index.php#ship" class="btn btn-danger">Annuler</a>

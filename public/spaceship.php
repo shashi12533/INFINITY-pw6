@@ -1,5 +1,18 @@
+<?php 
+require_once "../back/includes/connection.php";
+session_start ();
+
+$ship = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link`, `durationdesc`, `connectiondesc`, `spacingdesc`, `installationsdesc` FROM `ship` WHERE `id`=$_GET[id]
+";
+$ship_stmt = $pdo->prepare($ship);
+$ship_stmt->execute();
+
+$row = $ship_stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +28,7 @@
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="header_logo">
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
-        <h1 class="spaceship_title"><a href="" class="spaceship_title_link"></a>DEFAULT_SPACESHIP</h1>
+        <h1 class="spaceship_title"><a href="" class="spaceship_title_link"></a><?= $row["name"] ?></h1>
         <div class="spaceship_menu">
             <div class="spaceship_menu_icon" id="sh-icon1"></div>
             <div class="spaceship_menu_icon" id="sh-icon2"></div>
@@ -24,20 +37,20 @@
         </div>
         <div class="spaceship_articles">
             <article class="spaceship_articles_article" id="desc1">
-                <h2 class="spaceship_articles_article_title ">SPACESHIP_TITLE</h2>
-                <p class="spaceship_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spaceship_articles_article_title ">Temps de trajet : <?= $row["duration"] ?></h2>
+                <p class="spaceship_articles_article_text"><?= $row["durationdesc"] ?></p>
             </article>
             <article class="spaceship_articles_article is-moved" id="desc2">
-                <h2 class="spaceship_articles_article_title is-righted">SPACESHIP_TITLE</h2>
-                <p class="spaceship_articles_article_text is-righted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spaceship_articles_article_title is-righted">Connexion : <?= $row["connection"] ?></h2>
+                <p class="spaceship_articles_article_text is-righted"><?= $row["connectiondesc"] ?></p>
             </article>
             <article class="spaceship_articles_article" id="desc3">
-                <h2 class="spaceship_articles_article_title">SPACESHIP_TITLE</h2>
-                <p class="spaceship_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spaceship_articles_article_title">Nombre de passagers : <?= $row["spacing"] ?></h2>
+                <p class="spaceship_articles_article_text"><?= $row["spacingdesc"] ?></p>
             </article>
             <article class="spaceship_articles_article is-moved" id="desc4">
-                <h2 class="spaceship_articles_article_title is-righted">SPACESHIP_TITLE</h2>
-                <p class="spaceship_articles_article_text is-righted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spaceship_articles_article_title is-righted">Services à bord : <?= $row["installations"] ?></h2>
+                <p class="spaceship_articles_article_text is-righted"><?= $row["installationsdesc"] ?></p>
             </article>
         </div>
         
