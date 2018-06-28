@@ -28,7 +28,7 @@ if ($users['type'] == 'A' && password_verify($_POST['pwd'], $users["pwd"])) {
     $_SESSION['img'] = $users['img'];
     $_SESSION['type'] = $users['type'];
 
-    header("Location: ../../../public/profile.php");
+    header("Location: ../../../public/index.php");
 } else {
 
     if (password_verify($_POST['pwd'], $users["pwd"])) {

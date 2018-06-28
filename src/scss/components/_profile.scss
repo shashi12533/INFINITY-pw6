@@ -1,0 +1,109 @@
+body {
+    color: #FFF;
+    font-family: $Ex-Thn;
+}
+
+.profile {
+    width: 100%;
+    @media (min-width: $mobileToTablet ) {
+      width: 70%;
+      margin: 0 auto;
+    }
+}
+
+.profile_main {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_title {
+        font-size: $midBig;
+        width: 70%;
+    }
+    &_link {
+        text-decoration: none;
+        color: #FFF;
+        font-size: $xReg;
+        &:hover {
+            transition: .3s all;
+            color: $yellow;
+        }
+    }
+    &_img {
+        width: 150%;
+        &_container {
+            margin-bottom: 50px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            @media (min-width: $mobileToTablet ) {
+              margin-top: 100px;
+            }
+        }
+    }
+    &_error {
+        width: 30%;
+        height: 30%;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.profile_informations {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+   //  @media (min-width: $mobileToTablet ) {
+   //    align-items: center;
+   // }
+    &_title {
+      display: flex;
+        &-small {
+            font-size: $Reg;
+            margin-bottom: 25px;
+            line-height: 29px;
+        }
+        &-big {
+            font-size: $xxReg;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.profile_link {
+  font-family: $Ex-Thn;
+    font-size: $Reg;
+    margin-bottom: 20px;
+    text-align: center;
+  &_text {
+    color: $yellow;
+    text-decoration: none;
+    position: relative;
+    &:after {
+        content: '';
+        background: #fff;
+        width: 0%;
+        height: 1px;
+        position: absolute;
+        bottom: -2px;
+        left: 4px;
+        transition: all 0.2s ease;
+    }
+    &:hover:after {
+        width: 45%;
+
+    }
+  }
+}

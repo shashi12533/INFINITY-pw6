@@ -1,10 +1,11 @@
-.fmenu {
+.menu {
     background: $blocPurpleTotrans;
     width: 100%;
     height: 80px;
     position: fixed;
     bottom: 0;
-    @media (min-width: 600px) {
+    z-index: 10;
+    @media (min-width: $mobileToTablet) {
         background: transparent;
         width: 80px;
         top: 100px;
@@ -21,7 +22,7 @@
             margin: 15px 0;
             position: relative;
             transition: all 0.2s ease;
-            @media (min-width: 600px) {
+            @media (min-width: $mobileToTablet) {
                 margin: 25px 0;
             }
             &:after {
@@ -33,87 +34,89 @@
                 bottom: -20px;
                 left: 50%;
                 transform: translate(-50%, 0);
-                
+
             }
             &:nth-child(1) {
-                background: url('../assets/images/icons/menu/right-arrow.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/home.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/right-arrow-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/home-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
-                    content: 'Retour';
-                    
+                    content: 'Accueil';
+
                 }
             }
             &:nth-child(2) {
-                background: url('../assets/images/icons/menu/layers.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/packs.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/layers-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/packs-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
                     content: 'Packs';
-                    
+
                 }
             }
             &:nth-child(3) {
-                background: url('../assets/images/icons/menu/rocket-ship.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/spaceship.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/rocket-ship-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
                     content: 'Transports';
-                    
+
                 }
             }
             &:nth-child(4) {
-                background: url('../assets/images/icons/menu/saturn.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/planet.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/saturn-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
                     content: 'Planètes';
-                    
+
                 }
             }
             &:nth-child(5) {
-                background: url('../assets/images/icons/menu/lunar-module.svg') no-repeat center;
+                background: url('../assets/images/icons/menu/spacemodule.svg') no-repeat center;
                 background-size: cover;
                 &:hover {
-                    background: url('../assets/images/icons/menu/lunar-module-anim.svg') no-repeat center;
+                    background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center;
                     background-size: cover;
                 }
                 &:after {
                     content: 'Habitats';
-                    
+
                 }
             }
-            
+            &_generated_img {
+              width: 30px; border-radius: 100px;
+            }
 
         }
-        @media (min-width: 600px) {
+        @media (min-width: $mobileToTablet) {
             flex-direction: column;
-            
+
         }
     }
-    
+
 }
 .signIcon {
-     background-image: url('../assets/images/icons/menu/user.svg') !important; 
+     background-image: url('../assets/images/icons/menu/user.svg') !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     &:after {
         content: 'Connexion' !important;
-        
+
     }
     &:hover {
-        background-image: url('../assets/images/icons/menu/user-anim.svg') !important; 
+        background-image: url('../assets/images/icons/menu/user-anim.svg') !important;
     }
 }

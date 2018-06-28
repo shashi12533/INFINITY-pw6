@@ -1,6 +1,11 @@
-# SI-Space
+# INFINITY
 
 ## Work: make a website about space
+
+## Context: 
+> * 🌍 The Earth is overpopulated, and the population are forced to be exported to other planets. 
+> * 🚀 We are INFINITY, a big budget company having seized the opportunity facing this critical situation. 
+> * ✨ We propose offshoring to other planets, with parameters like transport, planet and habitat.
 
 ## Team:
 
@@ -16,4 +21,10 @@
 ==> [ShAd0wInK/starter-pack](http://github.com/ShAd0wInK/starter-pack)
 
 ==> [How to install](https://github.com/ShAd0wInK/starter-pack/blob/master/README.md)
+
+## Technos :
+* Gulp
+* SCSS
+* [Parallax.js](http://matthew.wagerfield.com/parallax/)
+* [Flickity.js](https://flickity.metafizzy.co/)
 

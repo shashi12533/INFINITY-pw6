@@ -4,15 +4,31 @@
 @import 'global/variables';
 @import 'global/fonts';
 @import 'global/global';
+@import 'global/default';
 
-// Import component files -----------------------
+
+// Import global component files ----------------
+@import 'components/stars';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/sign';
-@import 'components/stars';
 @import 'components/menu';
-@import 'components/userform';
+
+// Import specific componenent ------------------
 @import 'components/home';
+@import 'components/sign';
+@import 'components/userform';
+@import 'components/aio';
+@import 'components/custom';
+
+@import 'components/spaceships';
+@import 'components/spaceship';
+
+@import 'components/planet';
+@import 'components/planets';
+
+@import 'components/spacemodules';
+@import 'components/profile';
+@import 'components/packdesc';
 
 // Import mixin files ---------------------------
 @import 'mixins/responsive';

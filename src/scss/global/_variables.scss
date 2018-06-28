@@ -6,14 +6,39 @@ $menuPurple: #282037;
 $lghPurple: #60006B;
 $yellow: #E2A855;
 $white-Lgh: #adadad;
+$red: #7F0624;
+$packPurple: #391759;
+$aio: #45FFD0;
+$aio-Lgh: #adffe9;
+$aio-mDrk: #05bf8d;
+$aio-Drk: #0D2F26;
+$custom: #FF7925;
+$custom-Drk: #2F1607;
 
+$spaceship: #D4564A;
+$planet: #2AB2A4;
+$spacemodule: #6380CE;
 
 // Linear-gradient ------------------------------
-
 $LghPurpleTobgPurple: linear-gradient($lghPurple 0%, $bgPurple 70%);
 $bgPurpleToTrans: linear-gradient($bgPurple 80%, transparent 100%);
 $bgPurpleToTransInv: linear-gradient(0turn,$bgPurple 90%, transparent 100%);
 $blocPurpleTotrans: linear-gradient(0turn,$blocPurple 90%, transparent 100%);
+
+$aioToPurple: linear-gradient($aio, $packPurple);
+$aioToAioDrk: linear-gradient($aio, $aio-Drk);
+$aioLghToAioDrk: linear-gradient($aio-Lgh, $aio-Drk);
+$aioMDrkToAioDrk: linear-gradient($aio-mDrk, $aio-Drk);
+
+$customToCustomDrk: linear-gradient($custom, $custom-Drk);
+
+
+$spaceshipToPurple: linear-gradient($spaceship, $packPurple);
+
+$planetToPurple: linear-gradient($planet, $packPurple);
+
+
+$spacemoduleToPurple: linear-gradient($spacemodule, $packPurple);
 
 // Font-family ----------------------------------
 $Qs-Reg: 'Quicksand-Regular', sans-serif;
@@ -50,3 +75,6 @@ $bp-tablet: 600px;
 $bp-desktop: 949px;
 $bp-desktop-large: 1200px;
 $bp-desktop-x-large: 1800px;
+
+$mobileToTablet: 600px;
+$tabletToDesktop: 900px;

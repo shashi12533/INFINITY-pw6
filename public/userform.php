@@ -102,9 +102,9 @@ session_start ();
     else
     {
       ?>
-      <div style="color: red; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)" class="userform_title">
+      <div class="userform_error_title">
       <p>Veuillez d'abord vous connecter.</p>
-      <a style="font-size: 20px; color: white; text-decoration: none;" href="sign.php">Se connecter</a>
+      <a class="userform_error_link" href="sign.php">Se connecter</a>
       </div>
       <?php
     }
@@ -115,9 +115,9 @@ session_start ();
     <nav class="fmenu_nav">
       <a href="index.html" class="fmenu_nav_icon"></a>
       <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
+      <a href="spaceshipts.php" class="fmenu_nav_icon"></a>
+      <a href="planets.php" class="fmenu_nav_icon"></a>
+      <a href="spacemodules.php" class="fmenu_nav_icon"></a>
     </nav>
   </section>
 

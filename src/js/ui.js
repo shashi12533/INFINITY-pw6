@@ -61,3 +61,141 @@ for (let i = 0; i < changeLink.length; i++) {
 	}) 
 	
 }
+
+// Userform -------------------------------------
+
+var userform = document.querySelector('.userform')
+var ctn1 = document.querySelector('.userform_container_first');
+var ctn2 = document.querySelector('.userform_container_second');
+var ctn3 = document.querySelector('.userform_container_third');
+var next1 = document.querySelector('#next1');
+var next2 = document.querySelector('#next2');
+
+if (document.body.contains(userform)) {
+	next1.addEventListener('click', function() {
+		ctn1.classList.remove('is-visible');
+		ctn2.classList.add('is-visible');
+		
+	});
+	next2.addEventListener('click', function() {
+		ctn2.classList.remove('is-visible');
+		ctn3.classList.add('is-visible');
+	});
+}
+
+
+// Desc
+
+desc1 = document.querySelector('#desc1');
+desc2 = document.querySelector('#desc2');
+desc3 = document.querySelector('#desc3');
+desc4 = document.querySelector('#desc4');
+sh_icon1 = document.querySelector('#sh-icon1');
+sh_icon2 = document.querySelector('#sh-icon2');
+sh_icon3 = document.querySelector('#sh-icon3');
+sh_icon4 = document.querySelector('#sh-icon4');
+
+pl_icon1 = document.querySelector('#pl-icon1');
+pl_icon2 = document.querySelector('#pl-icon2');
+pl_icon3 = document.querySelector('#pl-icon3');
+pl_icon4 = document.querySelector('#pl-icon4');
+
+var spaceship = document.querySelector('.spaceship');
+var spacemodule = document.querySelector('.spacemodule');
+var planet = document.querySelector('.planet');
+
+function changeIcon(theIcon, path, picture) {
+	theIcon.style.background = "url(../assets/images/"+path+"/"+picture+".svg) no-repeat center"
+	theIcon.style.backgroundSize = "100%"
+}
+window.addEventListener('scroll', function() {
+	if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight - 100) {
+		if (document.contains(spaceship)) {
+			sh_icon1.style.background = "url(../assets/images/desc_planets/clock-degrade.svg) no-repeat center"
+			sh_icon1.style.backgroundSize = "100%"
+			sh_icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+			sh_icon2.style.backgroundSize = "100%"
+			sh_icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+			sh_icon3.style.backgroundSize = "100%"
+			sh_icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+			sh_icon4.style.backgroundSize = "100%"
+		}
+		else if (document.contains(planet)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spaceship/climate-degrade.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spaceship/oxygen.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spaceship/wildlife.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
+			pl_icon4.style.backgroundSize = "100%"
+		}		
+	}
+	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight - 100 ) {
+		if (document.contains(spaceship)) {
+			sh_icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+			sh_icon1.style.backgroundSize = "100%"
+			sh_icon2.style.background = "url(../assets/images/desc_planets/connection-degrade.svg) no-repeat center"
+			sh_icon2.style.backgroundSize = "100%"
+			sh_icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+			sh_icon3.style.backgroundSize = "100%"
+			sh_icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+			sh_icon4.style.backgroundSize = "100%"
+		}
+		else if (document.contains(planet)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spaceship/climate.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spaceship/oxygen-degrade.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spaceship/wildlife.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
+			pl_icon4.style.backgroundSize = "100%"
+		}	
+	}
+	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight + desc4.offsetHeight - 100 ){
+		if (document.contains(spaceship)) {
+			sh_icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+			sh_icon1.style.backgroundSize = "100%"
+			sh_icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+			sh_icon2.style.backgroundSize = "100%"
+			sh_icon3.style.background = "url(../assets/images/desc_planets/people-degrade.svg) no-repeat center"
+			sh_icon3.style.backgroundSize = "100%"
+			sh_icon4.style.background = "url(../assets/images/desc_planets/services.svg) no-repeat center"
+			sh_icon4.style.backgroundSize = "100%"
+		}
+		else if (document.contains(planet)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spaceship/climate.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spaceship/oxygen.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spaceship/wildlife-degrade.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
+			pl_icon4.style.backgroundSize = "100%"
+		}	
+	}
+	else {
+		if (document.contains(spaceship)) {
+			sh_icon1.style.background = "url(../assets/images/desc_planets/clock.svg) no-repeat center"
+			sh_icon1.style.backgroundSize = "100%"
+			sh_icon2.style.background = "url(../assets/images/desc_planets/connection.svg) no-repeat center"
+			sh_icon2.style.backgroundSize = "100%"
+			sh_icon3.style.background = "url(../assets/images/desc_planets/people.svg) no-repeat center"
+			sh_icon3.style.backgroundSize = "100%"
+			sh_icon4.style.background = "url(../assets/images/desc_planets/services-degrade.svg) no-repeat center"
+			sh_icon4.style.backgroundSize = "100%"
+		}
+		else if (document.contains(planet)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spaceship/climate.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spaceship/oxygen.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spaceship/wildlife.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work-degrade.svg) no-repeat center"
+			pl_icon4.style.backgroundSize = "100%"
+		}	
+	}
+
+});

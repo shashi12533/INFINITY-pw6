@@ -1,24 +1,80 @@
 html {
     font-size: 62.5%;
+    // overflow-x: hidden;
 }
 body {
     display: flex;
-    //overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 ::placeholder {
     color: $white-Lgh;
 }
+
+// Displayed / Undisplayed classes
 .is-flex {
     display: flex !important;
 }
 .isnt-flex {
     display: none;
 }
+.is-invisible {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+.is-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto;
+}
+.is-righted {
+    @media (min-width: $mobileToTablet ) {
+        text-align: right !important;
+        padding-left: 33% !important;
+        padding-right: 0px !important; 
+    }
+    
+}
+.is-moved {
+    &:after {
+        content: '';
+        background: red;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        left: 15%;
+        opacity: 0;
+        
+        @media (min-width: $mobileToTablet ) {
+            opacity: 1;  
+        }
+    }
+}
 
+// Colored menu
+.packsColored {
+    background: url('../assets/images/icons/menu/packs-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.spaceshipColored {
+    background: url('../assets/images/icons/menu/spaceship-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.planetColored {
+    background: url('../assets/images/icons/menu/planet-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+.spacemoduleColored {
+    background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center !important;
+    background-size: cover !important;
+}
+
+// Personnal scrollbar
 ::-webkit-scrollbar {
     width: 5px;
-    
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -37,12 +93,12 @@ body {
     background: #BB3800;
 }
 
+// Personnal selection color
 ::selection {
+color: #000;
+background: $yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
     color: #000;
-    background: #ffd800; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-      color: #000;
-    background: #ffd800; /* Gecko Browsers */
-  }
-
+background: $yellow; /* Gecko Browsers */
+}
