@@ -1,0 +1,22 @@
+.confirmation {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  @media (min-width: $mobileToTablet ) {
+    width: 60%;
+    margin: auto;
+  }
+  &_text {
+    font-size: $Reg;
+    line-height: 30px;
+    font-family: $Qs-Reg;
+    margin-bottom: 60px;
+    @media (min-width: $mobileToTablet ) {
+    letter-spacing: 1px;
+    }
+  }
+  &_img {
+    width: 50px;
+    margin-left: 50vw;
+  }
+}
