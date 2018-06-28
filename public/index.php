@@ -33,18 +33,25 @@ session_start ();
         </div>
         <section class="home_who">
             <h2 class="home_who_title">Qui sommes-nous ?</h2>
-            <p class="home_who_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro consequuntur nesciunt facere perferendis debitis aperiam dolorum magnam beatae sed sunt. Iure est neque ipsa dolor, accusantium facere. Cum, tempore alias?</p>
+            <p class="home_who_text"><em>"Vivre sur une autre planète ? Impossible !"</em><br><br>
+            Voilà ce qu'on vous aurait dit il y a <span class="ImStrong">50 ans</span>. Mais grâce à l’avancement de la technologie, nous vous proposons maintenant <span class="ImStrong">l’impossible !</span><br>
+            <span class="ImStrong">6 planètes habitables</span>, <span class="ImStrong">moyens de transports</span> et <span class="ImStrong">types d'habitations</span>, avec des conditions de vie adaptés selon votre <span class="ImStrong">profil</span>.<br><br>
+            Nous vous accompagnons tout au long de l’organisation de votre voyage <span class="ImStrong">sans retour</span>. Vous aurez toutes les informations nécessaires pour vous préparer à votre <span class="ImStrong">nouveau</span> mode de vie, du renseignement jusqu’à l’achat de votre billet. C’est <span class="ImStrong">notre garantie</span>.<br><br>
+            <span class="ImStrong">Attention</span> , le choix de quitter la planète Terre est un choix réfléchi car il sera impossible se faire <span class="ImStrong">marche arrière</span>.</p>
             <img src="assets/images/planets/planete3.svg" alt="" class="home_planet2">
         </section>
         <section class="home_packchoice">
             <h2 class="home_packchoice_title"> Découvrez nos offres :</h2>
             <p class="home_packchoice_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi tempora, rerum voluptate blanditiis incidunt facilis quo vitae fugit quidem suscipit quas deserunt illum fugiat magnam aperiam ipsa error provident.
+            Préparez votre voyage en choisissant le pack de vos <span class="ImStrong">rêves</span> .Nous vous proposons <span class="ImStrong">deux</span> types de packs:
+            <span class="aioColored">Tout inclus</span> ou <span class="customColored">personnalisable</span>.<br><br> 
+            Dans le pack <span class="aioColored">tout inclus</span>, travaillé et réfléchi par <span class="ImStrong">notre équipe</span>, nous vous proposant un voyage programmé et optimisé pour votre classe sociale.<br><br> 
+            Dans le pack <span class="customColored">personnalisable</span>, vous pouvez concevoir <span class="ImStrong">LE</span> pack qui vous correspond, en gérant le transport, les planètes et le type d'habitation.
             </p>
             <h3 class="home_packchoice_nav_title">Choisissez votre méthode</h3>
             <nav class="home_packchoice_nav">
-                <a href="aiopacks.html" class="home_packchoice_nav_link">All-in-one</a>
-                <a href="custompacks.html" class="home_packchoice_nav_link">Custom</a>
+                <a href="aiopacks.html" class="home_packchoice_nav_link">Tout inclus</a>
+                <a href="custompacks.html" class="home_packchoice_nav_link">personnalisable</a>
             </nav>
         </section>
         <p class="home_citation">Rejoignez INFINITY pour une meilleure vie dans l'espace</p>
