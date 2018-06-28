@@ -100,6 +100,11 @@ pl_icon2 = document.querySelector('#pl-icon2');
 pl_icon3 = document.querySelector('#pl-icon3');
 pl_icon4 = document.querySelector('#pl-icon4');
 
+sm_icon1 = document.querySelector('#sm-icon1');
+sm_icon2 = document.querySelector('#sm-icon2');
+sm_icon3 = document.querySelector('#sm-icon3');
+sm_icon4 = document.querySelector('#sm-icon4');
+
 var spaceship = document.querySelector('.spaceship');
 var spacemodule = document.querySelector('.spacemodule');
 var planet = document.querySelector('.planet');
@@ -129,7 +134,16 @@ window.addEventListener('scroll', function() {
 			pl_icon3.style.backgroundSize = "100%"
 			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
 			pl_icon4.style.backgroundSize = "100%"
-		}		
+		}	
+		else if (document.contains(spacemodule)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spacemodule/home-degrade.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spacemodule/publics-services.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spacemodule/sun-umbrella.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+		}	
+			
 	}
 	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight - 100 ) {
 		if (document.contains(spaceship)) {
@@ -152,6 +166,14 @@ window.addEventListener('scroll', function() {
 			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
 			pl_icon4.style.backgroundSize = "100%"
 		}	
+		else if (document.contains(spacemodule)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spacemodule/home.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spacemodule/publics-services-degrade.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spacemodule/sun-umbrella.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+		}
 	}
 	else if (window.scrollY < desc1.offsetHeight + desc2.offsetHeight + desc3.offsetHeight + desc4.offsetHeight - 100 ){
 		if (document.contains(spaceship)) {
@@ -174,6 +196,7 @@ window.addEventListener('scroll', function() {
 			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work.svg) no-repeat center"
 			pl_icon4.style.backgroundSize = "100%"
 		}	
+		
 	}
 	else {
 		if (document.contains(spaceship)) {
@@ -196,6 +219,14 @@ window.addEventListener('scroll', function() {
 			pl_icon4.style.background = "url(../assets/images/desc_spaceship/work-degrade.svg) no-repeat center"
 			pl_icon4.style.backgroundSize = "100%"
 		}	
+		else if (document.contains(spacemodule)) {
+			pl_icon1.style.background = "url(../assets/images/desc_spacemodule/home.svg) no-repeat center"
+			pl_icon1.style.backgroundSize = "100%"
+			pl_icon2.style.background = "url(../assets/images/desc_spacemodule/publics-services.svg) no-repeat center"
+			pl_icon2.style.backgroundSize = "100%"
+			pl_icon3.style.background = "url(../assets/images/desc_spacemodule/sun-umbrella-degrade.svg) no-repeat center"
+			pl_icon3.style.backgroundSize = "100%"
+		}
 	}
 
 });

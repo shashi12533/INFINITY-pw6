@@ -101,7 +101,8 @@ session_start ();
                 <a href="sign.php" class="menu_nav_icon signIcon"></a>
                 <?php
             }
-            ?>            <a href="index.php" class="menu_nav_icon"></a>
+            ?>            
+            <a href="index.php" class="menu_nav_icon"></a>
             <a href="spaceships.php" class="menu_nav_icon"></a>
             <a href="planets.php" class="menu_nav_icon"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>
