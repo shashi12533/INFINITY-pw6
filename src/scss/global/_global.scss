@@ -53,6 +53,9 @@ body {
         }
     }
 }
+.ImStrong {
+    font-family: $Qs-Bld !important;
+}
 
 // Colored menu
 .packsColored {
@@ -70,6 +73,14 @@ body {
 .spacemoduleColored {
     background: url('../assets/images/icons/menu/spacemodule-anim.svg') no-repeat center !important;
     background-size: cover !important;
+}
+.aioColored {
+    color: $aio;
+    font-family: $Qs-Bld !important;
+}
+.customColored {
+    color: $custom;
+    font-family: $Qs-Bld !important;
 }
 
 // Personnal scrollbar
