@@ -24,9 +24,9 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
 ?>
         <div class="profile_main">
         <div class="profile_main_img_container">
-        <img class="profile_main_img" src="assets/images/icons/logo.svg">
+        <img class="profile_main_img" src="<?= $_SESSION['img'] ?>">
         </div>
-        <h1 class="profile_main_title">Bonjour, <?= $_SESSION['surname']?>. Bienvenue sur votre profil.</h1>
+        <h1 class="profile_main_title">Bonjour, <?= $_SESSION['surname'] ?>. Bienvenue sur votre profil.</h1>
         </div>
         <div class="profile_informations">
             <p class="profile_informations_title-big">Voici vos informations : </p>
@@ -37,18 +37,18 @@ if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
         </div>
 
 	<!-- // On affiche un lien pour fermer notre session -->
-
-    <p class="profile_link">Vous décollez ? Pensez à vous<a class="profile_link_text" href="../../../back/actions/login/logout.php"> déconnecter</a></p>
-    <p class="profile_link">Vous pouvez modifier votre profil<a class="profile_link_text" href="../../../back/actions/login/edit.php"> ici</a></p>
+<div class="profile_informations_link">
+    <p class="profile_link">Vous décollez ? Pensez à vous<a class="profile_link_text" href="../../../back/actions/login/logout.php"> déconnecter</a>.</p>
+	<p class="profile_link">Vous pouvez modifier votre profil<a class="profile_link_text" href="../../../back/actions/login/edit.php"> ici</a>.</p>
+	</div>
     <?php
-}
-else {
-    ?>
-    <div class="profile_main">
-    <h1 class="profile_main_title">Veuillez vous connecter avant de continuer.</h1>
-    </div>
-    <div class="profile_main_error_container">
-    <svg class="profile_main_error" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+} else {
+	?>
+	    <div class="profile_main">
+        <h1 class="profile_main_title">Veuillez vous connecter avant de continuer.</h1>
+		</div>
+		<div class="profile_main_error_container">
+		<svg class="profile_main_error" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2721.3 2721.3" style="enable-background:new 0 0 2721.3 2721.3;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
@@ -75,7 +75,7 @@ else {
 </linearGradient>
 <circle class="st1" cx="787.2" cy="1676" r="482.8"/>
 <g>
-
+	
 		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1164.6124" y1="2085.1301" x2="2281.2046" y2="702.5433" gradientTransform="matrix(1 0 0 -1 0 2721.26)">
 		<stop  offset="8.579870e-02" style="stop-color:#E6E6E6"/>
 		<stop  offset="0.1563" style="stop-color:#D3D3D3"/>
@@ -89,7 +89,7 @@ else {
 	<circle class="st2" cx="1670.8" cy="1262.9" r="811.5"/>
 </g>
 <g class="st3">
-
+	
 		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1135.0422" y1="2121.7444" x2="2316.8582" y2="658.3967" gradientTransform="matrix(1 0 0 -1 0 2721.26)">
 		<stop  offset="8.579870e-02" style="stop-color:#E6E6E6"/>
 		<stop  offset="0.1563" style="stop-color:#D3D3D3"/>
@@ -114,11 +114,11 @@ else {
 </g>
 <g id="XMLID_2_">
 	<g>
-
+		
 			<rect x="1043" y="556.1" transform="matrix(0.7509 -0.6604 0.6604 0.7509 -110.8838 856.2845)" class="st7" width="73.5" height="38.1"/>
 	</g>
 	<g>
-
+		
 			<rect x="1043" y="556.1" transform="matrix(0.7509 -0.6604 0.6604 0.7509 -110.8838 856.2845)" class="st6" width="73.5" height="38.1"/>
 	</g>
 </g>
@@ -178,9 +178,7 @@ else {
 <circle class="st11" cx="1126.7" cy="407.7" r="13.2"/>
 <circle class="st11" cx="1009.6" cy="480.8" r="9.3"/>
 </svg>
-<a class="profile_main_link" href="sign.php">Se connecter | S'inscrire</a>
 </div>
-</section>
 <?php
 }
 ?>
@@ -209,18 +207,9 @@ else {
             } else {
             }
             ?>
-        </nav>
-    </section>
-    <footer class="footer">
-            <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
-            <nav class="footer_social">
-                <a href="" class="footer_social_icon"></a>
-                <a href=""  class="footer_social_icon"></a>
-                <a href=""  class="footer_social_icon"></a>
-            </nav>
-            <p class="footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
-        </footer>
-        </section>
+		</nav>
+	</section>
+		</section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/app.min.js" charset="UTF-8"></script>
 </body>

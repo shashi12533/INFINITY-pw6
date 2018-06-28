@@ -43,8 +43,8 @@ session_start ();
             </p>
             <h3 class="home_packchoice_nav_title">Choisissez votre méthode</h3>
             <nav class="home_packchoice_nav">
-                <a href="" class="home_packchoice_nav_link">All-in-one</a>
-                <a href="" class="home_packchoice_nav_link">Custom</a>
+                <a href="aiopacks.html" class="home_packchoice_nav_link">All-in-one</a>
+                <a href="custompacks.html" class="home_packchoice_nav_link">Custom</a>
             </nav>
         </section>
         <p class="home_citation">Rejoignez INFINITY pour une meilleure vie dans l'espace</p>
