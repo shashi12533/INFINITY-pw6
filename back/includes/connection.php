@@ -1,6 +1,6 @@
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=db_space','root','');
+    $pdo = new PDO('mysql:host=localhost;dbname=db_space','root','root');
 } catch(PDOException $exception) {
     die($exception->getMessage());
 }
