@@ -28,7 +28,8 @@ $station_stmt->execute();
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="spacemodules_title">Habitations</h1>
-        <p class="spacemodules_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
+        <p class="spacemodules_desc">Découvrez nos lieux d’habitation, adaptés selon votre <span class="ImgStrong">profil</span>. Vous y trouverez toutes les informations nécessaires pour votre <span class="ImStrong">futur lieu de cooconing</span>.<br>
+        <span class="ImStrong">N'attendez plus !</span></p>
         <div class="carousel spacemodules_packs"
         data-flickity='{ "watchCSS": true }' >
         <?php
