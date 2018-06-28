@@ -2,13 +2,13 @@
     background: $bgPurpleToTransInv;
     width: 100%;
     margin-bottom: 70px;
-    position: relative;
+    position: fixed !important;
     z-index: 10;
     display: flex;
     flex-direction: column;
     align-content: center;
     @media (min-width: $mobileToTablet ) {
-        position: fixed;
+
         bottom: 0;
         margin: 0;
     }
