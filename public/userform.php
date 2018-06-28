@@ -18,22 +18,24 @@
       <h1 class="header_title"><a href="index.html">INFINITY</a></h1>
     </header>
     <section class="userform_container">
-      <div class="buy_line"></div>
-      <div class="buy_circles">
-        <div class="buy_circles_content"></div>
-        <div class="buy_circles_content_active"></div>
-        <div class="buy_circles_content"></div>
-        <div class="buy_circles_content"></div>
-      </div>
-      <div class="buy_text">
-        <p class="buy_text_content">Récapitulatif</p>
-        <p class="buy_text_content">Informations</p>
-        <p class="buy_text_content">Paiements</p>
-        <p class="buy_text_content">Validation</p>
-      </div>
-      <div class="buy_return">
-        <a href="" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
-      </div>
+      <section class="buy">
+        <div class="buy_line"></div>
+        <div class="buy_circles">
+          <div class="buy_circles_content"></div>
+          <div class="buy_circles_content"></div>
+          <div class="buy_circles_content_active"></div>
+          <div class="buy_circles_content"></div>
+        </div>
+        <div class="buy_text">
+          <p class="buy_text_content">Récapitulatif</p>
+          <p class="buy_text_content">Informations</p>
+          <p class="buy_text_content">Paiements</p>
+          <p class="buy_text_content">Validation</p>
+        </div>
+        <div class="buy_return">
+          <a href="" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
+        </div>
+      </section>
       <h1 class="userform_title">Fiche de renseignements</h1>
       <div class="userform_container_first is-visible">
         <form class="userform_form" action="index.html" method="post">
