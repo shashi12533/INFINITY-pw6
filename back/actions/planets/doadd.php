@@ -2,9 +2,9 @@
 require_once "../../includes/connection.php";
 $sql  = "INSERT INTO 
 `db_space`.`planets` 
-(`name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`) 
+(`name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`, `airdesc`,`workdesc`, `weatherdesc`, `wildlifedesc`) 
 VALUES 
-(:name, :size, :air, :wildlife, :flora, :weather, :water, :work, :link);
+(:name, :size, :air, :wildlife, :flora, :weather, :water, :work, :link, :airdesc, :workdesc, :weatherdesc, :wildlifedesc);
 
 ";
 if(empty($_POST['name']) OR empty($_POST['size']) OR empty($_POST['air']) OR empty($_POST['wildlife']) OR empty($_POST['flora']) OR empty($_POST['weather']) OR empty($_POST['water']) OR empty($_POST['work']) OR empty($_POST['link']))
@@ -26,6 +26,10 @@ $stmt->bindValue(':weather', $_POST['weather']);
 $stmt->bindValue(':water', $_POST['water']);
 $stmt->bindValue(':work', $_POST['work']);
 $stmt->bindValue(':link', $_POST['link']);
+$stmt->bindValue(':airdesc', $_POST['airdesc']);
+$stmt->bindValue(':workdesc', $_POST['workdesc']);
+$stmt->bindValue(':weatherdesc', $_POST['weatherdesc']);
+$stmt->bindValue(':wildlifedesc', $_POST['wildlifedesc']);
 $stmt->execute();
 errorHandler($stmt);
 

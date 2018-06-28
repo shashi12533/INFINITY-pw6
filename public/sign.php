@@ -91,10 +91,6 @@
             <p class="sign_form_text" >Vous avez déjà un compte ?<a href="#" class="sign_form_text_link"> Se connecter !</a></p>
             <input type="submit" class="sign_form_submit" value="S'inscrire"></input>
         </form>
-
-        <div class="alert alert-danger">
-    <strong>Succès !</strong> L'objet a été supprimé.
-  </div>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="footer_social">

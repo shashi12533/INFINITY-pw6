@@ -2,7 +2,7 @@
 // Require the file connexion.php to connect to the database
 require_once "../../includes/connection.php";
 // Updating the values below from the "planetes" table where there's the needed id
-$sql = "UPDATE `db_space`.`planets` SET `name`=:name, `size`=:size, `air`=:air, `wildlife`=:wildlife, `flora`=:flora, `weather`=:weather, `water`=:water, `work`=:work, `link`=:link WHERE `id`=:id
+$sql = "UPDATE `db_space`.`planets` SET `name`=:name, `size`=:size, `air`=:air, `wildlife`=:wildlife, `flora`=:flora, `weather`=:weather, `water`=:water, `work`=:work, `link`=:link,  `airdesc`=:airdesc, `workdesc`=:workdesc, `weatherdesc`=:weatherdesc, `wildlifedesc`=:wildlifedesc   WHERE `id`=:id
 ;";
 
 if(empty($_POST['name']) OR empty($_POST['size']))
@@ -27,6 +27,10 @@ $stmt->bindValue(':weather', $_POST['weather']);
 $stmt->bindValue(':water', $_POST['water']);
 $stmt->bindValue(':work', $_POST['work']);
 $stmt->bindValue(':link', $_POST['link']);
+$stmt->bindValue(':workdesc', $_POST['workdesc']);
+$stmt->bindValue(':weatherdesc', $_POST['weatherdesc']);
+$stmt->bindValue(':wildlifedesc', $_POST['wildlifedesc']);
+$stmt->bindValue(':airdesc', $_POST['airdesc']);
 $stmt->execute();
 errorHandler($stmt);
 

@@ -1,17 +1,17 @@
 <?php
 require_once "includes/connection.php";
 require_once "includes/head.php";
-$planets  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link` FROM `planets`
+$planets  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`, `airdesc`,`workdesc`, `weatherdesc`, `wildlifedesc` FROM `planets`
 ";
 $planets_stmt = $pdo->prepare($planets);
 $planets_stmt->execute();
 
-$station  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link` FROM `station`
+$station  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link`, `residencedesc`, `servicesdesc`, `activitydesc` FROM `station`
 ";
 $station_stmt = $pdo->prepare($station);
 $station_stmt->execute();
 
-$ship = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link` FROM `ship`
+$ship = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`, `installations`, `link`, `durationdesc`, `connectiondesc`, `spacingdesc`, `installationsdesc` FROM `ship`
 ";
 $ship_stmt = $pdo->prepare($ship);
 $ship_stmt->execute();
@@ -116,18 +116,26 @@ $ship_stmt->execute();
     <input placeholder="Name" type="text" name="name"></input><br>
     <label style="width: 100px">Size : </label>
     <input placeholder="Size" type="number" name="size"></input><br>
-    <label style="width: 100px">Air : </label>
+    <label style="width: 100px">Air ambiant : </label>
     <input placeholder="Air" type="text" name="air"></input><br>
-    <label style="width: 100px">Wildlife : </label>
+    <label style="width: 100px">Air ambiant description : </label>
+    <textarea placeholder="Air ambiant description" type="text" name="airdesc"></textarea><br>
+    <label style="width: 100px">Faune : </label>
     <input placeholder="Wildlife" type="text" name="wildlife"></input><br>
+    <label style="width: 100px">Faune description : </label>
+    <textarea placeholder="Faune description" type="text" name="wildlifedesc"></textarea><br>
     <label style="width: 100px">Flora : </label>
     <input placeholder="Flora" type="text" name="flora"></input><br>
-    <label style="width: 100px">Weather : </label>
+    <label style="width: 100px">Climat : </label>
     <input placeholder="Weather" type="text" name="weather"></input><br>
+    <label style="width: 100px">Climat description : </label>
+    <textarea placeholder="Climat description" type="text" name="weatherdesc"></textarea><br>
     <label style="width: 100px">Water : </label>
     <input placeholder="Water" type="text" name="water"></input><br>
     <label style="width: 100px">Work : </label>
     <input placeholder="Work" type="text" name="work"></input><br>
+    <label style="width: 100px">Faune description : </label>
+    <textarea placeholder="Wildlife" type="text" name="workdesc"></textarea><br>
     <label style="width: 100px" for="link">Image:</label>
     <input placeholder="http://image.png" type="url" name="link"><br><br><br>
 <button type="submit" class="btn btn-info">Ajouter</button>
@@ -151,12 +159,18 @@ $ship_stmt->execute();
     <input placeholder="Air" type="text" name="air"></input><br>
     <label style="width: 100px">Residence : </label>
     <input placeholder="Residence" type="text" name="residence"></input><br>
+    <label style="width: 100px">Residence description : </label>
+    <textarea placeholder="Residence description" type="text" name="residencedesc"></textarea><br>
     <label style="width: 100px">Activity : </label>
     <input placeholder="Activity" type="text" name="activity"></input><br>
+    <label style="width: 100px">Activity description : </label>
+    <textarea placeholder="Activity description" type="text" name="activitydesc"></textarea><br>
     <label style="width: 100px">Leisure : </label>
     <input placeholder="Leisure" type="text" name="leisure"></input><br>
     <label style="width: 100px">Services : </label>
     <input placeholder="Services" type="text" name="services"></input><br>
+    <label style="width: 100px">Services description : </label>
+    <textarea placeholder="Services description" type="text" name="servicesdesc"></textarea><br>
     <label style="width: 100px">Land : </label>
     <input placeholder="Land" type="text" name="land"></input><br>
     <label style="width: 100px">Staff : </label>
@@ -184,12 +198,20 @@ $ship_stmt->execute();
     <input placeholder="Air" type="text" name="air"></input><br>
     <label style="width: 100px">Duration : </label>
     <input placeholder="Duration" type="text" name="duration"></input><br>
+    <label style="width: 100px">Duration description : </label>
+    <textarea placeholder="Duration description" type="text" name="durationdesc"></textarea><br>
     <label style="width: 100px">Spacing : </label>
     <input placeholder="Spacing" type="text" name="spacing"></input><br>
+    <label style="width: 100px">Spacing : </label>
+    <textarea placeholder="Spacing" type="text" name="spacingdesc"></textarea><br>
     <label style="width: 100px">Connection : </label>
     <input placeholder="connection" type="text" name="connection"></input><br>
+    <label style="width: 100px">Connection desc : </label>
+    <textarea placeholder="Connection description" type="text" name="connectiondesc"></textarea><br>
     <label style="width: 100px">Installations : </label>
     <input placeholder="installations" type="text" name="installations"></input><br>
+    <label style="width: 100px">Installations desc : </label>
+    <textarea placeholder="Installations desc" type="text" name="installationsdesc"></textarea><br>
     <label style="width: 100px" for="link">Image:</label>
     <input placeholder="http://image.png" type="url" name="link"><br><br><br>
 <button type="submit" class="btn btn-info">Ajouter</button>
@@ -210,11 +232,15 @@ $ship_stmt->execute();
         <th>Name</th>
         <th>Size</th>
         <th>Air</th>
+        <th>Air description</th>
         <th>Wildlife</th>
+        <th>Faune description</th>
         <th>Flora</th>
         <th>Weather</th>
+        <th>Climat description</th>
         <th>Water</th>
         <th>Work</th>
+        <th>Travail description</th>
         <th>Image</th>
         <th>Actions</th>
     </tr>
@@ -225,11 +251,15 @@ while ($row = $planets_stmt->fetch(PDO::FETCH_ASSOC)) {
         <td><?= $row['name'] ?></td>
         <td><?= $row['size'] ?> km&#179</td>
         <td><?= $row['air'] ?></td>
+        <td><?= $row['airdesc'] ?></td>
         <td><?= $row['wildlife'] ?></td>
+        <td><?= $row['wildlifedesc'] ?></td>
         <td><?= $row['flora'] ?></td>
         <td><?= $row['weather'] ?></td>
+        <td><?= $row['weatherdesc'] ?></td>
         <td><?= $row['water'] ?></td>
         <td><?= $row['work'] ?></td>
+        <td><?= $row['workdesc'] ?></td>
         <td><img style="width: 100px;" class="img-thumbnail" alt="<?= $row["name"] ?>" src="<?= $row["link"] ?>" data-holder-rendered="true"></td>
         <td>
         <form action="./actions/planets/edit.php" method="post">
@@ -243,6 +273,7 @@ while ($row = $planets_stmt->fetch(PDO::FETCH_ASSOC)) {
         </form>
         </td>
     </tr>
+    
 <?php
 }
 ?>
@@ -259,9 +290,12 @@ while ($row = $planets_stmt->fetch(PDO::FETCH_ASSOC)) {
         <th>Size</th>
         <th>Air</th>
         <th>Residence</th>
+        <th>Residence description</th>
         <th>Activity</th>
+        <th>Activity description</th>
         <th>Leisure</th>
         <th>Services</th>
+        <th>Services description</th>
         <th>Land</th>
         <th>Staff</th>
         <th>Image</th>
@@ -275,9 +309,12 @@ while ($row = $station_stmt->fetch(PDO::FETCH_ASSOC)) {
         <td><?= $row['size'] ?> km&#179</td>
         <td><?= $row['air'] ?></td>
         <td><?= $row['residence'] ?></td>
+        <td><?= $row['residencedesc'] ?></td>
         <td><?= $row['activity'] ?></td>
+        <td><?= $row['activitydesc'] ?></td>
         <td><?= $row['leisure'] ?></td>
         <td><?= $row['services'] ?></td>
+        <td><?= $row['servicesdesc'] ?></td>
         <td><?= $row['land'] ?></td>
         <td><?= $row['staff'] ?></td>
         <td><img style="width: 100px;" class="img-thumbnail" alt="<?= $row["name"] ?>" src="<?= $row["link"] ?>" data-holder-rendered="true"></td>
@@ -309,9 +346,13 @@ while ($row = $station_stmt->fetch(PDO::FETCH_ASSOC)) {
         <th>Size</th>
         <th>Air</th>
         <th>Duration</th>
+        <th>Duration description</th>
         <th>Spacing</th>
+        <th>Spacing description</th>
         <th>Connection</th>
+        <th>Connection description</th>
         <th>Installations</th>
+        <th>Installations description</th>
         <th>Image</th>
         <th>Actions</th>
     </tr>
@@ -323,9 +364,13 @@ while ($row = $ship_stmt->fetch(PDO::FETCH_ASSOC)) {
         <td><?= $row['size'] ?> km&#179</td>
         <td><?= $row['air'] ?></td>
         <td><?= $row['duration'] ?></td>
+        <td><?= $row['durationdesc'] ?></td>
         <td><?= $row['spacing'] ?></td>
+        <td><?= $row['spacingdesc'] ?></td>
         <td><?= $row['connection'] ?></td>
+        <td><?= $row['connectiondesc'] ?></td>
         <td><?= $row['installations'] ?></td>
+        <td><?= $row['installationsdesc'] ?></td>
         <td><img style="width: 100px;" class="img-thumbnail" alt="<?= $row["name"] ?>" src="<?= $row["link"] ?>" data-holder-rendered="true"></td>
         <td>
         <form action="./actions/ship/edit.php" method="post">

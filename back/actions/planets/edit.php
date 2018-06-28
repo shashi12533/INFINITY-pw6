@@ -1,7 +1,7 @@
 <?php
 require_once "../../includes/connection.php";
 require_once "../../includes/head.php";
-$sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link` FROM `planets` WHERE `id` = $_POST[id];
+$sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`, `airdesc`, `workdesc`, `weatherdesc`, `wildlifedesc` FROM `planets` WHERE `id` = $_POST[id];
 ";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
@@ -9,7 +9,7 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `wa
 
 
   <?php
-  $row = $stmt->fetch(PDO::FETCH_ASSOC)
+  $row = $stmt->fetch(PDO::FETCH_ASSOC);
   ?>
 
   <a href="#">
@@ -76,25 +76,33 @@ $sql  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `wa
 
   <form method="post" action="./doedit.php">
 <div class="form-group">
-    <label style="font-size: 24px">Modifier la planète <?= $row["name"] ?> : </label><br><br>
-    <label style="width: 100px;">Name : </label>
-    <input placeholder="Name" value="<?= $row["name"] ?>" type="text" name="name"></input><br>
-    <label style="width: 100px;">Size : </label>
-    <input placeholder="Size" value="<?= $row["size"] ?>" type="text" name="size"></input><br>
-    <label style="width: 100px;">Air : </label>
-    <input placeholder="Air" value="<?= $row["air"] ?>" type="text" name="air"></input><br>
-    <label style="width: 100px;">Wildlife : </label>
-    <input placeholder="Wildlife" value="<?= $row["wildlife"] ?>" type="text" name="wildlife"></input><br>
-    <label style="width: 100px;">Flora : </label>
-    <input placeholder="Flora" value="<?= $row["flora"] ?>" type="text" name="flora"></input><br>
-    <label style="width: 100px;">Weather : </label>
-    <input placeholder="Weather" value="<?= $row["weather"] ?>" type="text" name="weather"></input><br>
-    <label style="width: 100px;">Water : </label>
-    <input placeholder="Water" value="<?= $row["water"] ?>" type="text" name="water"></input><br>
-    <label style="width: 100px;">Work : </label>
-    <input placeholder="Work" value="<?= $row["work"] ?>" type="text" name="work"></input><br>
-    <label style="width: 100px;">Image : </label>
-    <input placeholder="Link" value="<?= $row["link"] ?>" type="link" name="link"></input> <img style="width: 100px;" src="<?= $row["link"] ?>" alt="<?= $row["name"]?>"><br><br><br>
+<label style="font-size: 24px;">Ajouter une planète : </label><br><br>
+    <label style="width: 100px">Name : </label>
+    <input value="<?= $row["name"] ?>" type="text" name="name"></input><br>
+    <label style="width: 100px">Size : </label>
+    <input value="<?= $row["size"] ?>" type="number" name="size"></input><br>
+    <label style="width: 100px">Air ambiant : </label>
+    <input value="<?= $row["air"] ?>" type="text" name="air"></input><br>
+    <label style="width: 100px">Air ambiant description : </label>
+    <textarea type="text" name="airdesc"><?= $row["airdesc"] ?></textarea><br>
+    <label style="width: 100px">Faune : </label>
+    <input value="<?= $row["wildlife"] ?>" type="text" name="wildlife"></input><br>
+    <label style="width: 100px">Faune description : </label>
+    <textarea type="text" name="wildlifedesc"><?= $row["wildlifedesc"] ?></textarea><br>
+    <label style="width: 100px">Flora : </label>
+    <input value="<?= $row["flora"] ?>" type="text" name="flora"></input><br>
+    <label style="width: 100px">Climat : </label>
+    <input value="<?= $row["weather"] ?>" type="text" name="weather"></input><br>
+    <label style="width: 100px">Climat description : </label>
+    <textarea type="text" name="weatherdesc"><?= $row["weatherdesc"] ?></textarea><br>
+    <label style="width: 100px">Water : </label>
+    <input value="<?= $row["water"] ?>" type="text" name="water"></input><br>
+    <label style="width: 100px">Work : </label>
+    <input value="<?= $row["work"] ?>" type="text" name="work"></input><br>
+    <label style="width: 100px">Travail description : </label>
+    <textarea type="text" name="workdesc"><?= $row["workdesc"] ?></textarea><br>
+    <label style="width: 100px" for="link">Image:</label>
+    <input value="<?= $row["link"] ?>" type="url" name="link"><img style="width: 100px;" src="<?= $row["link"] ?>" alt="<?= $row["name"]?>"><br><br><br>
 </div>
 <input type="hidden" name="id" value="<?=$row["id"]?>">
 <a href="../../index.php#planet" class="btn btn-danger">Annuler</a>

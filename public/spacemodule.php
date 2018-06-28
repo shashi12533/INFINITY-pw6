@@ -1,5 +1,16 @@
+<?php
+require_once "../back/includes/connection.php";
+require_once "../back/includes/head.php";
+$sql  = "SELECT `id`, `name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link`, `residencedesc`, `servicesdesc`, `activitydesc` FROM `station` WHERE `id` = $_GET[id];
+";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    $row = $stmt->fetch(PDO::FETCH_ASSOC)
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +26,7 @@
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="header_logo">
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
-        <h1 class="spacemodule_title"><a href="" class="spacemodule_title_link"></a>DEFAULT_SPACEMODULE</h1>
+        <h1 class="spacemodule_title"><a href="" class="spacemodule_title_link"></a><?= $row["name"] ?></h1>
         <div class="spacemodule_menu">
             <div class="spacemodule_menu_icon" id="pl-icon1"></div>
             <div class="spacemodule_menu_icon" id="pl-icon2"></div>
@@ -24,19 +35,18 @@
         </div>
         <div class="spacemodule_articles">
             <article class="spacemodule_articles_article" id="desc1">
-                <h2 class="spacemodule_articles_article_title ">SPACEMODULE_TITLE</h2>
-                <p class="spacemodule_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spacemodule_articles_article_title ">Type d'habitation : <?= $row["residence"] ?></h2>
+                <p class="spacemodule_articles_article_text"><?= $row["residencedesc"] ?></p>
             </article>
             <article class="spacemodule_articles_article is-moved" id="desc2">
-                <h2 class="spacemodule_articles_article_title is-righted">SPACEMODULE_TITLE</h2>
-                <p class="spacemodule_articles_article_text is-righted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spacemodule_articles_article_title is-righted">Services publics : <?= $row["services"] ?></h2>
+                <p class="spacemodule_articles_article_text is-righted"><?= $row["servicesdesc"] ?></p>
             </article>
             <article class="spacemodule_articles_article" id="desc3">
-                <h2 class="spacemodule_articles_article_title">SPACEMODULE_TITLE</h2>
-                <p class="spacemodule_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="spacemodule_articles_article_title">Activités proposées : <?= $row["activity"] ?></h2>
+                <p class="spacemodule_articles_article_text"><?= $row["activitydesc"] ?></p>
             </article>
             <article class="spacemodule_articles_article is-moved" id="desc4">
-                
             </article>
         </div>
         

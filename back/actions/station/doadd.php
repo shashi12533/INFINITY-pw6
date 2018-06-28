@@ -3,9 +3,9 @@ require_once "../../includes/connection.php";
 
 $sql  = "INSERT INTO 
 `db_space`.`station` 
-(`name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link`) 
+(`name`, `size`, `air`, `residence`, `activity`, `leisure`, `services`, `land`, `staff`, `link`, `residencedesc`, `servicesdesc`, `activitydesc`) 
 VALUES 
-(:name, :size, :air, :residence, :activity, :leisure, :services, :land, :staff, :link);
+(:name, :size, :air, :residence, :activity, :leisure, :services, :land, :staff, :link, :residencedesc, :servicesdesc, :activitydesc);
 
 ";
 
@@ -29,6 +29,9 @@ $stmt->bindValue(':services', $_POST['services']);
 $stmt->bindValue(':land', $_POST['land']);
 $stmt->bindValue(':staff', $_POST['staff']);
 $stmt->bindValue(':link', $_POST['link']);
+$stmt->bindValue(':residencedesc', $_POST['residencedesc']);
+$stmt->bindValue(':servicesdesc', $_POST['servicesdesc']);
+$stmt->bindValue(':activitydesc', $_POST['activitydesc']);
 $stmt->execute();
 errorHandler($stmt);
 

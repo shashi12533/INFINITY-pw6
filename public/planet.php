@@ -1,5 +1,19 @@
+<?php 
+require_once "../back/includes/connection.php";
+session_start ();
+
+$planets  = "SELECT `id`, `name`, `size`, `air`, `wildlife`, `flora`, `weather`, `water`, `work`, `link`, `airdesc`, `workdesc`, `weatherdesc`, `wildlifedesc` FROM `planets` WHERE id = $_GET[id]
+";
+$planets_stmt = $pdo->prepare($planets);
+$planets_stmt->execute();
+
+$row = $planets_stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +29,7 @@
             <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="header_logo">
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
-        <h1 class="planet_title"><a href="" class="planet_title_link"></a>DEFAULT_PLANET</h1>
+        <h1 class="planet_title"><a href="" class="planet_title_link"></a><?= $row["name"] ?></h1>
         <div class="planet_menu">
             <div class="planet_menu_icon" id="pl-icon1"></div>
             <div class="planet_menu_icon" id="pl-icon2"></div>
@@ -24,20 +38,20 @@
         </div>
         <div class="planet_articles">
             <article class="planet_articles_article" id="desc1">
-                <h2 class="planet_articles_article_title ">PLANET_TITLE</h2>
-                <p class="planet_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="planet_articles_article_title ">Climat : <?= $row["weather"] ?> </h2>
+                <p class="planet_articles_article_text"><?= $row["weatherdesc"] ?></p>
             </article>
             <article class="planet_articles_article is-moved" id="desc2">
-                <h2 class="planet_articles_article_title is-righted">PLANET_TITLE</h2>
-                <p class="planet_articles_article_text is-righted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="planet_articles_article_title is-righted">Air ambiant : <?= $row["air"] ?></h2>
+                <p class="planet_articles_article_text is-righted"><?= $row["airdesc"] ?></p>
             </article>
             <article class="planet_articles_article" id="desc3">
-                <h2 class="planet_articles_article_title">PLANET_TITLE</h2>
-                <p class="planet_articles_article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="planet_articles_article_title">Faune : <?= $row["wildlife"] ?></h2>
+                <p class="planet_articles_article_text"><?= $row["wildlifedesc"] ?></p>
             </article>
             <article class="planet_articles_article is-moved" id="desc4">
-                <h2 class="planet_articles_article_title is-righted">PLANET_TITLE</h2>
-                <p class="planet_articles_article_text is-righted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore rerum cum iusto. Ipsum, nam atque. Repellat, nulla, sunt nisi in natus, quod perspiciatis rerum harum earum officia autem itaque?</p>
+                <h2 class="planet_articles_article_title is-righted">Travail et emploi : <?= $row["work"] ?></h2>
+                <p class="planet_articles_article_text is-righted"><?= $row["workdesc"] ?></p>
             </article>
         </div>
         
