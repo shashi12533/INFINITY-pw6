@@ -40,7 +40,7 @@ session_start ();
             <span class="ImStrong">Attention</span> , le choix de quitter la planète Terre est un choix réfléchi car il sera impossible se faire <span class="ImStrong">marche arrière</span>.</p>
             <img src="assets/images/planets/planete3.svg" alt="" class="home_planet2">
         </section>
-        <section class="home_packchoice">
+        <section class="home_packchoice" id="packs">
             <h2 class="home_packchoice_title"> Découvrez nos offres :</h2>
             <p class="home_packchoice_text">
             Préparez votre voyage en choisissant le pack de vos <span class="ImStrong">rêves</span> .Nous vous proposons <span class="ImStrong">deux</span> types de packs:
@@ -48,13 +48,13 @@ session_start ();
             Dans le pack <span class="aioColored">tout inclus</span>, travaillé et réfléchi par <span class="ImStrong">notre équipe</span>, nous vous proposant un voyage programmé et optimisé pour votre classe sociale.<br><br> 
             Dans le pack <span class="customColored">personnalisable</span>, vous pouvez concevoir <span class="ImStrong">LE</span> pack qui vous correspond, en gérant le transport, les planètes et le type d'habitation.
             </p>
-            <h3 class="home_packchoice_nav_title">Choisissez votre méthode</h3>
+            <h3 class="home_packchoice_nav_title">Choisissez votre méthode :</h3>
             <nav class="home_packchoice_nav">
                 <a href="aiopacks.html" class="home_packchoice_nav_link">Tout inclus</a>
                 <a href="custompacks.html" class="home_packchoice_nav_link">personnalisable</a>
             </nav>
         </section>
-        <p class="home_citation">Rejoignez INFINITY pour une meilleure vie dans l'espace</p>
+        <p class="home_citation"><em>"Rejoignez INFINITY dépasser les limites du réel"</em></p>
         <section class="home_stats">
             <h2 class="home_stats_title">Quelques chiffres :</h2>
             <nav class="home_stats_nav">
@@ -111,7 +111,7 @@ session_start ();
                 <?php
             }
             ?>            
-            <a href="index.php" class="menu_nav_icon"></a>
+            <a href="index.php#packs" class="menu_nav_icon"></a>
             <a href="spaceships.php" class="menu_nav_icon"></a>
             <a href="planets.php" class="menu_nav_icon"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>

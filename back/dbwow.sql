@@ -18,6 +18,10 @@
 --
 -- Table structure for table `admin`
 --
+CREATE SCHEMA `db_space`
+DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE `db_space`;
 
 DROP TABLE IF EXISTS `admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

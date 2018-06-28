@@ -28,7 +28,8 @@ $ship_stmt->execute();
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="spaceships_title">Transports</h1>
-        <p class="spaceships_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
+        <p class="spaceships_desc">Ces transports imaginés, aménagés rien que pour ce <span class="ImStrong">transfert unique</span> ne feront peur à personne car nous vous garantissons à <span class="ImStrong">100% l’arrivée</span> à votre destination.<br>
+        <span class="ImStrong">Jetez-y un oeil !</span></p>
         <div class="carousel spaceships_packs"
         data-flickity='{ "watchCSS": true }' >
     
@@ -62,6 +63,7 @@ $ship_stmt->execute();
             
         </div>
         <img src="assets/images/icons/menu/spaceship-anim.svg" alt="" class="spaceships_planet1"><img src="assets/images/planets/comet2.svg" alt="" class="spaceships_comet1">
+        <p class="spaceships_desc"><em>"Un vaisseau est une maison errante, une auberge partout, un voyageur qui ne laisse pas de traces"</em>, <span class="ImStrong">Alcuin</span></p>
         <p class="spaceships_goto">Découvrez aussi nos <a href="custompacks.html" class="spaceships_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.html" class="spaceships_goto_link">PACKS TOUT INCLUS</a></p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
@@ -77,7 +79,7 @@ $ship_stmt->execute();
     <section class="menu">
         <nav class="menu_nav">
             <a href="index.php" class="menu_nav_icon"></a>
-            <a href="index.php" class="menu_nav_icon "></a>
+            <a href="index.php#packs" class="menu_nav_icon "></a>
             <a href="spaceships.php" class="menu_nav_icon spaceshipColored"></a>
             <a href="planets.php" class="menu_nav_icon"></a>
             <a href="spacemodules.php" class="menu_nav_icon"></a>
