@@ -17,6 +17,11 @@ $ship = "SELECT `id`, `name`, `size`, `air`, `duration`, `spacing`, `connection`
 $ship_stmt = $pdo->prepare($ship);
 $ship_stmt->execute();
 
+$aiopacks = "SELECT `id`, `name`, `description`, `img` FROM `aiopacks`
+";
+$aiopacks_stmt = $pdo->prepare($aiopacks);
+$aiopacks_stmt->execute();
+
 ?>
 
 <?php if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) { ?>
@@ -110,6 +115,7 @@ $ship_stmt->execute();
 
 
 <h1 style="color: #FFF;">Administration - Infinity</h1>
+<h6 style="color: #FFF;"><a href="../public/index.php">Retour à l'accueil</a></h6>
 
 <div class="container">
     <div class="card mt-5">
@@ -218,6 +224,25 @@ $ship_stmt->execute();
     <textarea placeholder="Installations desc" type="text" name="installationsdesc"></textarea><br>
     <label style="width: 100px" for="link">Image:</label>
     <input placeholder="http://image.png" type="url" name="link"><br><br><br>
+<button type="submit" class="btn btn-info">Ajouter</button>
+</form>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="card mt-5">
+      <div class="card-body">
+    <label style="font-size: 24px;">Ajouter un All in one Packs : </label><br><br>
+    <form method="post" action="actions/aiopacks/doadd.php">
+    <label style="width: 100px">Name : </label>
+    <input placeholder="Name" type="text" name="name"></input><br>
+    <label style="width: 100px">Description : </label>
+    <textarea placeholder="Description" type="number" name="description"></textarea><br>
+    <label style="width: 100px" for="img">Image :</label>
+    <input placeholder="http://image.png" type="url" name="img"><br><br><br>
 <button type="submit" class="btn btn-info">Ajouter</button>
 </form>
 </div>
@@ -385,6 +410,42 @@ while ($row = $ship_stmt->fetch(PDO::FETCH_ASSOC)) {
             <form action="actions/ship/dodelete.php" method="post">
             <input name="id" type="hidden" value="<?= $row["id"] ?>">
             <input onclick="return confirm('Voulez-vous vraiment supprimer <?= $row['name'] ?> ?')" type="submit" class="btn btn-danger" value="Supprimer">
+        </form>
+        </td>
+    </tr>
+<?php
+}
+?>
+</table>
+
+<br>
+<br>
+<br>
+
+<table id="aiopacks" style="background: #FFF;" class="table table-bordered">
+    <tr>
+    <label style="color: #FFF; font-size: 24px;" for="message">Liste des All in One Packs : </label><br><br>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Actions</th>
+    </tr>
+<?php
+while ($aiorow = $aiopacks_stmt->fetch(PDO::FETCH_ASSOC)) {
+?>
+   <tr>
+        <td><?= $aiorow['name'] ?></td>
+        <td><?= $aiorow['description'] ?></td>
+        <td><img style="width: 100px;" class="img-thumbnail" alt="<?= $aiorow["name"] ?>" src="<?= $aiorow["img"] ?>" data-holder-rendered="true"></td>
+        <td>
+        <form action="./actions/aiopacks/edit.php" method="post">
+            <input name="id" type="hidden" value="<?= $aiorow["id"] ?>">
+            <input type="submit" class="btn btn-info" value="Modifier">
+        </form>
+        <br>
+            <form action="./actions/aiopacks/dodelete.php" method="post">
+            <input name="id" type="hidden" value="<?= $aiorow["id"] ?>">
+            <input onclick="return confirm('Voulez-vous vraiment supprimer <?= $aiorow['name'] ?> ?')" type="submit" class="btn btn-danger" value="Supprimer">
         </form>
         </td>
     </tr>
