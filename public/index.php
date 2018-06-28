@@ -94,7 +94,9 @@ session_start ();
         <?php
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
                 ?>
-                <a href="profile.php" class="menu_nav_icon_generated"><img class="menu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt=""></a>
+                <a href="profile.php" class="menu_nav_icon_generated allo">
+                    <img class="menu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt="">
+                </a>
                 <?php
             } else {
                 ?>
