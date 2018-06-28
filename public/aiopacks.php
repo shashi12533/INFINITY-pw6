@@ -6,14 +6,34 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/master.min.css">
-    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <title>Packs tout inclus - INFINITY</title>
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="
+		Nous avons conçus ces packs afin de faciliter votre organisation de sorte qu’ils soient adaptables pour tout type de profil. Nous vous en présentons 3: Étoile, Nébuleuse et Voie Lactée.
+        Le budget est indiqué, pour que vous puissiez Facilement vous identifier dans l’une de ces offres. Vous aurez juste à choisir, telle une valise déjà faite.">
+		<meta itemprop="name" content="INFINITY, ouvrez vous au futur">
+		<meta itemprop="description" content="
+		Nous avons conçus ces packs afin de faciliter votre organisation de sorte qu’ils soient adaptables pour tout type de profil. Nous vous en présentons 3: Étoile, Nébuleuse et Voie Lactée.
+        Le budget est indiqué, pour que vous puissiez Facilement vous identifier dans l’une de ces offres. Vous aurez juste à choisir, telle une valise déjà faite.">
+		<meta itemprop="image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta property="og:url" content="http://alexandredelaloy.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="INFINITY, ouvrez vous au futur">
+		<meta property="og:description" content="
+		Nous avons conçus ces packs afin de faciliter votre organisation de sorte qu’ils soient adaptables pour tout type de profil. Nous vous en présentons 3: Étoile, Nébuleuse et Voie Lactée.
+        Le budget est indiqué, pour que vous puissiez Facilement vous identifier dans l’une de ces offres. Vous aurez juste à choisir, telle une valise déjà faite.">
+		<meta property="og:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="INFINITY, ouvrez vous au futur">
+		<meta name="twitter:description" content="
+		Nous avons conçus ces packs afin de faciliter votre organisation de sorte qu’ils soient adaptables pour tout type de profil. Nous vous en présentons 3: Étoile, Nébuleuse et Voie Lactée.
+        Le budget est indiqué, pour que vous puissiez Facilement vous identifier dans l’une de ces offres. Vous aurez juste à choisir, telle une valise déjà faite.">
+		<meta name="twitter:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+        <link rel="stylesheet" href="css/master.min.css">
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+        <title>Pack tout inclus - INFINITY</title>
+    </head>
 <body>
     <section class="aio">
         
@@ -23,7 +43,8 @@ session_start();
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="aio_title">Packs tout inclus</h1>
-        <p class="aio_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
+        <p class="aio_desc">Nous avons conçus ces packs afin de faciliter votre <span class="ImStrong">organisation</span> de sorte qu’ils soient adaptables pour tout type de <span class="ImStrong">profil</span>. Nous vous en présentons 3: <span class="ImStrong">Étoile</span>, <span class="ImStrong">Nébuleuse</span> et <span class="ImStrong">Voie Lactée</span>.<br><br> 
+        Le budget est indiqué, pour que vous puissiez <span class="ImStrong">Facilement</span> vous identifier dans l’une de ces offres. Vous aurez juste à choisir, telle une <span class="ImStrong">valise déjà faite</span>.</p>
         <div class="carousel aio_packs"
         data-flickity='{ "watchCSS": true }' >
             <div class="carousel-cell aio_packs_pack">
