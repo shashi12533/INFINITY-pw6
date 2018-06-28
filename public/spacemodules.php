@@ -48,7 +48,7 @@ $station_stmt->execute();
                         </li>
                     </ul>
                     <div class="spacemodules_packs_pack_content_linkBox">
-                            <a href="planet.html" class="spacemodules_packs_pack_content_link">En savoir +</a>
+                            <a href="spacemodule.html" class="spacemodules_packs_pack_content_link">En savoir +</a>
                             
                         </div>
                 </div>

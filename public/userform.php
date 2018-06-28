@@ -1,7 +1,3 @@
-<?php
-session_start ();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,17 +13,13 @@ session_start ();
 <body>
   <section class="userform">
     <section class="stars" id="scene"></section>
-    <header class="sign_header">
-      <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="sign_header_logo">
-      <h1 class="sign_header_title"><a href="index.html">INFINITY</a></h1>
+    <header class="header">
+      <img src="assets/images/icons/logo.svg" alt="INFINITY Logo" class="header_logo">
+      <h1 class="header_title"><a href="index.html">INFINITY</a></h1>
     </header>
-    <?php
-    if (isset($_SESSION['usr']) && isset($_SESSION['pwd']))
-    {
-      ?>
-      <section class="userform_container">
+    <section class="userform_container">
       <h1 class="userform_title">Fiche de renseignements</h1>
-      <div class="userform_container_first">
+      <div class="userform_container_first is-visible">
         <form class="userform_form" action="index.html" method="post">
           <label class="userform_form_label">Votre nom :</label>
           <input class="userform_form_input" type="text" name="name" placeholder="Nom prénom" required></input><br>
@@ -43,7 +35,7 @@ session_start ();
           <input class="userform_form_input" type="text" name="allergie" placeholder="Allergies"></input><br>
           <label class="userform_form_label">Régime alimentaire </label>
           <input class="userform_form_input" type="text" name="régime alimentaire" placeholder="Régime alimentaire"></input><br>
-          <input type="text" class="userform_form_next" name="suivant" placeholder="suivant"><a href=""></a></input>
+          <a class="userform_form_next" id="next1" name="suivant" href="#">coucou</a>
         </form>
       </div>
       <div class="userform_container_second">
@@ -76,7 +68,7 @@ session_start ();
           <option value="toxico">Toxicoman</option>
           <option value="junky">Junky</option>
         </select><br>
-          <input type="text" class="userform_form_next" name="suivant" placeholder="suivant"><a href=""></a></input>
+        <a class="userform_form_next" id="next2" name="suivant" href="#">coucou</a>
         </form>
       </div>
       <div class="userform_container_third">
@@ -97,33 +89,33 @@ session_start ();
         </form>
       </div>
     </section>
-    <?php
-    }
-    else
-    {
-      ?>
-      <div class="userform_error_title">
-      <p>Veuillez d'abord vous connecter.</p>
-      <a class="userform_error_link" href="sign.php">Se connecter</a>
-      </div>
-      <?php
-    }
-?>
+    <footer class="footer">
+        <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
+        <nav class="footer_social">
+            <a href="" class="footer_social_icon"></a>
+            <a href=""  class="footer_social_icon"></a>
+            <a href=""  class="footer_social_icon"></a>
+        </nav>
+        <p class="footer_copyright">ⓒ Copyright 2018 - INFINITY </p>
+    </footer>
   </section>
 
-  <section class="fmenu">
-    <nav class="fmenu_nav">
-      <a href="index.html" class="fmenu_nav_icon"></a>
-      <a href="" class="fmenu_nav_icon"></a>
-      <a href="spaceshipts.php" class="fmenu_nav_icon"></a>
-      <a href="planets.php" class="fmenu_nav_icon"></a>
-      <a href="spacemodules.php" class="fmenu_nav_icon"></a>
+  <section class="menu">
+    <nav class="menu_nav">
+      <a href="index.html" class="menu_nav_icon"></a>
+      <a href="" class="menu_nav_icon"></a>
+      <a href="spaceships.php" class="menu_nav_icon"></a>
+      <a href="planets.php" class="menu_nav_icon"></a>
+      <a href="spacemodules.php" class="menu_nav_icon"></a>
     </nav>
   </section>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <!--Flickity.js-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/app.min.js" charset="UTF-8"></script>
+  
 </body>
 
 </html>

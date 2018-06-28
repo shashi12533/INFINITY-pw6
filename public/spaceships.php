@@ -47,7 +47,7 @@ $ship_stmt->execute();
                         <li class="spaceships_packs_pack_content_item"> <?= $row["spacing"] ?></li>
                         <li class="spaceships_packs_pack_content_item"><?= $row["installations"] ?></li>
                     </ul>
-                    <form action="spaceshipinfo.php?id=<?= $row["id"] ?>" method="post">
+                    <form action="spaceship.php?id=<?= $row["id"] ?>" method="post">
                         <input name="id" type="hidden" value="<?= $row["id"] ?>">
                         <div class="spaceships_packs_pack_content_linkBox">
                         <input type="submit" class="spaceships_packs_pack_content_link" value="En savoir +">

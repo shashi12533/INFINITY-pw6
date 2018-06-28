@@ -6,21 +6,27 @@ body {
 .profile {
     width: 100%;
     @media (min-width: $mobileToTablet ) {
-      width: 70%;
-      margin: 0 auto;
+    width: 100%;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
     }
 }
 
 .profile_main {
-    margin-top: 10px;
+    margin-top: 90px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &_title {
+        text-align: center;
         font-size: $midBig;
         width: 70%;
+        &_absolute {
+            position: absolute;
+        }
     }
     &_link {
         text-decoration: none;
@@ -48,8 +54,8 @@ body {
         }
     }
     &_error {
-        width: 30%;
-        height: 30%;
+        width: 40%;
+        height: 40%;
         &_container {
             display: flex;
             flex-direction: column;
@@ -106,4 +112,10 @@ body {
 
     }
   }
+}
+
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
