@@ -1,0 +1,134 @@
+.spacemodule {
+    width: 100%;
+    position: relative;   
+    &_title {
+        background: $bgPurpleToTrans;
+        color:#fff;
+        font-size: $xBig;
+        font-family: $Ex-Thn;
+        text-align: center;
+        padding: 25px 25px 37px;
+        position: sticky;
+        top: -2px;
+        z-index: 2;
+        &:before {
+            content: '';
+            background: $spacemodule;
+            width: 33%;
+            height: 4px;
+            position: absolute;
+            bottom: 25px;
+            right: 50%;
+            transform: translate(50%, 0);
+            z-index: -1;
+            border-radius: 25px;
+        }
+        @media (min-width: $mobileToTablet ) {
+            background: transparent;
+            text-align : right;
+            margin: 25px 120px 50px;
+            &:before {
+                width: 200px;
+                right: 25px;
+                bottom: 25px;
+                transform: translate(0, 0);
+                
+            }
+        }
+    }
+    &_articles {
+        padding: 25px 100px 25px 25px;
+        color: #fff;
+        @media (min-width: $mobileToTablet ) {
+            padding: 0 120px 90px 120px;   
+        }
+        &_article {
+            position: relative;
+            &_title {
+                font-family: $Qs-Bld;
+                font-size: $Big;
+                text-align: center;
+                padding-bottom: 25px;
+                @media (min-width: $mobileToTablet ) {
+                    text-align: left;   
+                }
+            }
+            &_text {
+                font-family: $Qs-Reg;
+                font-size: $Reg;
+                text-align: justify;
+                line-height: 1.5;
+                padding-bottom: 50px;
+                @media (min-width: $mobileToTablet ) {
+                    padding-right: 33%;    
+                }
+            }
+            &:after {
+                content: '';
+                background: red;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 50px;
+                right: 15%;
+                opacity: 0;
+                
+                @media (min-width: $mobileToTablet ) {
+                    opacity: 1;  
+                }
+            }
+            &:nth-child(1) {
+                &:after {
+                    background: url(../assets/images/desc_spacemodule/home-degrade.svg) no-repeat center;
+                    background-size: 100%;
+                }
+                
+            }
+            &:nth-child(2) {
+                &:after {
+                    background: url(../assets/images/desc_spacemodule/publics-services-degrade.svg) no-repeat center;
+                    background-size: 100%;
+                }
+                
+            }
+            &:nth-child(3) {
+                &:after {
+                    background: url(../assets/images/desc_spacemodule/sun-umbrella-degrade.svg) no-repeat center;
+                    background-size: 100%;
+                }
+                
+            }
+            
+            
+        }    
+    }
+    &_menu {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        @media (min-width: $mobileToTablet ) {
+            visibility: hidden;
+        }
+        &_icon {
+            background: red;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 35px;
+            transition: all 0.2s ease;
+            &:nth-child(1) {
+                background: url(../assets/images/desc_spacemodule/home.svg) no-repeat center;
+                    background-size: 100%;
+            }
+            &:nth-child(2) {
+                background: url(../assets/images/desc_spacemodule/publics-services.svg) no-repeat center;
+                    background-size: 100%;
+            }
+            &:nth-child(3) {
+                background: url(../assets/images/desc_spacemodule/sun-umbrella.svg) no-repeat center;
+                    background-size: 100%;
+            }
+            
+        }
+    }
+}
