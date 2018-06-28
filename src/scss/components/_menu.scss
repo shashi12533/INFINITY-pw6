@@ -96,8 +96,18 @@
 
                 }
             }
+            &_generated {
+                display: flex;
+                align-items: center;
+            }
             &_generated_img {
               width: 30px; border-radius: 100px;
+              position: absolute;
+              top: 16px;
+              @media (min-width: $mobileToTablet) {
+                    position: relative;
+                    top: 0;
+                }
             }
 
         }
