@@ -8,9 +8,26 @@ session_start ();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="
+		INFINITY est une entreprise vous proposant des programmes afin d'aller prospérer vers d'autres planètes. Nous vous proposons des voyages interspaciaux selon votre budget et votre classe sociale">
+		<meta itemprop="name" content="INFINITY, ouvrez vous au futur">
+		<meta itemprop="description" content="
+		INFINITY est une entreprise vous proposant des programmes afin d'aller prospérer vers d'autres planètes. Nous vous proposons des voyages interspaciaux selon votre budget et votre classe sociale">
+		<meta itemprop="image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta property="og:url" content="http://alexandredelaloy.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="INFINITY, ouvrez vous au futur">
+		<meta property="og:description" content="
+		INFINITY est une entreprise vous proposant des programmes afin d'aller prospérer vers d'autres planètes. Nous vous proposons des voyages interspaciaux selon votre budget et votre classe sociale">
+		<meta property="og:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="INFINITY, ouvrez vous au futur">
+		<meta name="twitter:description" content="
+		INFINITY est une entreprise vous proposant des programmes afin d'aller prospérer vers d'autres planètes. Nous vous proposons des voyages interspaciaux selon votre budget et votre classe sociale">
+		<meta name="twitter:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
         <link rel="stylesheet" href="css/master.min.css">
         <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
-        <title>INFINITY, ouvrez vous au future</title>
+        <title>INFINITY, ouvrez vous au futur</title>
     </head>
 <body>
     <section class="home">
@@ -50,8 +67,8 @@ session_start ();
             </p>
             <h3 class="home_packchoice_nav_title">Choisissez votre méthode :</h3>
             <nav class="home_packchoice_nav">
-                <a href="aiopacks.html" class="home_packchoice_nav_link">Tout inclus</a>
-                <a href="custompacks.html" class="home_packchoice_nav_link">personnalisable</a>
+                <a href="aiopacks.php" class="home_packchoice_nav_link">Tout inclus</a>
+                <a href="custompacks.php" class="home_packchoice_nav_link">personnalisable</a>
             </nav>
         </section>
         <p class="home_citation"><em>"Rejoignez INFINITY dépasser les limites du réel"</em></p>

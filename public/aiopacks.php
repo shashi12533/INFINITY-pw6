@@ -102,7 +102,7 @@ session_start();
             
         </div>
         <img src="assets/images/planets/planeteAnneau3.svg" alt="" class="aio_planet1"><img src="assets/images/planets/comet2.svg" alt="" class="aio_comet1">
-        <p class="aio_goto">Découvrez aussi nos <a href="custompacks.html" class="aio_goto_link">PACKS PERSONNALISABLES</a> !</p>
+        <p class="aio_goto">Découvrez aussi nos <a href="custompacks.php" class="aio_goto_link">PACKS PERSONNALISABLES</a> !</p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="footer_social">
