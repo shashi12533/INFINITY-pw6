@@ -22,8 +22,8 @@
         <div class="buy_line"></div>
         <div class="buy_circles">
           <div class="buy_circles_content"></div>
-          <div class="buy_circles_content"></div>
           <div class="buy_circles_content_active"></div>
+          <div class="buy_circles_content"></div>
           <div class="buy_circles_content"></div>
         </div>
         <div class="buy_text">
@@ -33,7 +33,7 @@
           <p class="buy_text_content">Validation</p>
         </div>
         <div class="buy_return">
-          <a href="" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
+          <a href="buy.php" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
         </div>
       </section>
       <h1 class="userform_title">Fiche de renseignements</h1>

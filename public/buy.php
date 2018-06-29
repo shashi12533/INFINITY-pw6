@@ -33,7 +33,7 @@
         <p class="buy_text_content">Validation</p>
       </div>
       <div class="buy_return">
-        <a href="" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
+        <a href="javascript:history.back()" class="buy_return_link"><img src="assets/images/icons/menu/right-arrow.svg" alt="return" class="buy_return_img"></a>
       </div>
       <div class="buy_packs">
         <div class="buy_packs_first">

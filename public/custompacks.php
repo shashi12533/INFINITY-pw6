@@ -147,9 +147,8 @@ $planets_stmt->execute();
                         </li>
                     </ul>
                     <div class="custom_packs_pack_content_linkBox">
-                    <input type="submit" class="custom_packs_pack_content_link" value="Sélectionner">
                     <input type="submit" class="custom_packs_pack_content_link" value="En savoir +">
-                            
+                    <input type="submit" class="custom_packs_pack_content_link" value="Sélectionner">  
                         </div>
                 </div>
             </div>
