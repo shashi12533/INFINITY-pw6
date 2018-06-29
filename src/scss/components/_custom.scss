@@ -76,8 +76,10 @@
         font-family: $Ex-Thn;
         font-size: $Big;
         padding: 25px;
+        text-align: center;
         @media (min-width: $mobileToTablet ) {
             padding: 25px 150px;
+            text-align: left;
         }
     }
     
@@ -130,7 +132,7 @@
                 &_title {
                     color:#fff;
                     font-size: $Big;
-                    font-family: $Qs-Lgh;
+                    font-family: $Ex-Reg;
                     padding: 20px;
                 }
                 &_list {
@@ -288,6 +290,7 @@
     @media (min-width: $mobileToTablet ) {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
     &_button {
         color: #fff;
