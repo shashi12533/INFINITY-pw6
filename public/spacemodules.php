@@ -60,7 +60,7 @@ $station_stmt->execute();
             }
         ?>
         </div>
-        <img src="assets/images/icons/menu/spacemodule-anim.svg" alt="" class="spacemodules_planet1"><img src="assets/images/planets/comet2.svg" alt="" class="spacemodules_comet1">
+        <img src="assets/images/icons/menu/spacemodule-anim.svg" alt="icône habitation" class="spacemodules_planet1"><img src="assets/images/planets/comet2.svg" alt="deux comètes" class="spacemodules_comet1">
         <p class="spacemodules_goto">Découvrez aussi nos <a href="custompacks.html" class="spacemodules_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.html" class="spacemodules_goto_link">PACKS TOUT INCLUS</a></p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>

@@ -102,9 +102,9 @@
         </footer>
     </section>
     <section class="backgroundSign">
-        <img src="assets/images/planets/planete2.svg" alt="" class="backgroundSign_planet1">
-        <img src="assets/images/planets/planete3.svg" alt="" class="backgroundSign_planet2">
-        <img src="assets/images/planets/comet.svg" alt="" class="backgroundSign_comet">
+        <img src="assets/images/planets/planete2.svg" alt="planète violette" class="backgroundSign_planet1">
+        <img src="assets/images/planets/planete3.svg" alt="lune" class="backgroundSign_planet2">
+        <img src="assets/images/planets/comet.svg" alt="comète" class="backgroundSign_comet">
     </section>
     <section class="menu">
         <nav class="menu_nav">
