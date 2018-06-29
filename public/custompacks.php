@@ -24,6 +24,23 @@ $planets_stmt->execute();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="
+		Créez un pack qui vous ressemble. Vous aurez le choix de la planète de destination, du transport pour votre transfert et enfin de l'habitat où vous vivrez. Combinez à votre envie.">
+		<meta itemprop="name" content="INFINITY, ouvrez vous au futur">
+		<meta itemprop="description" content="
+		Créez un pack qui vous ressemble. Vous aurez le choix de la planète de destination, du transport pour votre transfert et enfin de l'habitat où vous vivrez. Combinez à votre envie.">
+		<meta itemprop="image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta property="og:url" content="http://alexandredelaloy.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="INFINITY, ouvrez vous au futur">
+		<meta property="og:description" content="
+		Créez un pack qui vous ressemble. Vous aurez le choix de la planète de destination, du transport pour votre transfert et enfin de l'habitat où vous vivrez. Combinez à votre envie.">
+		<meta property="og:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="INFINITY, ouvrez vous au futur">
+		<meta name="twitter:description" content="
+		Créez un pack qui vous ressemble. Vous aurez le choix de la planète de destination, du transport pour votre transfert et enfin de l'habitat où vous vivrez. Combinez à votre envie.">
+		<meta name="twitter:image" content="https://image.noelshack.com/fichiers/2018/26/5/1530228048-capture-d-ecran-2018-06-29-a-01-20-29.png">
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -37,7 +54,7 @@ $planets_stmt->execute();
             <h1 class="header_title"><a href="index.php">INFINITY</a></h1>
         </header>
         <h1 class="custom_title">PACKS PERSONNALISABLES</h1>
-        <p class="custom_desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime veritatis voluptate neque aperiam explicabo exercitationem culpa ea aut quis, at quisquam accusantium, voluptatibus aliquam rem. Modi tenetur aspernatur nobis voluptas.</p>
+        <p class="custom_desc">Créez un pack qui <span class="ImStrong">vous ressemble</span>. Vous aurez le choix de la <span class="ImStrong">planète</span> de destination, du <span class="ImStrong">transport</span> pour votre transfert et enfin de <span class="ImStrong">l'habitat</span> où vous vivrez. <span class="ImStrong">Combinez à votre envie</span>.</p>
         <h3 class="custom_titlesection">Je choisis mon budget (par personne) :</h3>
         <div class="custom_buttonBox">
             <div class="custom_buttonBox_button">Budget 1</div>
@@ -146,7 +163,7 @@ $planets_stmt->execute();
         </div>
         <img src="assets/images/planets/planete4.svg" alt="" class="custom_planet1">
         <img src="assets/images/planets/comet2.svg" alt="" class="custom_comet1">
-        <p class="custom_goto">Découvrez aussi nos <a href="aiopacks.html" class="custom_goto_link">PACKS TOUT INCLUS</a> !</p>
+        <p class="custom_goto">Découvrez aussi nos <a href="aiopacks.php" class="custom_goto_link">PACKS TOUT INCLUS</a> !</p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="footer_social">
