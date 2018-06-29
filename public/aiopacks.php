@@ -61,7 +61,7 @@ session_start();
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                             <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
-                            <a href="userform.html" class="aio_packs_pack_content_link">Commander</a>
+                            <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                         </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ session_start();
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                             <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
-                            <a href="userform.html" class="aio_packs_pack_content_link">Commander</a>
+                            <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                         </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ session_start();
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
                         <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
-                        <a href="userform.html" class="aio_packs_pack_content_link">Commander</a>
+                        <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                     </div>
                 </div>
             </div>
