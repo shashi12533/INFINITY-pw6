@@ -60,7 +60,7 @@ session_start();
                         <li class="aio_packs_pack_content_item"> Comète</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
-                            <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
+                            <a href="index.php" class="aio_packs_pack_content_link">En savoir +</a>
                             <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                         </div>
                 </div>
@@ -77,7 +77,7 @@ session_start();
                         <li class="aio_packs_pack_content_item"> Météor</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
-                            <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
+                            <a href="index.php" class="aio_packs_pack_content_link">En savoir +</a>
                             <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                         </div>
                 </div>
@@ -94,7 +94,7 @@ session_start();
                         <li class="aio_packs_pack_content_item"> Galaxia</li>
                     </ul>
                     <div class="aio_packs_pack_content_linkBox">
-                        <a href="packdesc.html" class="aio_packs_pack_content_link">En savoir +</a>
+                        <a href="index.php" class="aio_packs_pack_content_link">En savoir +</a>
                         <a href="buy.php" class="aio_packs_pack_content_link">Commander</a>
                     </div>
                 </div>
