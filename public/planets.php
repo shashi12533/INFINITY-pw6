@@ -61,7 +61,7 @@ $planets_stmt->execute();
         <img src="assets/images/icons/menu/planet-anim.svg" alt="icône planète" class="planets_planet1"><img src="assets/images/planets/comet2.svg" alt="deux comètes" class="planets_comet1">
         <p class="planets_desc">
         <em>"[...] Il n'est pas possible que nous continuions à nous regarder le nombril et à miser sur une planète surpeuplée et de plus en plus polluée.", <span class="ImStrong">Stephen Hawking</span></em></p>
-        <p class="planets_goto">Découvrez aussi nos <a href="custompacks.html" class="planets_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.html" class="planets_goto_link">PACKS TOUT INCLUS</a></p>
+        <p class="planets_goto">Découvrez aussi nos <a href="custompacks.php" class="planets_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.php" class="planets_goto_link">PACKS TOUT INCLUS</a></p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="footer_social">

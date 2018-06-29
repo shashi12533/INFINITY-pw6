@@ -64,7 +64,7 @@ $ship_stmt->execute();
         </div>
         <img src="assets/images/icons/menu/spaceship-anim.svg" alt="icône transports" class="spaceships_planet1"><img src="assets/images/planets/comet2.svg" alt="" class="spaceships_comet1">
         <p class="spaceships_desc"><em>"Un vaisseau est une maison errante, une auberge partout, un voyageur qui ne laisse pas de traces"</em>, <span class="ImStrong">Alcuin</span></p>
-        <p class="spaceships_goto">Découvrez aussi nos <a href="custompacks.html" class="spaceships_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.html" class="spaceships_goto_link">PACKS TOUT INCLUS</a></p>
+        <p class="spaceships_goto">Découvrez aussi nos <a href="custompacks.php" class="spaceships_goto_link">PACKS PERSONNALISABLES</a>, ainsi que nos <a href="aiopacks.php" class="spaceships_goto_link">PACKS TOUT INCLUS</a></p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
             <nav class="footer_social">
