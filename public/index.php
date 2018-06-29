@@ -40,7 +40,7 @@ session_start ();
             <h1 class="home_header_title">INFINITY</h1>
 
         </header>
-        <img src="assets/images/planets/planeteAnneau1.svg" alt="" class="home_planet1">
+        <img src="assets/images/planets/planeteAnneau1.svg" alt="planète orange avec anneaux" class="home_planet1">
 
         <div class="home_titleBox">
             <p class="home_titleBox_text">
@@ -55,7 +55,7 @@ session_start ();
             <span class="ImStrong">6 planètes habitables</span>, <span class="ImStrong">moyens de transports</span> et <span class="ImStrong">types d'habitations</span>, avec des conditions de vie adaptés selon votre <span class="ImStrong">profil</span>.<br><br>
             Nous vous accompagnons tout au long de l’organisation de votre voyage <span class="ImStrong">sans retour</span>. Vous aurez toutes les informations nécessaires pour vous préparer à votre <span class="ImStrong">nouveau</span> mode de vie, du renseignement jusqu’à l’achat de votre billet. C’est <span class="ImStrong">notre garantie</span>.<br><br>
             <span class="ImStrong">Attention</span> , le choix de quitter la planète Terre est un choix réfléchi car il sera impossible se faire <span class="ImStrong">marche arrière</span>.</p>
-            <img src="assets/images/planets/planete3.svg" alt="" class="home_planet2">
+            <img src="assets/images/planets/planete3.svg" alt="planète bleu vert" class="home_planet2">
         </section>
         <section class="home_packchoice" id="packs">
             <h2 class="home_packchoice_title"> Découvrez nos offres :</h2>
@@ -92,8 +92,8 @@ session_start ();
                     <p class="home_stats_nav_article_subtitle">Planètes colonisées, et ce n'est que le début..</p>
                 </article>
             </nav>
-            <img src="assets/images/planets/planete2.svg" alt="" class="home_planet3">
-            <img src="assets/images/planets/planete5.svg" alt="" class="home_planet4">
+            <img src="assets/images/planets/planete2.svg" alt="planète violette" class="home_planet3">
+            <img src="assets/images/planets/planete5.svg" alt="lune" class="home_planet4">
         </section>
         <section class="home_partners">
             <h3 class="home_partners_title">Nos partnenariats :</h3>
@@ -119,7 +119,7 @@ session_start ();
             if (isset($_SESSION['usr']) && isset($_SESSION['pwd'])) {
                 ?>
                 <a href="profile.php" class="menu_nav_icon_generated allo">
-                    <img class="menu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt="">
+                    <img class="menu_nav_icon_generated_img" src="<?= $_SESSION['img']?>" alt="avatar">
                 </a>
                 <?php
             } else {

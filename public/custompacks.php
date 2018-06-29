@@ -161,8 +161,8 @@ $planets_stmt->execute();
             <p class="custom_price">999 € </p>
             <div class="custom_buttonBox_button hovered">Payer</div>
         </div>
-        <img src="assets/images/planets/planete4.svg" alt="" class="custom_planet1">
-        <img src="assets/images/planets/comet2.svg" alt="" class="custom_comet1">
+        <img src="assets/images/planets/planete4.svg" alt="planète violet orange" class="custom_planet1">
+        <img src="assets/images/planets/comet2.svg" alt="deux comètes" class="custom_comet1">
         <p class="custom_goto">Découvrez aussi nos <a href="aiopacks.php" class="custom_goto_link">PACKS TOUT INCLUS</a> !</p>
         <footer class="footer">
             <p class="footer_text">Retrouvez nous sur nos réseaux sociaux :</p>
